@@ -1,0 +1,3201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Areas | PrimePainters Network</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation with Dropdown -->
+   
+ <header class="site-header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">Prime<span>Painters</span></a>
+    
+    <!-- Mobile Hamburger Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="how-it-works.html" class="active">How It Works</a>
+
+      <!-- Services Dropdown (Single instance controlled by CSS/JS) -->
+      <div class="dropdown" id="servicesDropdown">
+        <a href="services.html" class="dropdown-trigger">Services</a>
+        <div class="dropdown-content">
+          <a href="interior-painting.html">Interior Painting</a>
+          <a href="exterior-painting.html">Exterior Painting</a>
+          <a href="commercial-painting.html">Commercial Painting</a>
+          <a href="cabinet-refinishing.html">Cabinet Refinishing</a>
+        </div>
+      </div>
+
+      <a href="service-areas.html">Service Areas</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      
+      <!-- Mobile-only CTA placement inside the drawer -->
+      <div class="mobile-cta-container">
+        <a href="contractors.html" class="btn-outline">For Painters</a>
+      </div>
+    </nav>
+
+    <!-- Desktop CTA -->
+    <div class="nav-cta desktop-cta">
+      <a href="contractors.html" class="btn-outline">For Painters</a>
+    </div>
+  </div>
+</header>
+
+    <!-- Page Header Section with Full-Width Background Image -->
+<section
+  class="page-header-section"
+  style="
+    position: relative;
+    padding: 10rem 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+  "
+>
+  <div
+    class="container text-center"
+    style="position: relative; z-index: 2; max-width: 900px; margin: 0 auto; padding: 0 1.5rem;"
+  >
+    <span
+      class="badge"
+      style="
+        background: rgba(0, 102, 255, 0.85);
+        color: var(--white);
+        padding: 0.4rem 1.1rem;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        font-weight: 700;
+        display: inline-block;
+        margin-bottom: 1.25rem;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      "
+      >Local Coverage</span
+    >
+    <h1
+      style="
+        font-size: 3.25rem;
+        font-weight: 800;
+        color: var(--white);
+        margin-bottom: 1.25rem;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+      "
+    >
+      Find Vetted Painters Operating Across Gauteng
+    </h1>
+    <p
+      style="
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+      "
+    >
+      We connect homeowners and businesses with top-tier, insured painting contractors across Sandton, Midrand, Rosebank, Randburg, and surrounding neighborhoods.
+    </p>
+  </div>
+</section>
+
+    <!-- Service Areas Grid Section -->
+    <section class="content-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Primary Operating Zones</h2>
+          <p>
+            Select your region below to find local contractors ready to quote
+            your project.
+          </p>
+        </div>
+
+        <div
+          class="process-grid"
+          style="
+            margin-bottom: 4rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+          "
+        >
+          <!-- Sandton -->
+          <div class="process-card" style="background: var(--white)">
+            <h3>Sandton</h3>
+            <p>
+              Expert interior and exterior painting for luxury residential
+              estates, modern apartments, and corporate office parks.
+            </p>
+            <ul
+              class="benefits-list"
+              style="
+                margin-top: 1rem;
+                font-size: 0.9rem;
+                list-style: none;
+                padding: 0;
+              "
+            >
+              <li>✓ Luxury Residential Estates</li>
+              <li>✓ Corporate & Commercial Offices</li>
+              <li>✓ Premium Finishes & Refinishing</li>
+            </ul>
+          </div>
+
+          <!-- Midrand -->
+          <div class="process-card" style="background: var(--white)">
+            <h3>Midrand</h3>
+            <p>
+              Reliable painting services catering to expanding suburban housing
+              developments, security complexes, and local business hubs.
+            </p>
+            <ul
+              class="benefits-list"
+              style="
+                margin-top: 1rem;
+                font-size: 0.9rem;
+                list-style: none;
+                padding: 0;
+              "
+            >
+              <li>✓ Security Estate Homes</li>
+              <li>✓ Townhouse Complexes</li>
+              <li>✓ Rapid On-Site Estimates</li>
+            </ul>
+          </div>
+
+          <!-- Rosebank -->
+          <div class="process-card" style="background: var(--white)">
+            <h3>Rosebank</h3>
+            <p>
+              Specialized urban painting services tailored for high-density
+              residential complexes, stylish townhomes, and retail storefronts.
+            </p>
+            <ul
+              class="benefits-list"
+              style="
+                margin-top: 1rem;
+                font-size: 0.9rem;
+                list-style: none;
+                padding: 0;
+              "
+            >
+              <li>✓ Modern Apartments & Complexes</li>
+              <li>✓ Retail & Commercial Spaces</li>
+              <li>✓ Interior & Exterior Specialists</li>
+            </ul>
+          </div>
+
+          <!-- Randburg -->
+          <div class="process-card" style="background: var(--white)">
+            <h3>Randburg</h3>
+            <p>
+              Trusted craftsmanship for established residential neighborhoods,
+              family homes, townhouse complexes, and light commercial
+              properties.
+            </p>
+            <ul
+              class="benefits-list"
+              style="
+                margin-top: 1rem;
+                font-size: 0.9rem;
+                list-style: none;
+                padding: 0;
+              "
+            >
+              <li>✓ Established Suburbs & Homes</li>
+              <li>✓ Complex Maintenance Painting</li>
+              <li>✓ Weather-Resistant Coatings</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Zip Code Check Callout Box -->
+        <div
+          class="about-highlight-box text-center"
+          style="
+            max-width: 700px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f0f4ff 0%, #f8fafc 100%);
+          "
+        >
+          <h3>Looking for Painters Outside These Areas?</h3>
+          <p style="margin: 1rem 0; color: var(--gray-light)">
+            We are continuously expanding our coverage across Gauteng. Enter
+            your project details on our main page to verify active contractor
+            availability in your specific postal code.
+          </p>
+          <a
+            href="index.html#homeownerLeadForm"
+            class="btn-primary"
+            style="display: inline-block; width: auto; padding: 12px 30px"
+            >Check Your Area Now</a
+          >
+        </div>
+      </div>
+    </section>
+<section
+      class="individual-area-cards-section"
+      style="
+        padding: 7rem 0;
+        background: var(--bg-light);
+        border-top: 1px solid var(--border);
+      "
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <div
+          class="section-title"
+          style="text-align: center; margin-bottom: 5rem"
+        >
+          <span
+            class="badge"
+            style="
+              background: #eff6ff;
+              color: var(--primary);
+              padding: 0.4rem 1.1rem;
+              border-radius: 50px;
+              font-size: 0.85rem;
+              font-weight: 700;
+              display: inline-block;
+              margin-bottom: 1.25rem;
+              border: 1px solid rgba(0, 102, 255, 0.2);
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+            "
+            >Service Locations</span
+          >
+          <h2
+            style="
+              font-size: 2.75rem;
+              font-weight: 800;
+              color: var(--primary);
+              margin-bottom: 1rem;
+              letter-spacing: -0.02em;
+            "
+          >
+            Explore Painters by Area
+          </h2>
+          <p
+            style="
+              color: var(--gray-light);
+              font-size: 1.15rem;
+              max-width: 650px;
+              margin: 0 auto;
+              line-height: 1.6;
+            "
+          >
+            Connect with verified painting and refinishing professionals stationed directly in your neighborhood.
+          </p>
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+          "
+        >
+          <div
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 160px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80"
+                alt="Sandton professional painting services"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+              <span
+                style="
+                  position: absolute;
+                  bottom: 0.75rem;
+                  left: 0.75rem;
+                  background: rgba(0, 0, 0, 0.75);
+                  color: var(--white);
+                  padding: 0.2rem 0.6rem;
+                  border-radius: 4px;
+                  font-size: 0.7rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 0.05em;
+                "
+                >Residential • Commercial • Estates</span
+              >
+            </div>
+            <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+              <div>
+                <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">Sandton</h3>
+                <p style="font-size: 0.95rem; color: var(--gray-dark); line-height: 1.6; margin-bottom: 1.5rem;">
+                  Interior painting, exterior painting, office painting, cabinet refinishing and premium finishing.
+                </p>
+              </div>
+              <a
+                href="#sandton"
+                style="
+                  color: var(--primary);
+                  font-weight: 700;
+                  font-size: 0.95rem;
+                  text-decoration: none;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                "
+              >
+                View Painters in Sandton &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 160px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                alt="Midrand professional painting services"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+              <span
+                style="
+                  position: absolute;
+                  bottom: 0.75rem;
+                  left: 0.75rem;
+                  background: rgba(0, 0, 0, 0.75);
+                  color: var(--white);
+                  padding: 0.2rem 0.6rem;
+                  border-radius: 4px;
+                  font-size: 0.7rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 0.05em;
+                "
+                >Homes • Townhouses • Developments</span
+              >
+            </div>
+            <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+              <div>
+                <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">Midrand</h3>
+                <p style="font-size: 0.95rem; color: var(--gray-dark); line-height: 1.6; margin-bottom: 1.5rem;">
+                  Residential repainting, new developments, complexes and commercial properties.
+                </p>
+              </div>
+              <a
+                href="#midrand"
+                style="
+                  color: var(--primary);
+                  font-weight: 700;
+                  font-size: 0.95rem;
+                  text-decoration: none;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                "
+              >
+                View Painters in Midrand &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 160px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=600&q=80"
+                alt="Rosebank professional painting services"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+              <span
+                style="
+                  position: absolute;
+                  bottom: 0.75rem;
+                  left: 0.75rem;
+                  background: rgba(0, 0, 0, 0.75);
+                  color: var(--white);
+                  padding: 0.2rem 0.6rem;
+                  border-radius: 4px;
+                  font-size: 0.7rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 0.05em;
+                "
+                >Apartments • Offices • Retail</span
+              >
+            </div>
+            <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+              <div>
+                <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">Rosebank</h3>
+                <p style="font-size: 0.95rem; color: var(--gray-dark); line-height: 1.6; margin-bottom: 1.5rem;">
+                  Interior renovations, commercial painting, apartment repainting and property refreshes.
+                </p>
+              </div>
+              <a
+                href="#rosebank"
+                style="
+                  color: var(--primary);
+                  font-weight: 700;
+                  font-size: 0.95rem;
+                  text-decoration: none;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                "
+              >
+                View Painters in Rosebank &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 160px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80"
+                alt="Randburg professional painting services"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+              <span
+                style="
+                  position: absolute;
+                  bottom: 0.75rem;
+                  left: 0.75rem;
+                  background: rgba(0, 0, 0, 0.75);
+                  color: var(--white);
+                  padding: 0.2rem 0.6rem;
+                  border-radius: 4px;
+                  font-size: 0.7rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 0.05em;
+                "
+                >Homes • Complexes • Businesses</span
+              >
+            </div>
+            <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+              <div>
+                <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">Randburg</h3>
+                <p style="font-size: 0.95rem; color: var(--gray-dark); line-height: 1.6; margin-bottom: 1.5rem;">
+                  Interior and exterior painting, maintenance painting and residential renovations.
+                </p>
+              </div>
+              <a
+                href="#randburg"
+                style="
+                  color: var(--primary);
+                  font-weight: 700;
+                  font-size: 0.95rem;
+                  text-decoration: none;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                "
+              >
+                View Painters in Randburg &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Available in Your Area-->
+    <section
+      class="services-area-section"
+      style="
+        padding: 4rem 0;
+        background: var(--white);
+        border-top: 1px solid var(--border);
+      "
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;"
+      >
+        <div
+          class="section-title"
+          style="text-align: center; margin-bottom: 3rem;"
+        >
+          <span
+            class="badge"
+            style="
+              background: #eff6ff;
+              color: var(--primary);
+              padding: 0.4rem 1.1rem;
+              border-radius: 50px;
+              font-size: 0.8rem;
+              font-weight: 700;
+              display: inline-block;
+              margin-bottom: 1rem;
+              border: 1px solid rgba(0, 102, 255, 0.2);
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+            "
+            >Comprehensive Offerings</span
+          >
+          <h2
+            style="
+              font-size: clamp(2rem, 5vw, 2.75rem);
+              font-weight: 800;
+              color: var(--primary);
+              margin-bottom: 1rem;
+              letter-spacing: -0.02em;
+            "
+          >
+            Services Available in Your Area
+          </h2>
+          <p
+            style="
+              color: var(--gray-light);
+              font-size: 1rem;
+              max-width: 650px;
+              margin: 0 auto;
+              line-height: 1.6;
+              padding: 0 0.5rem;
+            "
+          >
+            Professional painting and surface restoration services matched to your specific property requirements.
+          </p>
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+          "
+        >
+          <div
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 160px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80"
+                alt="Interior painting services"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">Interior Painting</h3>
+              <p style="font-size: 0.9rem; color: var(--gray-dark); line-height: 1.6; margin: 0;">
+                Walls, ceilings, trim, doors and detailed finishes.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 160px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80"
+                alt="Exterior painting services"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">Exterior Painting</h3>
+              <p style="font-size: 0.9rem; color: var(--gray-dark); line-height: 1.6; margin: 0;">
+                Walls, facades, boundary walls and exterior surfaces.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 160px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
+                alt="Commercial painting services"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">Commercial Painting</h3>
+              <p style="font-size: 0.9rem; color: var(--gray-dark); line-height: 1.6; margin: 0;">
+                Offices, retail spaces, complexes and commercial properties.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 160px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80"
+                alt="Cabinet refinishing services"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">Cabinet Refinishing</h3>
+              <p style="font-size: 0.9rem; color: var(--gray-dark); line-height: 1.6; margin: 0;">
+                Kitchen cabinets, bathroom vanities and built-in cabinetry.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 160px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
+                alt="Drywall and surface preparation"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">Drywall &amp; Surface Preparation</h3>
+              <p style="font-size: 0.9rem; color: var(--gray-dark); line-height: 1.6; margin: 0;">
+                Patching, filling, sanding and skim coating.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 160px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                alt="Weatherproofing and protective coatings"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+            </div>
+            <div style="padding: 1.5rem;">
+              <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;">Weatherproofing &amp; Protective Coatings</h3>
+              <p style="font-size: 0.9rem; color: var(--gray-dark); line-height: 1.6; margin: 0;">
+                Exterior preparation and appropriate protective coating systems.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2.25rem 1.25rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-sm);
+          "
+        >
+          <h3 style="font-size: clamp(1.4rem, 4vw, 1.75rem); font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">Don't See Your Project?</h3>
+          <p style="font-size: 0.95rem; color: var(--gray-dark); line-height: 1.6; margin: 0 0 1.5rem 0;">
+            Have a specialized or custom painting requirement not listed above? Let us know what you need and we'll connect you with the right specialist.
+          </p>
+          <a
+            href="#contact"
+            style="
+              background: var(--primary);
+              color: var(--white);
+              padding: 0.85rem 2rem;
+              border-radius: 50px;
+              font-weight: 700;
+              font-size: 0.95rem;
+              text-decoration: none;
+              display: inline-block;
+              box-shadow: 0 4px 20px rgba(0, 102, 255, 0.35);
+              transition: transform 0.2s ease, opacity 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.opacity='0.95'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.opacity='1'"
+          >
+            Tell Us What You Need &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Residential & Commercial Coverage Section -->
+   <section
+      class="residential-commercial-section"
+      style="
+        padding: 4rem 0;
+        background: var(--bg-light);
+        border-top: 1px solid var(--border);
+      "
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;"
+      >
+        <!-- Section Header -->
+        <div
+          class="section-title"
+          style="text-align: center; margin-bottom: 3rem;"
+        >
+          <span
+            class="badge"
+            style="
+              background: #eff6ff;
+              color: var(--primary);
+              padding: 0.4rem 1.1rem;
+              border-radius: 50px;
+              font-size: 0.8rem;
+              font-weight: 700;
+              display: inline-block;
+              margin-bottom: 1rem;
+              border: 1px solid rgba(0, 102, 255, 0.2);
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+            "
+            >Client Sectors</span
+          >
+          <h2
+            style="
+              font-size: clamp(2rem, 5vw, 2.75rem);
+              font-weight: 800;
+              color: var(--primary);
+              margin-bottom: 1rem;
+              letter-spacing: -0.02em;
+            "
+          >
+            Residential &amp; Commercial Coverage
+          </h2>
+          <p
+            style="
+              color: var(--gray-light);
+              font-size: 1rem;
+              max-width: 650px;
+              margin: 0 auto;
+              line-height: 1.6;
+              padding: 0 0.5rem;
+            "
+          >
+            Specialized painting solutions tailored for private homeowners, residential estates, and commercial property managers.
+          </p>
+        </div>
+
+        <!-- 2 Large Panels Grid -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+          "
+        >
+          <!-- Residential Painting Panel -->
+          <div
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: 20px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 15px 35px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 180px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                alt="Residential painting for homes, apartments, and estates"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+              <div
+                style="
+                  position: absolute;
+                  top: 1rem;
+                  left: 1rem;
+                  background: var(--primary);
+                  color: var(--white);
+                  padding: 0.3rem 0.85rem;
+                  border-radius: 50px;
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 0.05em;
+                "
+              >
+                🏠 Residential Painting
+              </div>
+            </div>
+            <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+              <h3 style="font-size: clamp(1.4rem, 4vw, 1.75rem); font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">
+                Residential Properties
+              </h3>
+              <p style="font-size: 0.95rem; color: var(--gray-dark); line-height: 1.6; margin-bottom: 1.5rem;">
+                From interior repainting to full-scale home refreshes, we connect you with trusted professionals who respect your living space.
+              </p>
+              
+              <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem; border-top: 1px solid var(--border); padding-top: 1.25rem;">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Houses</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Apartments</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Townhouses</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Residential estates</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Villas</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Rental properties</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Renovations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commercial Painting Panel -->
+          <div
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: 20px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+            "
+            onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 15px 35px rgba(0,0,0,0.08)'"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+          >
+            <div style="height: 180px; overflow: hidden; position: relative;">
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+                alt="Commercial painting for offices, retail stores, and complexes"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;"
+              />
+              <div
+                style="
+                  position: absolute;
+                  top: 1rem;
+                  left: 1rem;
+                  background: var(--primary);
+                  color: var(--white);
+                  padding: 0.3rem 0.85rem;
+                  border-radius: 50px;
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 0.05em;
+                "
+              >
+                🏢 Commercial Painting
+              </div>
+            </div>
+            <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+              <h3 style="font-size: clamp(1.4rem, 4vw, 1.75rem); font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">
+                Commercial Properties
+              </h3>
+              <p style="font-size: 0.95rem; color: var(--gray-dark); line-height: 1.6; margin-bottom: 1.5rem;">
+                Professional painting services geared toward businesses, body corporates, and property managers requiring strict timelines and high standards.
+              </p>
+              
+              <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem; border-top: 1px solid var(--border); padding-top: 1.25rem;">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Offices</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Retail stores</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Restaurants</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Property developments</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Apartment complexes</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Body corporates</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <span style="color: var(--primary); font-weight: bold;">✓</span>
+                  <span style="font-weight: 700; color: var(--primary); font-size: 0.95rem;">Property managers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--How We Match You With a Local Painter-->
+    <section
+      class="match-process-section"
+      style="
+        padding: 7rem 0;
+        background: var(--white);
+        border-top: 1px solid var(--border);
+      "
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <div
+          class="section-title"
+          style="text-align: center; margin-bottom: 5rem"
+        >
+          <span
+            class="badge"
+            style="
+              background: #eff6ff;
+              color: var(--primary);
+              padding: 0.4rem 1.1rem;
+              border-radius: 50px;
+              font-size: 0.85rem;
+              font-weight: 700;
+              display: inline-block;
+              margin-bottom: 1.25rem;
+              border: 1px solid rgba(0, 102, 255, 0.2);
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+            "
+            >Simple 4-Step Process</span
+          >
+          <h2
+            style="
+              font-size: 2.75rem;
+              font-weight: 800;
+              color: var(--primary);
+              margin-bottom: 1rem;
+              letter-spacing: -0.02em;
+            "
+          >
+            How We Match You With a Local Painter
+          </h2>
+          <p
+            style="
+              color: var(--gray-light);
+              font-size: 1.15rem;
+              max-width: 700px;
+              margin: 0 auto;
+              line-height: 1.6;
+            "
+          >
+            PrimePainters connects you with trusted local professionals. Here is how our seamless matching network works from start to finish.
+          </p>
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 4rem;
+            align-items: center;
+          "
+        >
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+              gap: 2rem;
+            "
+          >
+            <div
+              style="
+                background: var(--bg-light);
+                border: 1px solid var(--border);
+                border-radius: 16px;
+                padding: 2.5rem 2rem;
+                box-shadow: var(--shadow-sm);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: relative;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+              "
+              onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+            >
+              <div
+                style="
+                  font-size: 2.5rem;
+                  font-weight: 900;
+                  color: rgba(0, 102, 255, 0.15);
+                  line-height: 1;
+                  margin-bottom: 1rem;
+                "
+              >
+                01
+              </div>
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 800;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Tell Us About Your Project
+              </h3>
+              <p
+                style="
+                  font-size: 0.95rem;
+                  color: var(--gray-dark);
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                Submit your location, property type and painting requirements.
+              </p>
+            </div>
+
+            <div
+              style="
+                background: var(--bg-light);
+                border: 1px solid var(--border);
+                border-radius: 16px;
+                padding: 2.5rem 2rem;
+                box-shadow: var(--shadow-sm);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: relative;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+              "
+              onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+            >
+              <div
+                style="
+                  font-size: 2.5rem;
+                  font-weight: 900;
+                  color: rgba(0, 102, 255, 0.15);
+                  line-height: 1;
+                  margin-bottom: 1rem;
+                "
+              >
+                02
+              </div>
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 800;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                We Review Your Request
+              </h3>
+              <p
+                style="
+                  font-size: 0.95rem;
+                  color: var(--gray-dark);
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                Your project details help determine what type of professional is appropriate.
+              </p>
+            </div>
+
+            <div
+              style="
+                background: var(--bg-light);
+                border: 1px solid var(--border);
+                border-radius: 16px;
+                padding: 2.5rem 2rem;
+                box-shadow: var(--shadow-sm);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: relative;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+              "
+              onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+            >
+              <div
+                style="
+                  font-size: 2.5rem;
+                  font-weight: 900;
+                  color: rgba(0, 102, 255, 0.15);
+                  line-height: 1;
+                  margin-bottom: 1rem;
+                "
+              >
+                03
+              </div>
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 800;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Get Connected With Local Pros
+              </h3>
+              <p
+                style="
+                  font-size: 0.95rem;
+                  color: var(--gray-dark);
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                Your request can be matched with suitable painting professionals operating in your area.
+              </p>
+            </div>
+
+            <div
+              style="
+                background: var(--bg-light);
+                border: 1px solid var(--border);
+                border-radius: 16px;
+                padding: 2.5rem 2rem;
+                box-shadow: var(--shadow-sm);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: relative;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+              "
+              onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)'"
+            >
+              <div
+                style="
+                  font-size: 2.5rem;
+                  font-weight: 900;
+                  color: rgba(0, 102, 255, 0.15);
+                  line-height: 1;
+                  margin-bottom: 1rem;
+                "
+              >
+                04
+              </div>
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 800;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Compare Your Options
+              </h3>
+              <p
+                style="
+                  font-size: 0.95rem;
+                  color: var(--gray-dark);
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                Discuss your project, receive quotes and choose the contractor that best fits your needs.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              border-radius: 20px;
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              border: 1px solid var(--border);
+              height: 520px;
+            "
+          >
+            <img
+              src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=80"
+              alt="Professional painting contractor discussing project options with a homeowner"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Areas We Currently Serve Section -->
+<section
+  class="service-areas-section"
+  style="
+    padding: 7rem 0;
+    background: var(--bg-light, #f8fafc);
+    border-top: 1px solid var(--border, #e2e8f0);
+  "
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: 5rem"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.4rem 1.1rem;
+          border-radius: 50px;
+          font-size: 0.85rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1.25rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Local Coverage Network</span
+      >
+      <h2
+        style="
+          font-size: 2.75rem;
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 1rem;
+          letter-spacing: -0.02em;
+        "
+      >
+        Areas We Currently Serve
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: 1.15rem;
+          max-width: 700px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        PrimePainters connects property owners with top-tier local painting professionals across key metropolitan business and residential hubs.
+      </p>
+    </div>
+
+    <!-- Areas Grid with Integrated SEO Suburbs & Contextual Photography -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2.5rem;
+      "
+    >
+      <!-- Area 01: Sandton -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden; position: relative;">
+          <img
+            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=700&q=80"
+            alt="Modern residential and commercial properties in Sandton painting service area"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+          <div
+            style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+              padding: 1rem 1.25rem 0.5rem;
+            "
+          >
+            <h3 style="color: #ffffff; font-size: 1.4rem; font-weight: 800; margin: 0;">
+              Sandton
+            </h3>
+          </div>
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <p style="font-size: 0.9rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">
+            Providing reliable painting contractor matching for premium residential estates and corporate spaces in:
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Sandown
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Morningside
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Bryanston
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Rivonia
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Hyde Park
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Fourways
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Area 02: Midrand -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden; position: relative;">
+          <img
+            src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=700&q=80"
+            alt="Interior and exterior architectural finishing in Midrand service corridor"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+          <div
+            style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+              padding: 1rem 1.25rem 0.5rem;
+            "
+          >
+            <h3 style="color: #ffffff; font-size: 1.4rem; font-weight: 800; margin: 0;">
+              Midrand
+            </h3>
+          </div>
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <p style="font-size: 0.9rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">
+            Connecting industrial complexes, townhouses, and suburban houses with qualified local painters across:
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Halfway House
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Waterfall
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Kyalami
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Carlswald
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Noordwyk
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Vorna Valley
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Area 03: Rosebank -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden; position: relative;">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80"
+            alt="Classic suburban homes and commercial office spaces in Rosebank district"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+          <div
+            style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+              padding: 1rem 1.25rem 0.5rem;
+            "
+          >
+            <h3 style="color: #ffffff; font-size: 1.4rem; font-weight: 800; margin: 0;">
+              Rosebank
+            </h3>
+          </div>
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <p style="font-size: 0.9rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">
+            Specialist paint matching for heritage properties, modern apartments, and retail locations throughout:
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Rosebank (Central)
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Illovo
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Parkwood
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Melrose
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Saxonwold
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Area 04: Randburg -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden; position: relative;">
+          <img
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=700&q=80"
+            alt="Established family homes undergoing painting upgrades in Randburg suburbs"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+          <div
+            style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+              padding: 1rem 1.25rem 0.5rem;
+            "
+          >
+            <h3 style="color: #ffffff; font-size: 1.4rem; font-weight: 800; margin: 0;">
+              Randburg
+            </h3>
+          </div>
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <p style="font-size: 0.9rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">
+            Trusted contractor matching for exterior wall coatings, roof painting, and room renovations across:
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Northcliff
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Linden
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Blairgowrie
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Ferndale
+            </li>
+            <li style="font-size: 0.95rem; color: var(--gray-dark, #1e293b); font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff);">&bull;</span> Parkhurst
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Painting Projects We Handle Section -->
+<section
+  class="painting-projects-section"
+  style="
+    padding: 4rem 0;
+    background: var(--white, #ffffff);
+    border-top: 1px solid var(--border, #e2e8f0);
+  "
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1rem"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: 3rem"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.4rem 1.1rem;
+          border-radius: 50px;
+          font-size: 0.8rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Our Expertise</span
+      >
+      <h2
+        style="
+          font-size: clamp(2rem, 5vw, 2.75rem);
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 1rem;
+          letter-spacing: -0.02em;
+        "
+      >
+        Painting Projects We Handle
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: 1rem;
+          max-width: 700px;
+          margin: 0 auto;
+          line-height: 1.6;
+          padding: 0 0.5rem;
+        "
+      >
+        From single-room home refreshes to large commercial complexes, our network connects you with specialized contractors equipped for any scope.
+      </p>
+    </div>
+
+    <!-- Projects Grid with Contextual Photography -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+      "
+    >
+      <!-- Project 01: Home Repainting -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden;">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80"
+            alt="Beautifully repainted modern residential home interior and exterior"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 0.5rem;">
+            Home Repainting
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--gray-dark, #1e293b); line-height: 1.6; margin: 0;">
+            Refresh tired interiors and exteriors with meticulous attention to detail and clean preparation processes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project 02: Office Repainting -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden;">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=80"
+            alt="Professional corporate office interior workspace painted with clean finishes"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 0.5rem;">
+            Office Repainting
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--gray-dark, #1e293b); line-height: 1.6; margin: 0;">
+            Professional environments executed with minimal disruption to your daily workflow and business hours.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project 03: Estate & Complex Projects -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden;">
+          <img
+            src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=700&q=80"
+            alt="Residential townhouse estate and shared multi-unit complex buildings"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 0.5rem;">
+            Estate & Complex Projects
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--gray-dark, #1e293b); line-height: 1.6; margin: 0;">
+            Large-scale painting solutions tailored for residential developments, body corporates, and shared properties.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project 04: Retail & Commercial Spaces -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden;">
+          <img
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=700&q=80"
+            alt="Modern retail storefront and customer-facing commercial interior space"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 0.5rem;">
+            Retail & Commercial Spaces
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--gray-dark, #1e293b); line-height: 1.6; margin: 0;">
+            Refresh customer-facing business environments to elevate brand perception and shopper experience.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project 05: Renovation Projects -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden;">
+          <img
+            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=80"
+            alt="Property undergoing architectural renovation, drywall patching, and fresh painting"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 0.5rem;">
+            Renovation Projects
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--gray-dark, #1e293b); line-height: 1.6; margin: 0;">
+            Seamless painting integration following structural renovations, interior repairs, or extensive remodeling work.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project 06: Property Maintenance -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden;">
+          <img
+            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=700&q=80"
+            alt="Ongoing property upkeep and protective exterior wall repainting maintenance"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 0.5rem;">
+            Property Maintenance
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--gray-dark, #1e293b); line-height: 1.6; margin: 0;">
+            Ongoing repainting schedules and protective upkeep requirements to safeguard your investment against wear.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Why Use a Local Painting Professional Section -->
+<section
+  class="why-use-us-section"
+  style="
+    padding: 4rem 0;
+    background: var(--bg-light, #f8fafc);
+    border-top: 1px solid var(--border, #e2e8f0);
+  "
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1rem"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: 3rem"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.4rem 1.1rem;
+          border-radius: 50px;
+          font-size: 0.8rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Why PrimePainters</span
+      >
+      <h2
+        style="
+          font-size: clamp(2rem, 5vw, 2.75rem);
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 1rem;
+          letter-spacing: -0.02em;
+        "
+      >
+        Why Use a Local Painting Professional?
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: 1rem;
+          max-width: 700px;
+          margin: 0 auto;
+          line-height: 1.6;
+          padding: 0 0.5rem;
+        "
+      >
+        We streamline your search for trusted regional painting contractors, saving you time while securing quality workmanship for your property.
+      </p>
+    </div>
+
+    <!-- Trust Cards Grid with Contextual Photography & Structured Copy -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+      "
+    >
+      <!-- Trust Card 01: Local Knowledge -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden;">
+          <img
+            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=700&q=80"
+            alt="Local painting contractor inspecting property architecture"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 0.5rem;">
+            Local Knowledge
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--gray-dark, #1e293b); line-height: 1.6; margin: 0;">
+            Connect with professionals operating directly in your local area who understand regional climate factors and building styles.
+          </p>
+        </div>
+      </div>
+
+      <!-- Trust Card 02: Convenient Quotes -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden;">
+          <img
+            src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=700&q=80"
+            alt="Streamlined digital quote submission and project planning"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 0.5rem;">
+            Convenient Quotes
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--gray-dark, #1e293b); line-height: 1.6; margin: 0;">
+            Submit your project details through our streamlined platform without needing to contact multiple contractors individually.
+          </p>
+        </div>
+      </div>
+
+      <!-- Trust Card 03: Project-Specific Matching -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden;">
+          <img
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=700&q=80"
+            alt="Detailed project scope assessment and contractor matching"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 0.5rem;">
+            Project-Specific Matching
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--gray-dark, #1e293b); line-height: 1.6; margin: 0;">
+            Your exact specifications and requirements help determine suitable professionals best equipped for your scope.
+          </p>
+        </div>
+      </div>
+
+      <!-- Trust Card 04: Multiple Options -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden;">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
+            alt="Comparing multiple contractor quotes and options"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 0.5rem;">
+            Multiple Options
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--gray-dark, #1e293b); line-height: 1.6; margin: 0;">
+            Where available, receive opportunities to compare quotes and select the contractor that aligns with your timeline and budget.
+          </p>
+        </div>
+      </div>
+
+      <!-- Trust Card 05: Residential & Commercial -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        "
+        onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.08)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))'"
+      >
+        <div style="height: 180px; overflow: hidden;">
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80"
+            alt="Commercial office tower and residential housing coverage"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;"
+          />
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 0.5rem;">
+            Residential & Commercial
+          </h3>
+          <p style="font-size: 0.9rem; color: var(--gray-dark, #1e293b); line-height: 1.6; margin: 0;">
+            Comprehensive network coverage tailored for both individual homeowners looking for house painting and businesses managing commercial spaces.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Service Area Map Showcase Section -->
+<section
+  class="service-map-section"
+  style="
+    padding: 4rem 0;
+    background: var(--white, #ffffff);
+    border-top: 1px solid var(--border, #e2e8f0);
+  "
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: 2.5rem;"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.4rem 1.1rem;
+          border-radius: 50px;
+          font-size: 0.8rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Regional Footprint</span
+      >
+      <h2
+        style="
+          font-size: clamp(1.8rem, 4vw, 2.75rem);
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 1rem;
+          letter-spacing: -0.02em;
+          line-height: 1.2;
+        "
+      >
+        Serving Johannesburg's Northern & Central Suburbs
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: 1rem;
+          max-width: 700px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        Our verified network of painting professionals covers key commercial and residential corridors across the metropolitan area.
+      </p>
+    </div>
+
+    <!-- Interactive-Style Map Container -->
+    <div
+      style="
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid var(--border, #e2e8f0);
+        box-shadow: var(--shadow-sm, 0 10px 30px rgba(0,0,0,0.06));
+        min-height: 520px;
+        background: #0f172a;
+        display: flex;
+        flex-direction: column;
+      "
+    >
+      <!-- Background Map Photography / Styled Visual -->
+      <img
+        src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1600&q=80"
+        alt="Geographic coverage map showing Johannesburg Northern and Central suburbs"
+        style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.45; display: block;"
+      />
+
+      <!-- Dark Gradient Overlay for Contrast -->
+      <div
+        style="
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, rgba(15,23,42,0.9) 0%, rgba(15,23,42,0.7) 100%);
+        "
+      ></div>
+
+      <!-- Map Overlay Content / Hub Nodes -->
+      <div
+        style="
+          position: relative;
+          z-index: 2;
+          padding: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex-grow: 1;
+          gap: 1.5rem;
+        "
+      >
+        <!-- Top Route Flow Indicator -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem 1rem;
+            flex-wrap: wrap;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 1rem;
+            border-radius: 16px;
+            max-width: 850px;
+            margin: 0 auto;
+            width: 100%;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            text-align: center;
+          "
+        >
+          <span style="color: #ffffff; font-weight: 800; font-size: 0.95rem;">Sandton</span>
+          <span style="color: var(--primary, #0066ff); font-weight: 900; font-size: 1rem;">&rarr;</span>
+          <span style="color: #ffffff; font-weight: 800; font-size: 0.95rem;">Midrand</span>
+          <span style="color: var(--primary, #0066ff); font-weight: 900; font-size: 1rem;">&rarr;</span>
+          <span style="color: #ffffff; font-weight: 800; font-size: 0.95rem;">Rosebank</span>
+          <span style="color: var(--primary, #0066ff); font-weight: 900; font-size: 1rem;">&rarr;</span>
+          <span style="color: #ffffff; font-weight: 800; font-size: 0.95rem;">Randburg</span>
+        </div>
+
+        <!-- Center Interactive Pins Grid -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 0.75rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+          "
+        >
+          <!-- Pin 1 -->
+          <div
+            style="
+              background: rgba(30, 41, 59, 0.9);
+              backdrop-filter: blur(6px);
+              border: 1px solid rgba(255, 255, 255, 0.12);
+              border-radius: 12px;
+              padding: 1rem;
+              display: flex;
+              align-items: center;
+              gap: 0.75rem;
+            "
+          >
+            <div
+              style="
+                width: 10px;
+                height: 10px;
+                background: #22c55e;
+                border-radius: 50%;
+                box-shadow: 0 0 10px #22c55e;
+                flex-shrink: 0;
+              "
+            ></div>
+            <div>
+              <h4 style="color: #ffffff; font-size: 0.95rem; font-weight: 700; margin: 0 0 0.1rem 0;">Sandton Hub</h4>
+              <span style="color: #94a3b8; font-size: 0.775rem;">Active Coverage</span>
+            </div>
+          </div>
+
+          <!-- Pin 2 -->
+          <div
+            style="
+              background: rgba(30, 41, 59, 0.9);
+              backdrop-filter: blur(6px);
+              border: 1px solid rgba(255, 255, 255, 0.12);
+              border-radius: 12px;
+              padding: 1rem;
+              display: flex;
+              align-items: center;
+              gap: 0.75rem;
+            "
+          >
+            <div
+              style="
+                width: 10px;
+                height: 10px;
+                background: #22c55e;
+                border-radius: 50%;
+                box-shadow: 0 0 10px #22c55e;
+                flex-shrink: 0;
+              "
+            ></div>
+            <div>
+              <h4 style="color: #ffffff; font-size: 0.95rem; font-weight: 700; margin: 0 0 0.1rem 0;">Midrand Hub</h4>
+              <span style="color: #94a3b8; font-size: 0.775rem;">Active Coverage</span>
+            </div>
+          </div>
+
+          <!-- Pin 3 -->
+          <div
+            style="
+              background: rgba(30, 41, 59, 0.9);
+              backdrop-filter: blur(6px);
+              border: 1px solid rgba(255, 255, 255, 0.12);
+              border-radius: 12px;
+              padding: 1rem;
+              display: flex;
+              align-items: center;
+              gap: 0.75rem;
+            "
+          >
+            <div
+              style="
+                width: 10px;
+                height: 10px;
+                background: #22c55e;
+                border-radius: 50%;
+                box-shadow: 0 0 10px #22c55e;
+                flex-shrink: 0;
+              "
+            ></div>
+            <div>
+              <h4 style="color: #ffffff; font-size: 0.95rem; font-weight: 700; margin: 0 0 0.1rem 0;">Rosebank Hub</h4>
+              <span style="color: #94a3b8; font-size: 0.775rem;">Active Coverage</span>
+            </div>
+          </div>
+
+          <!-- Pin 4 -->
+          <div
+            style="
+              background: rgba(30, 41, 59, 0.9);
+              backdrop-filter: blur(6px);
+              border: 1px solid rgba(255, 255, 255, 0.12);
+              border-radius: 12px;
+              padding: 1rem;
+              display: flex;
+              align-items: center;
+              gap: 0.75rem;
+            "
+          >
+            <div
+              style="
+                width: 10px;
+                height: 10px;
+                background: #22c55e;
+                border-radius: 50%;
+                box-shadow: 0 0 10px #22c55e;
+                flex-shrink: 0;
+              "
+            ></div>
+            <div>
+              <h4 style="color: #ffffff; font-size: 0.95rem; font-weight: 700; margin: 0 0 0.1rem 0;">Randburg Hub</h4>
+              <span style="color: #94a3b8; font-size: 0.775rem;">Active Coverage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Legend Note -->
+        <div style="text-align: center;">
+          <span
+            style="
+              display: inline-block;
+              background: rgba(15, 23, 42, 0.85);
+              color: #cbd5e1;
+              font-size: 0.775rem;
+              padding: 0.4rem 1rem;
+              border-radius: 20px;
+              border: 1px solid rgba(255,255,255,0.1);
+            "
+            >Johannesburg Metropolitan Region &bull; Northern & Central Sectors</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Sub-map caption text -->
+    <div
+      style="
+        max-width: 800px;
+        margin: 2rem auto 0 auto;
+        text-align: center;
+        padding: 0 0.5rem;
+      "
+    >
+      <p
+        style="
+          color: var(--gray-dark, #1e293b);
+          font-size: 0.95rem;
+          line-height: 1.6;
+          margin: 0;
+        "
+      >
+        Our network coverage continues to expand. If you're outside our primary areas, submit your project details and we'll check whether an appropriate professional is available.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- Location Checker Lead Generation Section -->
+<section
+  class="location-checker-section"
+  style="
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--primary, #0066ff) 0%, #004ecc 100%);
+    position: relative;
+    overflow: hidden;
+  "
+>
+  <!-- Subtle Background Pattern Overlay -->
+  <div
+    style="
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+      background-size: 24px 24px;
+      opacity: 0.6;
+      pointer-events: none;
+    "
+  ></div>
+
+  <div
+    class="container"
+    style="max-width: 900px; margin: 0 auto; padding: 0 1rem; position: relative; z-index: 1;"
+  >
+    <!-- Card Container -->
+    <div
+      style="
+        background: var(--white, #ffffff);
+        border-radius: 20px;
+        padding: 2rem 1.25rem;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      "
+    >
+      <!-- Section Header -->
+      <div
+        class="section-title"
+        style="text-align: center; margin-bottom: 2rem;"
+      >
+        <span
+          class="badge"
+          style="
+            background: #eff6ff;
+            color: var(--primary, #0066ff);
+            padding: 0.4rem 1.1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(0, 102, 255, 0.2);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+          "
+          >Quick Verification</span
+        >
+        <h2
+          style="
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 800;
+            color: var(--primary, #0066ff);
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+          "
+        >
+          Is Your Area Covered?
+        </h2>
+        <p
+          style="
+            color: var(--gray-light, #64748b);
+            font-size: 1rem;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.6;
+          "
+        >
+          Enter your project location and tell us what type of painting work you need. We'll help determine whether a suitable local professional is available.
+        </p>
+      </div>
+
+      <!-- Lead Generation Form -->
+      <form
+        onsubmit="event.preventDefault();"
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+        "
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+          "
+        >
+          <!-- Location Input -->
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <label
+              for="checker-location"
+              style="font-size: 0.9rem; font-weight: 700; color: var(--gray-dark, #1e293b);"
+            >
+              Project Suburb or Location
+            </label>
+            <input
+              id="checker-location"
+              type="text"
+              placeholder="e.g. Sandton, Bryanston, Rosebank"
+              required
+              style="
+                padding: 0.85rem 1rem;
+                border-radius: 12px;
+                border: 1px solid var(--border, #cbd5e1);
+                font-size: 1rem;
+                outline: none;
+                transition: border-color 0.2s ease, box-shadow 0.2s ease;
+                background: #f8fafc;
+                width: 100%;
+                box-sizing: border-box;
+              "
+              onfocus="this.style.borderColor='var(--primary, #0066ff)'; this.style.boxShadow='0 0 0 3px rgba(0,102,255,0.15)'; this.style.background='#ffffff';"
+              onblur="this.style.borderColor='var(--border, #cbd5e1)'; this.style.boxShadow='none'; this.style.background='#f8fafc';"
+            />
+          </div>
+
+          <!-- Project Type Select -->
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <label
+              for="checker-project-type"
+              style="font-size: 0.9rem; font-weight: 700; color: var(--gray-dark, #1e293b);"
+            >
+              Painting Requirement
+            </label>
+            <select
+              id="checker-project-type"
+              required
+              style="
+                padding: 0.85rem 1rem;
+                border-radius: 12px;
+                border: 1px solid var(--border, #cbd5e1);
+                font-size: 1rem;
+                outline: none;
+                transition: border-color 0.2s ease, box-shadow 0.2s ease;
+                background: #f8fafc;
+                color: var(--gray-dark, #1e293b);
+                width: 100%;
+                box-sizing: border-box;
+              "
+              onfocus="this.style.borderColor='var(--primary, #0066ff)'; this.style.boxShadow='0 0 0 3px rgba(0,102,255,0.15)'; this.style.background='#ffffff';"
+              onblur="this.style.borderColor='var(--border, #cbd5e1)'; this.style.boxShadow='none'; this.style.background='#f8fafc';"
+            >
+              <option value="" disabled selected>Select project type...</option>
+              <option value="home">Home Repainting</option>
+              <option value="office">Office Repainting</option>
+              <option value="estate">Estate & Complex Project</option>
+              <option value="commercial">Retail & Commercial Space</option>
+              <option value="renovation">Renovation Painting</option>
+              <option value="maintenance">Property Maintenance</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div style="text-align: center; margin-top: 0.5rem;">
+          <button
+            type="submit"
+            style="
+              background: var(--primary, #0066ff);
+              color: #ffffff;
+              font-weight: 800;
+              font-size: 1rem;
+              padding: 1rem 2rem;
+              border-radius: 50px;
+              border: none;
+              cursor: pointer;
+              box-shadow: 0 8px 20px rgba(0, 102, 255, 0.35);
+              transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+              width: 100%;
+              max-width: 320px;
+            "
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.background='#0052cc'; this.style.boxShadow='0 12px 25px rgba(0, 102, 255, 0.45)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.background='var(--primary, #0066ff)'; this.style.boxShadow='0 8px 20px rgba(0, 102, 255, 0.35)';"
+          >
+            Check My Area
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Frequently Asked Questions Section -->
+<section
+  class="faq-section"
+  style="
+    padding: 7rem 0;
+    background: var(--bg-light, #f8fafc);
+    border-top: 1px solid var(--border, #e2e8f0);
+  "
+>
+  <div
+    class="container"
+    style="max-width: 900px; margin: 0 auto; padding: 0 1.5rem"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: 4rem"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.4rem 1.1rem;
+          border-radius: 50px;
+          font-size: 0.85rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1.25rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Common Inquiries</span
+      >
+      <h2
+        style="
+          font-size: 2.75rem;
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 1rem;
+          letter-spacing: -0.02em;
+        "
+      >
+        Frequently Asked Questions
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: 1.15rem;
+          max-width: 650px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        Find clear answers about our network coverage, painter matching process, and project capabilities.
+      </p>
+    </div>
+
+    <!-- FAQ Accordion / Cards Container -->
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      "
+    >
+      <!-- FAQ Item 01 -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          padding: 2rem 2.25rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+        "
+      >
+        <h3
+          style="
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary, #0066ff);
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+          "
+        >
+          Do you only serve Sandton, Midrand, Rosebank and Randburg?
+        </h3>
+        <p
+          style="
+            font-size: 0.95rem;
+            color: var(--gray-dark, #1e293b);
+            line-height: 1.6;
+            margin: 0;
+          "
+        >
+          Sandton, Midrand, Rosebank, and Randburg are our primary operating hubs. However, our network coverage frequently extends to surrounding suburbs and locations across the region.
+        </p>
+      </div>
+
+      <!-- FAQ Item 02 -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          padding: 2rem 2.25rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+        "
+      >
+        <h3
+          style="
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary, #0066ff);
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+          "
+        >
+          Do you provide residential painters?
+        </h3>
+        <p
+          style="
+            font-size: 0.95rem;
+            color: var(--gray-dark, #1e293b);
+            line-height: 1.6;
+            margin: 0;
+          "
+        >
+          Yes, where suitable professionals are available, we connect homeowners with trusted residential painters for interior and exterior projects.
+        </p>
+      </div>
+
+      <!-- FAQ Item 03 -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          padding: 2rem 2.25rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+        "
+      >
+        <h3
+          style="
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary, #0066ff);
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+          "
+        >
+          Do you work with commercial properties?
+        </h3>
+        <p
+          style="
+            font-size: 0.95rem;
+            color: var(--gray-dark, #1e293b);
+            line-height: 1.6;
+            margin: 0;
+          "
+        >
+          Yes—commercial projects, retail environments, office buildings, and estate complexes can be submitted for contractor matching.
+        </p>
+      </div>
+
+      <!-- FAQ Item 04 -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          padding: 2rem 2.25rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+        "
+      >
+        <h3
+          style="
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary, #0066ff);
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+          "
+        >
+          Can I request an exterior painter or cabinet refinishing?
+        </h3>
+        <p
+          style="
+            font-size: 0.95rem;
+            color: var(--gray-dark, #1e293b);
+            line-height: 1.6;
+            margin: 0;
+          "
+        >
+          Yes. Our network features professionals equipped for specialized services, including full exterior wall coatings and detailed cabinet refinishing.
+        </p>
+      </div>
+
+      <!-- FAQ Item 05 -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          padding: 2rem 2.25rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+        "
+      >
+        <h3
+          style="
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary, #0066ff);
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+          "
+        >
+          What if my suburb isn't listed?
+        </h3>
+        <p
+          style="
+            font-size: 0.95rem;
+            color: var(--gray-dark, #1e293b);
+            line-height: 1.6;
+            margin: 0;
+          "
+        >
+          Simply submit your project details through our location checker or quote form. We continuously expand our network and will verify professional availability in your specific area.
+        </p>
+      </div>
+
+      <!-- FAQ Item 06 -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 16px;
+          padding: 2rem 2.25rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));
+        "
+      >
+        <h3
+          style="
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary, #0066ff);
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+          "
+        >
+          How do I get a quote?
+        </h3>
+        <p
+          style="
+            font-size: 0.95rem;
+            color: var(--gray-dark, #1e293b);
+            line-height: 1.6;
+            margin: 0;
+          "
+        >
+          Submit your project requirements and location via our form. We review your details and match you with available local professionals who will reach out to discuss your project and provide comparative quotes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Final Professional CTA Section -->
+    <section
+      class="final-cta-section"
+      style="
+        padding: 7rem 0;
+        background: linear-gradient(135deg, var(--primary) 0%, #004ecc 100%);
+        color: var(--white);
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <!-- Background Decorative Glow -->
+      <div
+        style="
+          position: absolute;
+          top: -50%;
+          right: -20%;
+          width: 600px;
+          height: 600px;
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 50%;
+          pointer-events: none;
+        "
+      ></div>
+
+      <div
+        class="container"
+        style="
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 0 1.5rem;
+          position: relative;
+          z-index: 2;
+        "
+      >
+        <div class="cta-content" style="text-align: center">
+          <span
+            class="badge"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              color: var(--white);
+              padding: 0.4rem 1.1rem;
+              border-radius: 50px;
+              font-size: 0.85rem;
+              font-weight: 700;
+              display: inline-block;
+              margin-bottom: 1.25rem;
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+              backdrop-filter: blur(4px);
+            "
+            >Get Started Today</span
+          >
+          <h2
+            style="
+              font-size: 3rem;
+              font-weight: 800;
+              color: var(--white);
+              margin-bottom: 1.25rem;
+              letter-spacing: -0.02em;
+              line-height: 1.2;
+            "
+          >
+            Ready to Transform Your Property's Exterior?
+          </h2>
+          <p
+            style="
+              color: rgba(255, 255, 255, 0.85);
+              font-size: 1.2rem;
+              max-width: 700px;
+              margin: 0 auto 3rem auto;
+              line-height: 1.6;
+            "
+          >
+            Connect with professional painting contractors across Johannesburg.
+            Request your detailed, no-obligation quotation today and secure
+            premium weather-resistant protection.
+          </p>
+
+          <!-- Action Buttons Wrapper -->
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 1.25rem;
+              align-items: center;
+            "
+          >
+            <!-- Primary Action -->
+            <a
+              href="/contact"
+              style="
+                background: var(--white);
+                color: var(--primary);
+                padding: 1.15rem 2.75rem;
+                border-radius: 50px;
+                font-weight: 800;
+                font-size: 1.1rem;
+                text-decoration: none;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+                transition:
+                  transform 0.2s ease,
+                  background 0.2s ease,
+                  box-shadow 0.2s ease;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-2px)';
+                this.style.background = '#f8fafc';
+                this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.2)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.background = 'var(--white)';
+                this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.15)';
+              "
+            >
+              Request a Free Quote <span>&rarr;</span>
+            </a>
+
+            <!-- Secondary Action (Phone / WhatsApp) -->
+            <a
+              href="tel:0110000000"
+              style="
+                background: transparent;
+                color: var(--white);
+                padding: 1.15rem 2.5rem;
+                border-radius: 50px;
+                font-weight: 800;
+                font-size: 1.1rem;
+                text-decoration: none;
+                border: 2px solid rgba(255, 255, 255, 0.4);
+                transition:
+                  background 0.2s ease,
+                  border-color 0.2s ease;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.6rem;
+              "
+              onmouseover="
+                this.style.background = 'rgba(255, 255, 255, 0.1)';
+                this.style.borderColor = 'var(--white)';
+              "
+              onmouseout="
+                this.style.background = 'transparent';
+                this.style.borderColor = 'rgba(255, 255, 255, 0.4)';
+              "
+            >
+              <span>📞</span> Call 011 000 0000
+            </a>
+          </div>
+
+          <!-- Trust Subtext -->
+          <div
+            style="
+              margin-top: 2.5rem;
+              display: flex;
+              justify-content: center;
+              gap: 2rem;
+              flex-wrap: wrap;
+              font-size: 0.9rem;
+              color: rgba(255, 255, 255, 0.75);
+            "
+          >
+            <span
+              style="display: inline-flex; align-items: center; gap: 0.4rem"
+            >
+              <span style="color: #4ade80">✔</span> Fully Insured Contractors
+            </span>
+            <span
+              style="display: inline-flex; align-items: center; gap: 0.4rem"
+            >
+              <span style="color: #4ade80">✔</span> Premium Weather Guarantees
+            </span>
+            <span
+              style="display: inline-flex; align-items: center; gap: 0.4rem"
+            >
+              <span style="color: #4ade80">✔</span> Fast Turnaround Times
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
+     <footer class="site-footer" style="background: #0f172a; color: #cbd5e1; padding: 4rem 0 2rem 0; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+            
+            <!-- Main Footer Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2.5rem; margin-bottom: 3rem;">
+                
+                <!-- Col 1: Brand Info -->
+                <div>
+                    <h3 style="color: #ffffff; font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">PrimePainters</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.6; color: #94a3b8; margin-bottom: 1.25rem;">
+                        Connecting homeowners and businesses with trusted, vetted painting and coating professionals across Sandton, Midrand, Rosebank, and Randburg.
+                    </p>
+                    <div style="font-size: 0.85rem; color: #64748b;">
+                        &copy; 2026 PrimePainters. All rights reserved.
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links (All Navbar Items) -->
+                <div>
+                    <h4 style="color: #ffffff; font-size: 1rem; font-weight: 600; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Quick Navigation</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem;">
+                        <li><a href="index.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem; transition: color 0.2s;">Home</a></li>
+                        <li><a href="about.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem; transition: color 0.2s;">About Us</a></li>
+                        <li><a href="how-it-works.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem; transition: color 0.2s;">How It Works</a></li>
+                        <li><a href="services.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem; transition: color 0.2s;">Services</a></li>
+                        <li><a href="service-areas.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem; transition: color 0.2s;">Service Areas</a></li>
+                        <li><a href="gallery.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem; transition: color 0.2s;">Gallery</a></li>
+                        <li><a href="blog.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem; transition: color 0.2s;">Blog</a></li>
+                        <li><a href="contact.html" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem; transition: color 0.2s;">Contact</a></li>
+                        <li><a href="contractors.html" style="color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: color 0.2s;">For Painters</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Service Hubs -->
+                <div>
+                    <h4 style="color: #ffffff; font-size: 1rem; font-weight: 600; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Service Areas</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.9rem; color: #94a3b8;">
+                        <li>Sandton Residential Estates</li>
+                        <li>Midrand Developments</li>
+                        <li>Rosebank & Illovo</li>
+                        <li>Randburg Suburbs</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Support -->
+                <div>
+                    <h4 style="color: #ffffff; font-size: 1rem; font-weight: 600; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px;">Get Connected</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.6; color: #94a3b8; margin-bottom: 1rem;">
+                        Receive up to 3 competitive quotes from vetted local pros in under 60 seconds.
+                    </p>
+                    <a href="contact.html" style="display: inline-block; background: var(--accent); color: #ffffff; padding: 0.65rem 1.25rem; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.85rem;">Request Free Quote</a>
+                </div>
+
+            </div>
+
+            <!-- Bottom Credit Bar -->
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; color: #64748b;">
+                <div>
+                    Designed & Developed by <span style="color: #cbd5e1; font-weight: 600;">Sam Web Studios</span>
+                </div>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="privacy.html" style="color: #64748b; text-decoration: none;">Privacy Policy</a>
+                    <a href="terms.html" style="color: #64748b; text-decoration: none;">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

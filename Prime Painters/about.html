@@ -1,0 +1,2738 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | PrimePainters Network</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+  <header class="site-header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">Prime<span>Painters</span></a>
+    
+    <!-- Mobile Hamburger Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="how-it-works.html" class="active">How It Works</a>
+
+      <!-- Services Dropdown (Single instance controlled by CSS/JS) -->
+      <div class="dropdown" id="servicesDropdown">
+        <a href="services.html" class="dropdown-trigger">Services</a>
+        <div class="dropdown-content">
+          <a href="interior-painting.html">Interior Painting</a>
+          <a href="exterior-painting.html">Exterior Painting</a>
+          <a href="commercial-painting.html">Commercial Painting</a>
+          <a href="cabinet-refinishing.html">Cabinet Refinishing</a>
+        </div>
+      </div>
+
+      <a href="service-areas.html">Service Areas</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      
+      <!-- Mobile-only CTA placement inside the drawer -->
+      <div class="mobile-cta-container">
+        <a href="contractors.html" class="btn-outline">For Painters</a>
+      </div>
+    </nav>
+
+    <!-- Desktop CTA -->
+    <div class="nav-cta desktop-cta">
+      <a href="contractors.html" class="btn-outline">For Painters</a>
+    </div>
+  </div>
+</header>
+    <section
+      class="page-header-section"
+      style="
+        background:
+          linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)),
+          url(images/about-hero.jpg) no-repeat center center / cover;
+        color: #ffffff;
+        padding: 6rem 0;
+        text-align: center;
+      "
+    >
+      <div class="container text-center">
+        <span
+          class="badge"
+          style="
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border: none;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+          "
+          >Our Story & Mission</span
+        >
+        <h1
+          style="
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.5px;
+          "
+        >
+          Building Trust Between Homeowners and Elite Painters
+        </h1>
+        <p
+          style="
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+          "
+        >
+          We are on a mission to eliminate the hassle of finding reliable
+          contractors while empowering skilled local painters to grow
+          sustainable, high-integrity businesses.
+        </p>
+      </div>
+    </section>
+
+    <!-- Trust & Statistics Animated Counter Section -->
+    <section
+      class="stats-section"
+      style="background: white; color: whitesmoke; padding: 4rem 0"
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+          "
+        >
+          <div>
+            <div
+              class="counter"
+              data-target="500"
+              data-suffix="+"
+              style="
+                font-size: 2.75rem;
+                font-weight: 800;
+                color: var(--primary);
+                margin-bottom: 0.5rem;
+              "
+            >
+              0+
+            </div>
+            <div style="color: #94a3b8; font-size: 0.95rem; font-weight: 500">
+              Projects Completed
+            </div>
+          </div>
+          <div>
+            <div
+              class="counter"
+              data-target="100"
+              data-suffix="%"
+              style="
+                font-size: 2.75rem;
+                font-weight: 800;
+                color: var(--primary);
+                margin-bottom: 0.5rem;
+              "
+            >
+              0%
+            </div>
+            <div style="color: #94a3b8; font-size: 0.95rem; font-weight: 500">
+              Vetted & Insured Pros
+            </div>
+          </div>
+          <div>
+            <div
+              class="counter"
+              data-target="4.9"
+              data-decimals="1"
+              data-suffix=" / 5"
+              style="
+                font-size: 2.75rem;
+                font-weight: 800;
+                color: var(--primary);
+                margin-bottom: 0.5rem;
+              "
+            >
+              0 / 5
+            </div>
+            <div style="color: #94a3b8; font-size: 0.95rem; font-weight: 500">
+              Average Customer Rating
+            </div>
+          </div>
+          <div>
+            <div
+              class="counter"
+              data-target="3"
+              style="
+                font-size: 2.75rem;
+                font-weight: 800;
+                color: var(--primary);
+                margin-bottom: 0.5rem;
+              "
+            >
+              0
+            </div>
+            <div style="color: #94a3b8; font-size: 0.95rem; font-weight: 500">
+              Instant Quotes Guaranteed
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Content -->
+  <section class="content-section" style="padding: 5rem 0">
+  <div
+    class="container about-grid"
+    style="
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    "
+  >
+    <div class="about-text">
+      <h2
+        style="
+          font-size: 2.25rem;
+          font-weight: 700;
+          color: #0f172a;
+          margin-bottom: 1.5rem;
+          line-height: 1.2;
+        "
+      >
+        Why We Started PrimePainters
+      </h2>
+      <p
+        style="
+          color: #475569;
+          font-size: 1.05rem;
+          line-height: 1.7;
+          margin-bottom: 1.25rem;
+        "
+      >
+        Finding a trustworthy contractor used to mean asking neighbors,
+        sorting through outdated directories, or rolling the dice on
+        unverified ads. We built PrimePainters to change that completely.
+      </p>
+      <p
+        style="
+          color: var(--gray-light);
+          font-size: 1.05rem;
+          line-height: 1.7;
+        "
+      >
+        By combining transparent matching technology with strict vetting
+        standards, we ensure homeowners get top-tier workmanship without the
+        stress, and professional painters get steady, high-intent local
+        leads without wasting money on broad, ineffective advertising.
+      </p>
+    </div>
+    <div
+      class="about-highlight-box"
+      style="
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        padding: 2.5rem;
+        border-radius: 16px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+      "
+    >
+      <h3
+        style="
+          font-size: 1.35rem;
+          font-weight: 700;
+          color: #0f172a;
+          margin-bottom: 1.5rem;
+          border-bottom: 2px solid #e2e8f0;
+          padding-bottom: 0.75rem;
+        "
+      >
+        Our Core Commitments
+      </h3>
+      <ul
+        style="
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+        "
+      >
+        <li style="display: flex; gap: 1rem; align-items: flex-start">
+          <div
+            style="
+              background: #e0f2fe;
+              color: #0284c7;
+              padding: 0.4rem;
+              border-radius: 8px;
+              font-weight: bold;
+              margin-top: 0.2rem;
+            "
+          >
+            ✓
+          </div>
+          <div>
+            <strong
+              style="color: #0f172a; display: block; margin-bottom: 0.2rem"
+              >Rigorous Vetting:</strong
+            >
+            <span style="color: #475569; font-size: 0.95rem"
+              >Every painter in our network undergoes license and insurance
+              verification.</span
+            >
+          </div>
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start">
+          <div
+            style="
+              background: #e0f2fe;
+              color: #0284c7;
+              padding: 0.4rem;
+              border-radius: 8px;
+              font-weight: bold;
+              margin-top: 0.2rem;
+            "
+          >
+            ✓
+          </div>
+          <div>
+            <strong
+              style="color: #0f172a; display: block; margin-bottom: 0.2rem"
+              >Total Transparency:</strong
+            >
+            <span style="color: #475569; font-size: 0.95rem"
+              >No hidden booking fees or confusing pricing structures for
+              homeowners.</span
+            >
+          </div>
+        </li>
+        <li style="display: flex; gap: 1rem; align-items: flex-start">
+          <div
+            style="
+              background: #e0f2fe;
+              color: #0284c7;
+              padding: 0.4rem;
+              border-radius: 8px;
+              font-weight: bold;
+              margin-top: 0.2rem;
+            "
+          >
+            ✓
+          </div>
+          <div>
+            <strong
+              style="color: #0f172a; display: block; margin-bottom: 0.2rem"
+              >Mutual Growth:</strong
+            >
+            <span style="color: #475569; font-size: 0.95rem"
+              >We measure our success by the growth of local painting
+              businesses and homeowner satisfaction.</span
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr !important;
+      gap: 2.5rem !important;
+    }
+    .content-section {
+      padding: 3rem 1rem !important;
+    }
+  }
+</style>
+    <!-- Leadership & Team Section -->
+    <section
+      class="team-section"
+      style="padding: 6rem 0; background: var(--white)"
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <div
+          class="section-title"
+          style="text-align: center; margin-bottom: 4rem"
+        >
+          <h2
+            style="
+              font-size: 2.25rem;
+              font-weight: 700;
+              color: var(--primary);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Meet the Leadership Team
+          </h2>
+          <p style="color: var(--gray-light); font-size: 1.1rem">
+            Dedicated professionals committed to raising the standard of home
+            improvement services.
+          </p>
+        </div>
+
+        <div
+          class="team-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+          "
+        >
+          <!-- Team Member 1 -->
+          <div
+            class="team-card"
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              text-align: center;
+              padding-bottom: 2rem;
+            "
+          >
+            <div
+              style="
+                height: 180px;
+                position: relative;
+                overflow: hidden;
+                background: #0f172a;
+              "
+            >
+              <img
+                src="images/mqelisi-nyoni.jpg"
+                alt="Mqelisi Nyoni - Founder & CEO"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  inset: 0;
+                  background: linear-gradient(
+                    to top,
+                    rgba(15, 23, 42, 0.4) 0%,
+                    transparent 60%
+                  );
+                "
+              ></div>
+              <div
+                style="
+                  width: 90px;
+                  height: 90px;
+                  background: var(--white);
+                  border-radius: 50%;
+                  border: 4px solid var(--white);
+                  position: absolute;
+                  bottom: -45px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1.5rem;
+                  font-weight: 800;
+                  color: var(--primary);
+                  box-shadow: var(--shadow-md);
+                  overflow: hidden;
+                "
+              >
+                <img
+                  src="images/mqelisi-nyoni.jpg"
+                  alt="Mqelisi Nyoni avatar"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                  "
+                />
+              </div>
+            </div>
+            <div
+              style="
+                padding-top: 55px;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+              "
+            >
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  color: var(--dark);
+                  margin-bottom: 0.25rem;
+                "
+              >
+                Mqelisi Nyoni
+              </h3>
+              <p
+                style="
+                  color: var(--primary);
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  margin-bottom: 1rem;
+                "
+              >
+                Founder & CEO
+              </p>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.9rem;
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                With over 15 years in property development and trade networking,
+                Mqelisi launched PrimePainters to bring absolute trust and
+                efficiency to local contracting.
+              </p>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div
+            class="team-card"
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              text-align: center;
+              padding-bottom: 2rem;
+            "
+          >
+            <div
+              style="
+                height: 180px;
+                position: relative;
+                overflow: hidden;
+                background: #0f172a;
+              "
+            >
+              <img
+                src="images/samuel-zhou.jpeg"
+                alt="Samuel Zhou - Head of Contractor Relations"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  inset: 0;
+                  background: linear-gradient(
+                    to top,
+                    rgba(15, 23, 42, 0.4) 0%,
+                    transparent 60%
+                  );
+                "
+              ></div>
+              <div
+                style="
+                  width: 90px;
+                  height: 90px;
+                  background: var(--white);
+                  border-radius: 50%;
+                  border: 4px solid var(--white);
+                  position: absolute;
+                  bottom: -45px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1.5rem;
+                  font-weight: 800;
+                  color: var(--primary);
+                  box-shadow: var(--shadow-md);
+                  overflow: hidden;
+                "
+              >
+                <img
+                  src="images/samuel-zhou.jpeg"
+                  alt="Samuel Zhou avatar"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                  "
+                />
+              </div>
+            </div>
+            <div
+              style="
+                padding-top: 55px;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+              "
+            >
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  color: var(--dark);
+                  margin-bottom: 0.25rem;
+                "
+              >
+                Samuel Zhou
+              </h3>
+              <p
+                style="
+                  color: var(--primary);
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  margin-bottom: 1rem;
+                "
+              >
+                Head of Contractor Relations
+              </p>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.9rem;
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                Samuel oversees our rigorous vetting protocols, ensuring that
+                every painter on our platform maintains pristine licensing,
+                compliance, and work quality standards.
+              </p>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div
+            class="team-card"
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+              text-align: center;
+              padding-bottom: 2rem;
+            "
+          >
+            <div
+              style="
+                height: 180px;
+                position: relative;
+                overflow: hidden;
+                background: #0f172a;
+              "
+            >
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80"
+                alt="David Khumalo - Customer Experience Director"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  inset: 0;
+                  background: linear-gradient(
+                    to top,
+                    rgba(15, 23, 42, 0.4) 0%,
+                    transparent 60%
+                  );
+                "
+              ></div>
+              <div
+                style="
+                  width: 90px;
+                  height: 90px;
+                  background: var(--white);
+                  border-radius: 50%;
+                  border: 4px solid var(--white);
+                  position: absolute;
+                  bottom: -45px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1.5rem;
+                  font-weight: 800;
+                  color: var(--primary);
+                  box-shadow: var(--shadow-md);
+                  overflow: hidden;
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+                  alt="David Khumalo avatar"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                  "
+                />
+              </div>
+            </div>
+            <div
+              style="
+                padding-top: 55px;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+              "
+            >
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  color: var(--dark);
+                  margin-bottom: 0.25rem;
+                "
+              >
+                David Khumalo
+              </h3>
+              <p
+                style="
+                  color: var(--primary);
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  margin-bottom: 1rem;
+                "
+              >
+                Customer Experience Director
+              </p>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.9rem;
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                David ensures that every homeowner enjoys a seamless,
+                hassle-free journey from initial quote request down to the final
+                brush stroke.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--service-areas-section-->
+    <section
+      class="service-areas-section"
+      style="
+        padding: 6rem 0;
+        background: var(--bg-light);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      "
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <div
+          class="section-title"
+          style="text-align: center; margin-bottom: 4rem"
+        >
+          <span
+            style="
+              background: #eff6ff;
+              color: var(--primary, #0066ff);
+              padding: 0.4rem 1.1rem;
+              border-radius: 50px;
+              font-size: 0.85rem;
+              font-weight: 700;
+              display: inline-block;
+              margin-bottom: 1.25rem;
+              border: 1px solid rgba(0, 102, 255, 0.2);
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+            "
+            >Regional Coverage</span
+          >
+          <h2
+            style="
+              font-size: 2.25rem;
+              font-weight: 700;
+              color: var(--primary);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Proudly Serving Local Neighborhoods
+          </h2>
+          <p
+            style="
+              color: var(--gray-light);
+              font-size: 1.1rem;
+              max-width: 750px;
+              margin: 0 auto;
+            "
+          >
+            We connect homeowners with elite painting professionals across
+            premier communities.
+          </p>
+        </div>
+
+        <div
+          style="
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 4rem;
+            box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+            background: #0f172a;
+            height: 340px;
+          "
+        >
+          <img
+            src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80"
+            alt="Gauteng city skyline and local neighborhood coverage"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+              opacity: 0.4;
+            "
+          />
+          <div
+            style="
+              position: absolute;
+              inset: 0;
+              background: linear-gradient(
+                135deg,
+                rgba(15, 23, 42, 0.85) 0%,
+                rgba(0, 102, 255, 0.4) 100%
+              );
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              padding: 2rem;
+            "
+          >
+            <h3
+              style="
+                color: #ffffff;
+                font-size: 2rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+                letter-spacing: -0.01em;
+              "
+            >
+              Expert Painters Right In Your Neighborhood
+            </h3>
+            <p
+              style="
+                color: #f1f5f9;
+                font-size: 1.1rem;
+                max-width: 700px;
+                margin: 0;
+                line-height: 1.6;
+              "
+            >
+              No matter where you are situated across Gauteng, our platform
+              matches you with local vetted professionals who understand
+              regional environmental conditions and architecture.
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+          "
+        >
+          <div
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              padding: 2rem;
+              box-shadow: var(--shadow-sm);
+            "
+          >
+            <h3
+              style="
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 0.75rem;
+              "
+            >
+              Sandton
+            </h3>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-bottom: 1.25rem;
+              "
+            >
+              Providing executive residential and luxury estate painting,
+              interior skimming, and specialized wall treatments.
+            </p>
+            <a
+              href="service-areas.html"
+              style="
+                color: var(--primary);
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 0.9rem;
+              "
+              >View Sandton Pros &rarr;</a
+            >
+          </div>
+
+          <div
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              padding: 2rem;
+              box-shadow: var(--shadow-sm);
+            "
+          >
+            <h3
+              style="
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 0.75rem;
+              "
+            >
+              Midrand
+            </h3>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-bottom: 1.25rem;
+              "
+            >
+              Reliable weatherproofing, roof coatings, and complete home
+              makeovers for expanding residential complexes.
+            </p>
+            <a
+              href="service-areas.html"
+              style="
+                color: var(--primary);
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 0.9rem;
+              "
+              >View Midrand Pros &rarr;</a
+            >
+          </div>
+
+          <div
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              padding: 2rem;
+              box-shadow: var(--shadow-sm);
+            "
+          >
+            <h3
+              style="
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 0.75rem;
+              "
+            >
+              Rosebank
+            </h3>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-bottom: 1.25rem;
+              "
+            >
+              Sophisticated interior finishes, bespoke color consultations, and
+              meticulous property maintenance.
+            </p>
+            <a
+              href="service-areas.html"
+              style="
+                color: var(--primary);
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 0.9rem;
+              "
+              >View Rosebank Pros &rarr;</a
+            >
+          </div>
+
+          <div
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              padding: 2rem;
+              box-shadow: var(--shadow-sm);
+            "
+          >
+            <h3
+              style="
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 0.75rem;
+              "
+            >
+              Randburg
+            </h3>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-bottom: 1.25rem;
+              "
+            >
+              Durable exterior painting, damp-proofing restoration, and
+              cost-effective commercial property coatings.
+            </p>
+            <a
+              href="service-areas.html"
+              style="
+                color: var(--primary);
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 0.9rem;
+              "
+              >View Randburg Pros &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Values Grid styled to match your uniform card design -->
+    <section
+      class="values-section"
+      style="padding: 6rem 0; background: var(--bg-light)"
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <div
+          class="section-title"
+          style="text-align: center; margin-bottom: 4rem"
+        >
+          <h2
+            style="
+              font-size: 2.25rem;
+              font-weight: 700;
+              color: var(--primary);
+              margin-bottom: 0.75rem;
+            "
+          >
+            What Drives Our Platform
+          </h2>
+          <p style="color: var(--gray-light); font-size: 1.1rem">
+            The core values that shape every connection we make.
+          </p>
+        </div>
+        <div
+          class="process-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+          "
+        >
+          <!-- Card 1 -->
+          <div
+            class="process-card"
+            style="
+              background: var(--white);
+              padding: 3rem 2.5rem;
+              border-radius: var(--radius);
+              border: 1px solid var(--border);
+              position: relative;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <div
+                class="step-number"
+                style="
+                  background: #eff6ff;
+                  color: var(--primary);
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 10px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                01
+              </div>
+              <h3
+                style="
+                  font-size: 1.35rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Quality First
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.95rem;
+                  line-height: 1.6;
+                  margin-bottom: 2rem;
+                "
+              >
+                We partner exclusively with professional craftsmen who take
+                pride in meticulous preparation, clean execution, and lasting
+                results.
+              </p>
+            </div>
+            <div>
+              <a
+                href="how-it-works.html"
+                style="
+                  color: var(--primary);
+                  font-weight: 600;
+                  text-decoration: none;
+                  font-size: 0.95rem;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.4rem;
+                "
+                >Learn More &rarr;</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="process-card"
+            style="
+              background: var(--white);
+              padding: 3rem 2.5rem;
+              border-radius: var(--radius);
+              border: 1px solid var(--border);
+              position: relative;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <div
+                class="step-number"
+                style="
+                  background: #eff6ff;
+                  color: var(--primary);
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 10px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                02
+              </div>
+              <h3
+                style="
+                  font-size: 1.35rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Absolute Reliability
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.95rem;
+                  line-height: 1.6;
+                  margin-bottom: 2rem;
+                "
+              >
+                Time is valuable. Our platform ensures rapid response times,
+                clear communication, and dependable project scheduling.
+              </p>
+            </div>
+            <div>
+              <a
+                href="how-it-works.html"
+                style="
+                  color: var(--primary);
+                  font-weight: 600;
+                  text-decoration: none;
+                  font-size: 0.95rem;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.4rem;
+                "
+                >Learn More &rarr;</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="process-card"
+            style="
+              background: var(--white);
+              padding: 3rem 2.5rem;
+              border-radius: var(--radius);
+              border: 1px solid var(--border);
+              position: relative;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+          >
+            <div>
+              <div
+                class="step-number"
+                style="
+                  background: #eff6ff;
+                  color: var(--primary);
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 10px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                03
+              </div>
+              <h3
+                style="
+                  font-size: 1.35rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Community Focus
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.95rem;
+                  line-height: 1.6;
+                  margin-bottom: 2rem;
+                "
+              >
+                We believe in supporting local trade professionals and keeping
+                local economies strong by connecting neighbors with trusted
+                local experts.
+              </p>
+            </div>
+            <div>
+              <a
+                href="how-it-works.html"
+                style="
+                  color: var(--primary);
+                  font-weight: 600;
+                  text-decoration: none;
+                  font-size: 0.95rem;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.4rem;
+                "
+                >Learn More &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Vetting Process Section -->
+    <section
+      class="vetting-section"
+      style="
+        padding: 6rem 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border, #e2e8f0);
+      "
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <!-- Section Header -->
+        <div
+          class="section-title"
+          style="text-align: center; margin-bottom: 4rem"
+        >
+          <span
+            style="
+              background: #eff6ff;
+              color: var(--primary, #0066ff);
+              padding: 0.4rem 1.1rem;
+              border-radius: 50px;
+              font-size: 0.85rem;
+              font-weight: 700;
+              display: inline-block;
+              margin-bottom: 1.25rem;
+              border: 1px solid rgba(0, 102, 255, 0.2);
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+            "
+            >How We Vet Our Painting Professionals</span
+          >
+          <h2
+            style="
+              font-size: 2.25rem;
+              font-weight: 700;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Not Every Painter Makes the Cut
+          </h2>
+          <p
+            style="
+              color: var(--gray-light, #64748b);
+              font-size: 1.1rem;
+              max-width: 750px;
+              margin: 0 auto;
+              line-height: 1.6;
+            "
+          >
+            Our rigorous 5-step screening process ensures you receive unmatched
+            craftsmanship, safety, and accountability on every project.
+          </p>
+        </div>
+
+        <!-- Hero Image & Overview Description -->
+        <div
+          style="
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 4rem;
+            box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+            background: #0f172a;
+            height: 340px;
+          "
+        >
+          <img
+            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80"
+            alt="Professional painter quality inspection and vetting"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+              opacity: 0.4;
+            "
+          />
+          <div
+            style="
+              position: absolute;
+              inset: 0;
+              background: linear-gradient(
+                135deg,
+                rgba(15, 23, 42, 0.85) 0%,
+                rgba(0, 102, 255, 0.4) 100%
+              );
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              padding: 2rem;
+            "
+          >
+            <h3
+              style="
+                color: #ffffff;
+                font-size: 2rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+                letter-spacing: -0.01em;
+              "
+            >
+              Absolute Trust Through Rigorous Screening
+            </h3>
+            <p
+              style="
+                color: #f1f5f9;
+                font-size: 1.1rem;
+                max-width: 700px;
+                margin: 0;
+                line-height: 1.6;
+              "
+            >
+              We don't leave your property's finish to chance. Every contractor
+              on our platform undergoes strict multi-point verification before
+              they ever pick up a brush at your home.
+            </p>
+          </div>
+        </div>
+
+        <!-- Vetting Steps Grid (5 Steps) -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+          "
+        >
+          <!-- Step 1 -->
+          <div
+            style="
+              background: var(--bg-light, #f8fafc);
+              border: 1px solid var(--border, #e2e8f0);
+              border-radius: var(--radius, 12px);
+              overflow: hidden;
+              box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+              display: flex;
+              flex-direction: column;
+            "
+          >
+            <div
+              style="
+                height: 140px;
+                position: relative;
+                overflow: hidden;
+                background: #0f172a;
+              "
+            >
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80"
+                alt="Business and identity verification"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  inset: 0;
+                  background: linear-gradient(
+                    to top,
+                    rgba(15, 23, 42, 0.6) 0%,
+                    transparent 70%
+                  );
+                "
+              ></div>
+              <span
+                style="
+                  position: absolute;
+                  top: 1rem;
+                  left: 1rem;
+                  background: var(--primary, #0066ff);
+                  color: #fff;
+                  font-size: 0.75rem;
+                  font-weight: 800;
+                  padding: 0.25rem 0.6rem;
+                  border-radius: 4px;
+                "
+                >STEP 1</span
+              >
+            </div>
+            <div
+              style="
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+              "
+            >
+              <h4
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--dark, #0f172a);
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Business & Identity Verification
+              </h4>
+              <p
+                style="
+                  color: var(--gray-dark, #334155);
+                  font-size: 0.9rem;
+                  line-height: 1.5;
+                  margin: 0;
+                "
+              >
+                We verify official company registration, directorship records,
+                and legal identification for complete operational transparency.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            style="
+              background: var(--bg-light, #f8fafc);
+              border: 1px solid var(--border, #e2e8f0);
+              border-radius: var(--radius, 12px);
+              overflow: hidden;
+              box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+              display: flex;
+              flex-direction: column;
+            "
+          >
+            <div
+              style="
+                height: 140px;
+                position: relative;
+                overflow: hidden;
+                background: #0f172a;
+              "
+            >
+              <img
+                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=500&q=80"
+                alt="Insurance verification"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  inset: 0;
+                  background: linear-gradient(
+                    to top,
+                    rgba(15, 23, 42, 0.6) 0%,
+                    transparent 70%
+                  );
+                "
+              ></div>
+              <span
+                style="
+                  position: absolute;
+                  top: 1rem;
+                  left: 1rem;
+                  background: var(--primary, #0066ff);
+                  color: #fff;
+                  font-size: 0.75rem;
+                  font-weight: 800;
+                  padding: 0.25rem 0.6rem;
+                  border-radius: 4px;
+                "
+                >STEP 2</span
+              >
+            </div>
+            <div
+              style="
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+              "
+            >
+              <h4
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--dark, #0f172a);
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Insurance Verification
+              </h4>
+              <p
+                style="
+                  color: var(--gray-dark, #334155);
+                  font-size: 0.9rem;
+                  line-height: 1.5;
+                  margin: 0;
+                "
+              >
+                Active public liability and damage insurance coverage is
+                verified to protect your property against unexpected accidents.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            style="
+              background: var(--bg-light, #f8fafc);
+              border: 1px solid var(--border, #e2e8f0);
+              border-radius: var(--radius, 12px);
+              overflow: hidden;
+              box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+              display: flex;
+              flex-direction: column;
+            "
+          >
+            <div
+              style="
+                height: 140px;
+                position: relative;
+                overflow: hidden;
+                background: #0f172a;
+              "
+            >
+              <img
+                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=500&q=80"
+                alt="Experience and workmanship review"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  inset: 0;
+                  background: linear-gradient(
+                    to top,
+                    rgba(15, 23, 42, 0.6) 0%,
+                    transparent 70%
+                  );
+                "
+              ></div>
+              <span
+                style="
+                  position: absolute;
+                  top: 1rem;
+                  left: 1rem;
+                  background: var(--primary, #0066ff);
+                  color: #fff;
+                  font-size: 0.75rem;
+                  font-weight: 800;
+                  padding: 0.25rem 0.6rem;
+                  border-radius: 4px;
+                "
+                >STEP 3</span
+              >
+            </div>
+            <div
+              style="
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+              "
+            >
+              <h4
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--dark, #0f172a);
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Experience & Workmanship Review
+              </h4>
+              <p
+                style="
+                  color: var(--gray-dark, #334155);
+                  font-size: 0.9rem;
+                  line-height: 1.5;
+                  margin: 0;
+                "
+              >
+                We inspect past portfolios, surface prep methodologies, and
+                technical application standards across residential and
+                commercial jobs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div
+            style="
+              background: var(--bg-light, #f8fafc);
+              border: 1px solid var(--border, #e2e8f0);
+              border-radius: var(--radius, 12px);
+              overflow: hidden;
+              box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+              display: flex;
+              flex-direction: column;
+            "
+          >
+            <div
+              style="
+                height: 140px;
+                position: relative;
+                overflow: hidden;
+                background: #0f172a;
+              "
+            >
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80"
+                alt="References and reputation checks"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  inset: 0;
+                  background: linear-gradient(
+                    to top,
+                    rgba(15, 23, 42, 0.6) 0%,
+                    transparent 70%
+                  );
+                "
+              ></div>
+              <span
+                style="
+                  position: absolute;
+                  top: 1rem;
+                  left: 1rem;
+                  background: var(--primary, #0066ff);
+                  color: #fff;
+                  font-size: 0.75rem;
+                  font-weight: 800;
+                  padding: 0.25rem 0.6rem;
+                  border-radius: 4px;
+                "
+                >STEP 4</span
+              >
+            </div>
+            <div
+              style="
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+              "
+            >
+              <h4
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--dark, #0f172a);
+                  margin-bottom: 0.5rem;
+                "
+              >
+                References & Reputation Checks
+              </h4>
+              <p
+                style="
+                  color: var(--gray-dark, #334155);
+                  font-size: 0.9rem;
+                  line-height: 1.5;
+                  margin: 0;
+                "
+              >
+                Direct client feedback and historical project track records are
+                analyzed to ensure reliable scheduling and polite crew conduct.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div
+            style="
+              background: var(--bg-light, #f8fafc);
+              border: 1px solid var(--border, #e2e8f0);
+              border-radius: var(--radius, 12px);
+              overflow: hidden;
+              box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+              display: flex;
+              flex-direction: column;
+            "
+          >
+            <div
+              style="
+                height: 140px;
+                position: relative;
+                overflow: hidden;
+                background: #0f172a;
+              "
+            >
+              <img
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=500&q=80"
+                alt="Ongoing quality monitoring"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  inset: 0;
+                  background: linear-gradient(
+                    to top,
+                    rgba(15, 23, 42, 0.6) 0%,
+                    transparent 70%
+                  );
+                "
+              ></div>
+              <span
+                style="
+                  position: absolute;
+                  top: 1rem;
+                  left: 1rem;
+                  background: var(--primary, #0066ff);
+                  color: #fff;
+                  font-size: 0.75rem;
+                  font-weight: 800;
+                  padding: 0.25rem 0.6rem;
+                  border-radius: 4px;
+                "
+                >STEP 5</span
+              >
+            </div>
+            <div
+              style="
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+              "
+            >
+              <h4
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--dark, #0f172a);
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Ongoing Quality Monitoring
+              </h4>
+              <p
+                style="
+                  color: var(--gray-dark, #334155);
+                  font-size: 0.9rem;
+                  line-height: 1.5;
+                  margin: 0;
+                "
+              >
+                Continuous homeowner performance reviews and satisfaction scores
+                maintain high accountability across active network rosters.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Strong Closing Statement Box -->
+        <div
+          style="
+            background: linear-gradient(
+              135deg,
+              var(--primary, #0066ff) 0%,
+              #1d4ed8 100%
+            );
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 102, 255, 0.2);
+          "
+        >
+          <h3
+            style="
+              font-size: 1.85rem;
+              font-weight: 800;
+              margin-bottom: 0.75rem;
+              letter-spacing: -0.01em;
+            "
+          >
+            Our goal isn't to give you the biggest list of painters. It's to
+            give you access to better painters.
+          </h3>
+          <p
+            style="
+              font-size: 1.05rem;
+              max-width: 650px;
+              margin: 0 auto;
+              opacity: 0.95;
+              line-height: 1.6;
+            "
+          >
+            Experience a trusted marketplace designed to protect your investment
+            from start to finish.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- The PrimePainters Difference Section -->
+  <section class="difference-section" style="padding: 6rem 0; background: var(--bg-light, #f8fafc); border-bottom: 1px solid var(--border, #e2e8f0);">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+      
+      <!-- Section Header -->
+      <div class="section-title" style="text-align: center; margin-bottom: 4rem;">
+        <span style="background: #eff6ff; color: var(--primary, #0066ff); padding: 0.4rem 1.1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 700; display: inline-block; margin-bottom: 1.25rem; border: 1px solid rgba(0, 102, 255, 0.2); letter-spacing: 0.05em; text-transform: uppercase;">The PrimePainters Difference</span>
+        <h2 style="font-size: 2.25rem; font-weight: 700; color: var(--primary, #0066ff); margin-bottom: 0.75rem;">Why should I use PrimePainters instead of finding a painter myself?</h2>
+        <p style="color: var(--gray-light, #64748b); font-size: 1.1rem; max-width: 750px; margin: 0 auto; line-height: 1.6;">
+          Skip the guesswork, endless calls, and reliability risks. See how we transform the way you hire painting contractors.
+        </p>
+      </div>
+
+      <!-- Comparison Grid (2 Columns) -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; max-width: 1000px; margin: 0 auto;">
+        
+        <!-- Traditional Search Card -->
+        <div style="background: var(--white, #ffffff); border: 1px solid var(--border, #e2e8f0); border-radius: var(--radius, 12px); padding: 2.5rem; box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02)); display: flex; flex-direction: column;">
+          <div style="margin-bottom: 2rem; border-bottom: 2px solid #f1f5f9; padding-bottom: 1rem;">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #64748b; margin: 0;">Traditional Search</h3>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.5rem; flex-grow: 1;">
+            
+            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+              <span style="background: #fee2e2; color: #dc2626; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✕</span>
+              <div>
+                <strong style="color: var(--dark, #0f172a); display: block; margin-bottom: 0.2rem; font-size: 1.05rem;">Endless Google searches</strong>
+                <p style="color: var(--gray-dark, #334155); font-size: 0.95rem; margin: 0; line-height: 1.5;">Hours spent digging through unverified listings and sketchy classified ads.</p>
+              </div>
+            </li>
+
+            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+              <span style="background: #fee2e2; color: #dc2626; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✕</span>
+              <div>
+                <strong style="color: var(--dark, #0f172a); display: block; margin-bottom: 0.2rem; font-size: 1.05rem;">Uncertain credentials</strong>
+                <p style="color: var(--gray-dark, #334155); font-size: 0.95rem; margin: 0; line-height: 1.5;">Zero background checks, missing business registrations, and uninsured workers.</p>
+              </div>
+            </li>
+
+            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+              <span style="background: #fee2e2; color: #dc2626; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✕</span>
+              <div>
+                <strong style="color: var(--dark, #0f172a); display: block; margin-bottom: 0.2rem; font-size: 1.05rem;">Multiple phone calls</strong>
+                <p style="color: var(--gray-dark, #334155); font-size: 0.95rem; margin: 0; line-height: 1.5;">Chasing contractors down for quotes, callbacks, and scheduling updates.</p>
+              </div>
+            </li>
+
+            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+              <span style="background: #fee2e2; color: #dc2626; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✕</span>
+              <div>
+                <strong style="color: var(--dark, #0f172a); display: block; margin-bottom: 0.2rem; font-size: 1.05rem;">Difficult to compare contractors</strong>
+                <p style="color: var(--gray-dark, #334155); font-size: 0.95rem; margin: 0; line-height: 1.5;">Apples-to-oranges pricing with no standard guarantee of quality workmanship.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- PrimePainters Card -->
+        <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border: 1px solid rgba(0, 102, 255, 0.3); border-radius: var(--radius, 12px); padding: 2.5rem; box-shadow: 0 10px 25px rgba(0, 102, 255, 0.15); display: flex; flex-direction: column; color: #ffffff; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: 0; right: 0; background: var(--primary, #0066ff); color: #fff; font-size: 0.75rem; font-weight: 800; padding: 0.4rem 1.2rem; border-bottom-left-radius: 12px; letter-spacing: 0.05em; text-transform: uppercase;">The Smarter Choice</div>
+          <div style="margin-bottom: 2rem; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 1rem;">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: #ffffff; margin: 0;">PrimePainters</h3>
+          </div>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.5rem; flex-grow: 1;">
+            
+            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+              <span style="background: #dbeafe; color: var(--primary, #0066ff); width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✓</span>
+              <div>
+                <strong style="color: #ffffff; display: block; margin-bottom: 0.2rem; font-size: 1.05rem;">Vetted professionals</strong>
+                <p style="color: #cbd5e1; font-size: 0.95rem; margin: 0; line-height: 1.5;">Every contractor passes strict 5-step screening, including insurance and background verification.</p>
+              </div>
+            </li>
+
+            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+              <span style="background: #dbeafe; color: var(--primary, #0066ff); width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✓</span>
+              <div>
+                <strong style="color: #ffffff; display: block; margin-bottom: 0.2rem; font-size: 1.05rem;">Local matching</strong>
+                <p style="color: #cbd5e1; font-size: 0.95rem; margin: 0; line-height: 1.5;">Connect instantly with top-rated painters located right across your local neighborhood.</p>
+              </div>
+            </li>
+
+            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+              <span style="background: #dbeafe; color: var(--primary, #0066ff); width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✓</span>
+              <div>
+                <strong style="color: #ffffff; display: block; margin-bottom: 0.2rem; font-size: 1.05rem;">Multiple quotes</strong>
+                <p style="color: #cbd5e1; font-size: 0.95rem; margin: 0; line-height: 1.5;">Compare transparent, competitive estimates side-by-side without any hidden fees.</p>
+              </div>
+            </li>
+
+            <li style="display: flex; align-items: flex-start; gap: 1rem;">
+              <span style="background: #dbeafe; color: var(--primary, #0066ff); width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px;">✓</span>
+              <div>
+                <strong style="color: #ffffff; display: block; margin-bottom: 0.2rem; font-size: 1.05rem;">One simple request</strong>
+                <p style="color: #cbd5e1; font-size: 0.95rem; margin: 0; line-height: 1.5;">Submit your project details once and let trusted professionals compete for your business.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- How It Works Mini-Section (Visual Process) -->
+<section class="how-it-works-mini" style="padding: 5rem 0; background: var(--white, #ffffff); border-top: 1px solid var(--border, #e2e8f0); border-bottom: 1px solid var(--border, #e2e8f0);">
+  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+    
+    <!-- Section Header -->
+    <div class="hiw-header" style="text-align: center; margin-bottom: 4rem;">
+      <span style="background: #eff6ff; color: var(--primary, #0066ff); padding: 0.4rem 1.1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 700; display: inline-block; margin-bottom: 1.25rem; border: 1px solid rgba(0, 102, 255, 0.2); letter-spacing: 0.05em; text-transform: uppercase;">Simplified Process</span>
+      <h2 style="font-size: 2.75rem; font-weight: 800; color: var(--primary, #0066ff); margin-bottom: 1rem; letter-spacing: -0.02em;">From Request to Freshly Painted Walls</h2>
+      <p style="color: var(--gray-light, #64748b); font-size: 1.15rem; max-width: 700px; margin: 0 auto; line-height: 1.6;">Getting your home or business professionally painted has never been easier. Follow these 5 simple steps.</p>
+    </div>
+
+    <!-- Content Grid (Left: Cards, Right: Image) -->
+    <div class="hiw-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+      
+      <!-- Left Column: Steps Cards -->
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        
+        <!-- Step 01 -->
+        <div style="background: var(--bg-light, #f8fafc); border: 1px solid var(--border, #e2e8f0); border-radius: 16px; padding: 1.75rem; display: flex; align-items: flex-start; gap: 1.5rem; box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary, #0066ff); line-height: 1; margin-top: -5px;">01</div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--dark, #0f172a); margin: 0 0 0.5rem 0;">Tell Us About Your Project</h3>
+            <p style="color: var(--gray-dark, #334155); font-size: 1rem; line-height: 1.6; margin: 0;">Tell us what needs painting, where you are, and what you need.</p>
+          </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div style="background: var(--bg-light, #f8fafc); border: 1px solid var(--border, #e2e8f0); border-radius: 16px; padding: 1.75rem; display: flex; align-items: flex-start; gap: 1.5rem; box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary, #0066ff); line-height: 1; margin-top: -5px;">02</div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--dark, #0f172a); margin: 0 0 0.5rem 0;">We Match You</h3>
+            <p style="color: var(--gray-dark, #334155); font-size: 1rem; line-height: 1.6; margin: 0;">Your request is matched with suitable local painting professionals.</p>
+          </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div style="background: var(--bg-light, #f8fafc); border: 1px solid var(--border, #e2e8f0); border-radius: 16px; padding: 1.75rem; display: flex; align-items: flex-start; gap: 1.5rem; box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary, #0066ff); line-height: 1; margin-top: -5px;">03</div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--dark, #0f172a); margin: 0 0 0.5rem 0;">Compare Your Options</h3>
+            <p style="color: var(--gray-dark, #334155); font-size: 1rem; line-height: 1.6; margin: 0;">Receive responses and compare your options.</p>
+          </div>
+        </div>
+
+        <!-- Step 04 -->
+        <div style="background: var(--bg-light, #f8fafc); border: 1px solid var(--border, #e2e8f0); border-radius: 16px; padding: 1.75rem; display: flex; align-items: flex-start; gap: 1.5rem; box-shadow: var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02));">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary, #0066ff); line-height: 1; margin-top: -5px;">04</div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--dark, #0f172a); margin: 0 0 0.5rem 0;">Choose Your Painter</h3>
+            <p style="color: var(--gray-dark, #334155); font-size: 1rem; line-height: 1.6; margin: 0;">Select the professional that best fits your project.</p>
+          </div>
+        </div>
+
+        <!-- Step 05 -->
+        <div style="background: #e0f2fe; border: 2px solid var(--primary, #0066ff); border-radius: 16px; padding: 1.75rem; display: flex; align-items: flex-start; gap: 1.5rem; box-shadow: 0 10px 15px -3px rgba(0, 102, 255, 0.1), 0 4px 6px -2px rgba(0, 102, 255, 0.05);">
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary, #0066ff); line-height: 1; margin-top: -5px;">05</div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--dark, #0f172a); margin: 0 0 0.5rem 0;">Transform Your Space</h3>
+            <p style="color: var(--gray-dark, #334155); font-size: 1rem; line-height: 1.6; margin: 0;">Your chosen painter completes the work.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Visual Image -->
+      <div class="mobile-sticky-fix" style="position: sticky; top: 100px;">
+        <img 
+            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1000&q=80" 
+            alt="Professional painter transforming a wall in a modern home" 
+            style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); display: block;"
+        >
+        <div style="margin-top: 2rem; text-align: center; background: var(--bg-light, #f8fafc); padding: 1.5rem; border-radius: 16px; border: 1px solid var(--border, #e2e8f0);">
+            <p style="margin: 0; font-weight: 600; color: var(--dark, #0f172a); font-size: 1.1rem;">Ready to start your transformation?</p>
+            <a href="#quote-form" style="margin-top: 1rem; display: inline-block; background: var(--primary, #0066ff); color: #ffffff; padding: 0.75rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1rem;">Request Your Free Quote</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- FAQ Section with Interactive Accordion -->
+    <section
+      class="faq-section"
+      style="padding: 6rem 0; background: var(--white)"
+    >
+      <div
+        class="container"
+        style="max-width: 900px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <div
+          class="section-title"
+          style="text-align: center; margin-bottom: 4rem"
+        >
+          <h2
+            style="
+              font-size: 2.25rem;
+              font-weight: 700;
+              color: var(--primary);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Frequently Asked Questions
+          </h2>
+          <p style="color: var(--gray-light); font-size: 1.1rem">
+            Everything you need to know about working with our vetted painting
+            professionals.
+          </p>
+        </div>
+
+        <div
+          class="accordion-container"
+          style="display: flex; flex-direction: column; gap: 1rem"
+        >
+          <!-- FAQ Item 1 -->
+          <div
+            class="faq-item"
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+            "
+          >
+            <button
+              class="faq-question"
+              onclick="toggleFaq(this)"
+              style="
+                width: 100%;
+                background: none;
+                border: none;
+                padding: 1.5rem 2rem;
+                text-align: left;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--primary);
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <span>Are all painters on PrimePainters vetted and insured?</span>
+              <span
+                class="faq-icon"
+                style="
+                  font-size: 1.5rem;
+                  font-weight: 400;
+                  color: var(--primary);
+                "
+                >+</span
+              >
+            </button>
+            <div
+              class="faq-answer"
+              style="
+                max-height: 0;
+                overflow: hidden;
+                transition:
+                  max-height 0.3s ease,
+                  padding 0.3s ease;
+                padding: 0 2rem;
+              "
+            >
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.95rem;
+                  line-height: 1.6;
+                  margin: 0 0 1.5rem 0;
+                "
+              >
+                Yes, absolutely. Every single painting professional in our
+                network goes through a strict verification process checking
+                legal operating licenses, public liability insurance, and
+                historical craftsmanship quality.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="faq-item"
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+            "
+          >
+            <button
+              class="faq-question"
+              onclick="toggleFaq(this)"
+              style="
+                width: 100%;
+                background: none;
+                border: none;
+                padding: 1.5rem 2rem;
+                text-align: left;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--primary);
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <span>How does the matching process work?</span>
+              <span
+                class="faq-icon"
+                style="
+                  font-size: 1.5rem;
+                  font-weight: 400;
+                  color: var(--primary);
+                "
+                >+</span
+              >
+            </button>
+            <div
+              class="faq-answer"
+              style="
+                max-height: 0;
+                overflow: hidden;
+                transition:
+                  max-height 0.3s ease,
+                  padding 0.3s ease;
+                padding: 0 2rem;
+              "
+            >
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.95rem;
+                  line-height: 1.6;
+                  margin: 0 0 1.5rem 0;
+                "
+              >
+                You submit your project details once, and our platform matches
+                you with up to three top-rated local painting contractors who
+                specialize in your specific type of project—whether residential
+                interior, exterior, or commercial coating.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="faq-item"
+            style="
+              background: var(--white);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              overflow: hidden;
+              box-shadow: var(--shadow-sm);
+            "
+          >
+            <button
+              class="faq-question"
+              onclick="toggleFaq(this)"
+              style="
+                width: 100%;
+                background: none;
+                border: none;
+                padding: 1.5rem 2rem;
+                text-align: left;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--primary);
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <span>Is there any cost or obligation to request quotes?</span>
+              <span
+                class="faq-icon"
+                style="
+                  font-size: 1.5rem;
+                  font-weight: 400;
+                  color: var(--primary);
+                "
+                >+</span
+              >
+            </button>
+            <div
+              class="faq-answer"
+              style="
+                max-height: 0;
+                overflow: hidden;
+                transition:
+                  max-height 0.3s ease,
+                  padding 0.3s ease;
+                padding: 0 2rem;
+              "
+            >
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.95rem;
+                  line-height: 1.6;
+                  margin: 0 0 1.5rem 0;
+                "
+              >
+                No. Requesting quotes through PrimePainters is 100% free with
+                zero hidden charges or service booking fees. You are under no
+                obligation to hire the contractors who reach out to you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section
+      class="cta-banner"
+      style="
+        background: linear-gradient(
+          135deg,
+          var(--primary) 0%,
+          var(--primary-dark) 100%
+        );
+        color: var(--white);
+        padding: 6rem 0;
+        text-align: center;
+      "
+    >
+      <div
+        class="container"
+        style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <h2
+          style="
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--white);
+            letter-spacing: -0.5px;
+          "
+        >
+          Ready to Transform Your Space?
+        </h2>
+        <p
+          style="
+            font-size: 1.15rem;
+            color: #e2e8f0;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+          "
+        >
+          Join hundreds of satisfied homeowners and connect with trusted local
+          painting experts today. Get up to 3 competitive quotes in under 60
+          seconds.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a
+            href="contact.html"
+            style="
+              background: var(--white);
+              color: var(--primary);
+              padding: 1rem 2.5rem;
+              border-radius: var(--radius);
+              font-weight: 700;
+              text-decoration: none;
+              font-size: 1rem;
+              box-shadow: var(--shadow-md);
+              transition: opacity 0.2s ease;
+            "
+            >Get Free Quotes</a
+          >
+          <a
+            href="how-it-works.html"
+            style="
+              background: transparent;
+              color: var(--white);
+              border: 2px solid rgba(255, 255, 255, 0.4);
+              padding: 1rem 2.5rem;
+              border-radius: var(--radius);
+              font-weight: 600;
+              text-decoration: none;
+              font-size: 1rem;
+              transition: border-color 0.2s ease;
+            "
+            >Learn How It Works</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Professional Footer Section -->
+    <footer
+      class="site-footer"
+      style="
+        background: #0f172a;
+        color: #cbd5e1;
+        padding: 4rem 0 2rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      "
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <!-- Main Footer Grid -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+          "
+        >
+          <!-- Col 1: Brand Info -->
+          <div>
+            <h3
+              style="
+                color: #ffffff;
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+              "
+            >
+              PrimePainters
+            </h3>
+            <p
+              style="
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #94a3b8;
+                margin-bottom: 1.25rem;
+              "
+            >
+              Connecting homeowners and businesses with trusted, vetted painting
+              and coating professionals across Sandton, Midrand, Rosebank, and
+              Randburg.
+            </p>
+            <div style="font-size: 0.85rem; color: #64748b">
+              &copy; 2026 PrimePainters. All rights reserved.
+            </div>
+          </div>
+
+          <!-- Col 2: Navigation Links (All Navbar Items) -->
+          <div>
+            <h4
+              style="
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Quick Navigation
+            </h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.65rem;
+              "
+            >
+              <li>
+                <a
+                  href="index.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="how-it-works.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="service-areas.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Service Areas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contractors.html"
+                  style="
+                    color: var(--accent);
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    transition: color 0.2s;
+                  "
+                  >For Painters</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Service Hubs -->
+          <div>
+            <h4
+              style="
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Service Areas
+            </h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.65rem;
+                font-size: 0.9rem;
+                color: #94a3b8;
+              "
+            >
+              <li>Sandton Residential Estates</li>
+              <li>Midrand Developments</li>
+              <li>Rosebank & Illovo</li>
+              <li>Randburg Suburbs</li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact & Support -->
+          <div>
+            <h4
+              style="
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Get Connected
+            </h4>
+            <p
+              style="
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #94a3b8;
+                margin-bottom: 1rem;
+              "
+            >
+              Receive up to 3 competitive quotes from vetted local pros in under
+              60 seconds.
+            </p>
+            <a
+              href="contact.html"
+              style="
+                display: inline-block;
+                background: var(--accent);
+                color: #ffffff;
+                padding: 0.65rem 1.25rem;
+                border-radius: 6px;
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 0.85rem;
+              "
+              >Request Free Quote</a
+            >
+          </div>
+        </div>
+
+        <!-- Bottom Credit Bar -->
+        <div
+          style="
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: #64748b;
+          "
+        >
+          <div>
+            Designed & Developed by
+            <span style="color: #cbd5e1; font-weight: 600"
+              >Sam Web Studios</span
+            >
+          </div>
+          <div style="display: flex; gap: 1.5rem">
+            <a href="privacy.html" style="color: #64748b; text-decoration: none"
+              >Privacy Policy</a
+            >
+            <a href="terms.html" style="color: #64748b; text-decoration: none"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

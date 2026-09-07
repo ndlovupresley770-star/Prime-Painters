@@ -1,0 +1,4446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Painting Services | PrimePainters Network</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation with Dropdown -->
+     <header class="site-header">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">Prime<span>Painters</span></a>
+    
+    <!-- Mobile Hamburger Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="how-it-works.html" class="active">How It Works</a>
+
+      <!-- Services Dropdown (Single instance controlled by CSS/JS) -->
+      <div class="dropdown" id="servicesDropdown">
+        <a href="services.html" class="dropdown-trigger">Services</a>
+        <div class="dropdown-content">
+          <a href="interior-painting.html">Interior Painting</a>
+          <a href="exterior-painting.html">Exterior Painting</a>
+          <a href="commercial-painting.html">Commercial Painting</a>
+          <a href="cabinet-refinishing.html">Cabinet Refinishing</a>
+        </div>
+      </div>
+
+      <a href="service-areas.html">Service Areas</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      
+      <!-- Mobile-only CTA placement inside the drawer -->
+      <div class="mobile-cta-container">
+        <a href="contractors.html" class="btn-outline">For Painters</a>
+      </div>
+    </nav>
+
+    <!-- Desktop CTA -->
+    <div class="nav-cta desktop-cta">
+      <a href="contractors.html" class="btn-outline">For Painters</a>
+    </div>
+  </div>
+</header>
+
+    <!-- Comprehensive Services Hero Section with Background Image and Right-Hand CTA Banner -->
+    <section
+      class="hero-section"
+      style="
+        position: relative;
+        min-height: 650px;
+        background:
+          linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.75)),
+          url(&quot;images/services-hero.jpg&quot;) center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        padding: 6rem 0;
+      "
+    >
+      <div
+        class="container"
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 1.5rem;
+          width: 100%;
+        "
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            align-items: center;
+          "
+        >
+          <!-- Left Column: Title & Description -->
+          <div class="hero-content" style="color: var(--white)">
+            <span
+              class="badge"
+              style="
+                background: rgba(255, 255, 255, 0.15);
+                color: #ffffff;
+                padding: 0.4rem 1rem;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                display: inline-block;
+                margin-bottom: 1.25rem;
+                border: 1px solid rgba(147, 197, 253, 0.3);
+              "
+              >Expert Craftsmanship</span
+            >
+            <h1
+              style="
+                font-size: 3rem;
+                font-weight: 800;
+                line-height: 1.15;
+                margin-bottom: 1.25rem;
+                color: var(--white);
+              "
+            >
+              Comprehensive Painting Services Tailored to Your Property
+            </h1>
+            <p
+              style="
+                font-size: 1.1rem;
+                color: #cbd5e1;
+                line-height: 1.6;
+                margin: 0;
+              "
+            >
+              Every project matched through our network is handled by verified
+              professionals specializing in flawless preparation, premium
+              coatings, and stunning finishes.
+            </p>
+          </div>
+
+          <!-- Right Column: CTA Contact Banner Card -->
+          <div
+            class="hero-cta-card"
+            style="
+              background: var(--white);
+              padding: 2.5rem;
+              border-radius: var(--radius);
+              box-shadow:
+                0 20px 25px -5px rgba(0, 0, 0, 0.2),
+                0 8px 10px -6px rgba(0, 0, 0, 0.2);
+              border: 1px solid var(--border);
+            "
+          >
+            <h3
+              style="
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--dark);
+                margin-bottom: 0.5rem;
+              "
+            >
+              Request a Consultation
+            </h3>
+            <p
+              style="
+                color: var(--gray-light);
+                font-size: 0.95rem;
+                margin-bottom: 1.5rem;
+                line-height: 1.5;
+              "
+            >
+              Connect with top-rated local painting contractors for your
+              upcoming property upgrade.
+            </p>
+
+            <form
+              action="contact.html"
+              method="GET"
+              style="display: flex; flex-direction: column; gap: 1rem"
+            >
+              <div>
+                <label
+                  style="
+                    display: block;
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                    color: var(--dark);
+                    margin-bottom: 0.4rem;
+                  "
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="John Doe"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 0.75rem 1rem;
+                    border: 1px solid var(--border);
+                    border-radius: 8px;
+                    font-size: 0.95rem;
+                    background: var(--bg-light);
+                    color: var(--dark);
+                    outline: none;
+                  "
+                />
+              </div>
+              <div>
+                <label
+                  style="
+                    display: block;
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                    color: var(--dark);
+                    margin-bottom: 0.4rem;
+                  "
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  placeholder="082 123 4567"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 0.75rem 1rem;
+                    border: 1px solid var(--border);
+                    border-radius: 8px;
+                    font-size: 0.95rem;
+                    background: var(--bg-light);
+                    color: var(--dark);
+                    outline: none;
+                  "
+                />
+              </div>
+              <button
+                type="submit"
+                style="
+                  background: var(--primary);
+                  color: var(--white);
+                  border: none;
+                  padding: 0.9rem;
+                  border-radius: 8px;
+                  font-weight: 700;
+                  font-size: 1rem;
+                  cursor: pointer;
+                  transition: background 0.2s ease;
+                  margin-top: 0.5rem;
+                "
+              >
+                Get Free Quotes
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Services Sections -->
+    <section class="content-section">
+      <div class="container">
+        <!-- Interior Painting -->
+
+        <div
+          id="interior"
+          class="about-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 5rem;
+          "
+        >
+          <div class="about-text">
+            <span
+              class="badge"
+              style="
+                background: #eff6ff;
+                color: var(--primary);
+                padding: 0.4rem 1rem;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                display: inline-block;
+                margin-bottom: 1.25rem;
+                border: 1px solid rgba(0, 102, 255, 0.2);
+              "
+              >Residential</span
+            >
+            <h2
+              style="
+                font-size: 2.25rem;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 1rem;
+              "
+            >
+              Interior Painting & Decorating
+            </h2>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+              "
+            >
+              Transform the mood and aesthetic of your living spaces. Our
+              network pros handle everything from meticulous surface
+              preparation, drywall patching, and priming to flawless walls,
+              ceilings, and trim work.
+            </p>
+            <ul
+              class="benefits-list"
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+              "
+            >
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ Detailed furniture protection & masking
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ Premium low-VOC paint options
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ Crisp lines for walls, baseboards, and crown molding
+              </li>
+            </ul>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 1.5rem">
+            <div
+              style="
+                overflow: hidden;
+                border-radius: var(--radius);
+                border: 1px solid var(--border);
+                box-shadow: var(--shadow-sm);
+              "
+            >
+              <img
+                src="images/interior-painting-&-decorating.jpg"
+                alt="Interior Painting Service"
+                style="
+                  width: 100%;
+                  height: 240px;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+
+            <div
+              class="about-highlight-box"
+              style="
+                background: var(--bg-light);
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                padding: 2rem;
+                box-shadow: var(--shadow-sm);
+              "
+            >
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                What's Included
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.95rem;
+                  line-height: 1.6;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                Complete room prep, minor crack repair, sanding, two coats of
+                premium paint, and a thorough post-project clean-up so your home
+                looks immaculate.
+              </p>
+              <a
+                href="index.html#homeownerLeadForm"
+                class="btn-primary"
+                style="
+                  background: var(--primary);
+                  color: var(--white);
+                  padding: 0.85rem 1.5rem;
+                  border-radius: var(--radius);
+                  font-weight: 700;
+                  text-decoration: none;
+                  display: block;
+                  text-align: center;
+                  box-shadow: var(--shadow-sm);
+                "
+                >Get Interior Quote</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Exterior Painting Section with Side-by-Side Image -->
+        <div
+          id="exterior"
+          class="about-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 5rem;
+          "
+        >
+          <!-- Left Column: Highlight Box & Side-by-Side Image -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem">
+            <div
+              class="about-highlight-box"
+              style="
+                background: var(--bg-light);
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                padding: 2rem;
+                box-shadow: var(--shadow-sm);
+              "
+            >
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Weather-Resistant Protection
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.95rem;
+                  line-height: 1.6;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                Exterior coatings must withstand harsh weather elements. Our
+                vetted contractors use specialized weatherproofing paints and
+                stains designed to protect your investment for years.
+              </p>
+              <a
+                href="index.html#homeownerLeadForm"
+                class="btn-primary"
+                style="
+                  background: var(--primary);
+                  color: var(--white);
+                  padding: 0.85rem 1.5rem;
+                  border-radius: var(--radius);
+                  font-weight: 700;
+                  text-decoration: none;
+                  display: block;
+                  text-align: center;
+                  box-shadow: var(--shadow-sm);
+                "
+                >Get Exterior Quote</a
+              >
+            </div>
+
+            <!-- Side-by-Side Image Showcase -->
+            <div
+              style="
+                overflow: hidden;
+                border-radius: var(--radius);
+                border: 1px solid var(--border);
+                box-shadow: var(--shadow-sm);
+              "
+            >
+              <img
+                src="images/exterior-painting-&-staining.jpg"
+                alt="Exterior Painting Service"
+                style="
+                  width: 100%;
+                  height: 220px;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+
+          <!-- Right Column: Text & Benefits List -->
+          <div class="about-text">
+            <span
+              class="badge"
+              style="
+                background: #eff6ff;
+                color: var(--primary);
+                padding: 0.4rem 1rem;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                display: inline-block;
+                margin-bottom: 1.25rem;
+                border: 1px solid rgba(0, 102, 255, 0.2);
+              "
+              >Protection & Curb Appeal</span
+            >
+            <h2
+              style="
+                font-size: 2.25rem;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 1rem;
+              "
+            >
+              Exterior Painting & Staining
+            </h2>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+              "
+            >
+              Boost your property's curb appeal and protect your siding from
+              moisture, rot, and UV damage. Our exterior painting partners
+              specialize in wood, stucco, brick, vinyl, and metal surfaces.
+            </p>
+            <ul
+              class="benefits-list"
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+              "
+            >
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ High-pressure power washing & surface cleaning
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ Professional scraping, caulking, and priming
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ Long-lasting, fade-resistant exterior finishes
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Commercial Painting Section with Side-by-Side Image -->
+        <div
+          id="commercial"
+          class="about-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 5rem;
+          "
+        >
+          <!-- Left Column: Text & Benefits List -->
+          <div class="about-text">
+            <span
+              class="badge"
+              style="
+                background: #eff6ff;
+                color: var(--primary);
+                padding: 0.4rem 1rem;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                display: inline-block;
+                margin-bottom: 1.25rem;
+                border: 1px solid rgba(0, 102, 255, 0.2);
+              "
+              >Business Solutions</span
+            >
+            <h2
+              style="
+                font-size: 2.25rem;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 1rem;
+              "
+            >
+              Commercial Painting Services
+            </h2>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+              "
+            >
+              Keep your office building, retail storefront, or multi-family
+              property looking professional and welcoming to clients. We connect
+              business owners with contractors who offer flexible scheduling
+              (including after-hours and weekends) to avoid business disruption.
+            </p>
+            <ul
+              class="benefits-list"
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+              "
+            >
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ Minimal disruption to daily business operations
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ Industrial-grade coatings and epoxy flooring options
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ Strict compliance with safety standards
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Highlight Box & Side-by-Side Image -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem">
+            <div
+              class="about-highlight-box"
+              style="
+                background: var(--bg-light);
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                padding: 2rem;
+                box-shadow: var(--shadow-sm);
+              "
+            >
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Commercial Reliability
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.95rem;
+                  line-height: 1.6;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                Fully insured and certified crews capable of managing
+                large-scale commercial square footage with strict timeline
+                adherence.
+              </p>
+              <a
+                href="index.html#homeownerLeadForm"
+                class="btn-primary"
+                style="
+                  background: var(--primary);
+                  color: var(--white);
+                  padding: 0.85rem 1.5rem;
+                  border-radius: var(--radius);
+                  font-weight: 700;
+                  text-decoration: none;
+                  display: block;
+                  text-align: center;
+                  box-shadow: var(--shadow-sm);
+                "
+                >Get Commercial Quote</a
+              >
+            </div>
+
+            <!-- Side-by-Side Image Showcase -->
+            <div
+              style="
+                overflow: hidden;
+                border-radius: var(--radius);
+                border: 1px solid var(--border);
+                box-shadow: var(--shadow-sm);
+              "
+            >
+              <img
+                src="images/commercial-painting-services..jpg"
+                alt="Commercial Painting Service"
+                style="
+                  width: 100%;
+                  height: 220px;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Cabinet Refinishing Section with Side-by-Side Image -->
+        <div
+          id="cabinets"
+          class="about-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 5rem;
+          "
+        >
+          <!-- Left Column: Highlight Box & Side-by-Side Image -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem">
+            <div
+              class="about-highlight-box"
+              style="
+                background: var(--bg-light);
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                padding: 2rem;
+                box-shadow: var(--shadow-sm);
+              "
+            >
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                A Cost-Effective Kitchen Upgrade
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.95rem;
+                  line-height: 1.6;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                Instead of expensive full-scale kitchen renovations, expert
+                cabinet refinishing gives your cabinets a factory-smooth,
+                durable finish at a fraction of the cost.
+              </p>
+              <a
+                href="index.html#homeownerLeadForm"
+                class="btn-primary"
+                style="
+                  background: var(--primary);
+                  color: var(--white);
+                  padding: 0.85rem 1.5rem;
+                  border-radius: var(--radius);
+                  font-weight: 700;
+                  text-decoration: none;
+                  display: block;
+                  text-align: center;
+                  box-shadow: var(--shadow-sm);
+                "
+                >Get Cabinet Quote</a
+              >
+            </div>
+
+            <!-- Side-by-Side Image Showcase -->
+            <div
+              style="
+                overflow: hidden;
+                border-radius: var(--radius);
+                border: 1px solid var(--border);
+                box-shadow: var(--shadow-sm);
+              "
+            >
+              <img
+                src="images/cabinet-refinishing-&-spraying.jpg"
+                alt="Cabinet Refinishing Service"
+                style="
+                  width: 100%;
+                  height: 220px;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+
+          <!-- Right Column: Text & Benefits List -->
+          <div class="about-text">
+            <span
+              class="badge"
+              style="
+                background: #eff6ff;
+                color: var(--primary);
+                padding: 0.4rem 1rem;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                display: inline-block;
+                margin-bottom: 1.25rem;
+                border: 1px solid rgba(0, 102, 255, 0.2);
+              "
+              >Specialized Craftsmanship</span
+            >
+            <h2
+              style="
+                font-size: 2.25rem;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 1rem;
+              "
+            >
+              Cabinet Refinishing & Spraying
+            </h2>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+              "
+            >
+              Revitalize your kitchen or bathroom cabinets with professional
+              spraying techniques. Our specialists remove doors, degrease, sand,
+              apply industrial primer, and spray multiple coats for a flawless,
+              factory-grade finish that resists chipping and wear.
+            </p>
+            <ul
+              class="benefits-list"
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+              "
+            >
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ Durable conversion varnish or enamel coatings
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ Huge cost savings compared to replacement
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.95rem"
+              >
+                ✓ Wide selection of custom color options
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Drywall Repair, Filling & Skim Coating Section -->
+        <div
+          id="drywall"
+          class="about-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 5rem;
+          "
+        >
+          <!-- Left Column: Text & Services List -->
+          <div class="about-text">
+            <span
+              class="badge"
+              style="
+                background: #eff6ff;
+                color: var(--primary);
+                padding: 0.4rem 1rem;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                display: inline-block;
+                margin-bottom: 1.25rem;
+                border: 1px solid rgba(0, 102, 255, 0.2);
+              "
+              >Surface Preparation</span
+            >
+            <h2
+              style="
+                font-size: 2.25rem;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 1rem;
+              "
+            >
+              Thorough Drywall Repair, Filling & Skim Coating
+            </h2>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+              "
+            >
+              A flawless paint job starts beneath the surface. Our professionals
+              repair holes, cracks, dents and damaged drywall, tape seams and
+              apply professional skim coating to create smooth, uniform walls
+              ready for primer and paint.
+            </p>
+            <ul
+              class="benefits-list"
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+              "
+            >
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.9rem"
+              >
+                ✓ Hole repair
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.9rem"
+              >
+                ✓ Crack repair
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.9rem"
+              >
+                ✓ Joint/seam repair
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.9rem"
+              >
+                ✓ Skim coating
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.9rem"
+              >
+                ✓ Sanding
+              </li>
+              <li
+                style="color: var(--dark); font-weight: 600; font-size: 0.9rem"
+              >
+                ✓ Surface preparation
+              </li>
+              <li
+                style="
+                  color: var(--dark);
+                  font-weight: 600;
+                  font-size: 0.9rem;
+                  grid-column: span 2;
+                "
+              >
+                ✓ Water-damaged drywall repair
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Highlight Box & Side-by-Side Image -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem">
+            <div
+              class="about-highlight-box"
+              style="
+                background: var(--bg-light);
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                padding: 2rem;
+                box-shadow: var(--shadow-sm);
+              "
+            >
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.75rem;
+                "
+              >
+                Flawless Wall Foundations
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.95rem;
+                  line-height: 1.6;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                Eliminate visible imperfections and uneven textures before
+                coating. Expert skimming ensures your final paint layer catches
+                the light seamlessly.
+              </p>
+              <a
+                href="index.html#homeownerLeadForm"
+                class="btn-primary"
+                style="
+                  background: var(--primary);
+                  color: var(--white);
+                  padding: 0.85rem 1.5rem;
+                  border-radius: var(--radius);
+                  font-weight: 700;
+                  text-decoration: none;
+                  display: block;
+                  text-align: center;
+                  box-shadow: var(--shadow-sm);
+                "
+                >Get Drywall Quote</a
+              >
+            </div>
+
+            <!-- Side-by-Side Image Showcase -->
+            <div
+              style="
+                overflow: hidden;
+                border-radius: var(--radius);
+                border: 1px solid var(--border);
+                box-shadow: var(--shadow-sm);
+              "
+            >
+              <img
+                src="images/thorough-drywall-repair-filling-&-skim-coating...jpg"
+                alt="Drywall Repair and Skim Coating Service"
+                style="
+                  width: 100%;
+                  height: 220px;
+                  object-fit: cover;
+                  display: block;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Why Professional Painting Matters Section -->
+    <section
+  class="services-showcase-section"
+  style="
+    padding: clamp(4rem, 8vw, 7rem) 0;
+    background: var(--white, #ffffff);
+    border-top: 1px solid var(--border, #e2e8f0);
+    border-bottom: 1px solid var(--border, #e2e8f0);
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  "
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1rem; width: 100%; box-sizing: border-box;"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: clamp(2.5rem, 5vw, 4rem); padding: 0 0.5rem;"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.35rem 1rem;
+          border-radius: 50px;
+          font-size: 0.75rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Comprehensive Solutions</span
+      >
+      <h2
+        style="
+          font-size: clamp(2rem, 5vw, 2.75rem);
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 0.75rem;
+          letter-spacing: -0.02em;
+          line-height: 1.2;
+        "
+      >
+        Specialised Painting &amp; Coating Services
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: clamp(1rem, 2vw, 1.15rem);
+          max-width: 750px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        From protective elastomeric coatings for harsh weather to premium interior finishes, discover our full spectrum of professional painting solutions tailored for your property.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      "
+    >
+      <!-- Service Card 1: Exterior & Elastomeric -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div>
+          <div
+            style="
+              background: #eff6ff;
+              color: var(--primary, #0066ff);
+              width: 48px;
+              height: 48px;
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 1.25rem;
+              font-weight: 700;
+              margin-bottom: 1.25rem;
+              border: 1px solid rgba(0, 102, 255, 0.15);
+            "
+          >
+            01
+          </div>
+          <h3
+            style="
+              font-size: 1.25rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin-bottom: 0.75rem;
+              letter-spacing: -0.01em;
+            "
+          >
+            Exterior &amp; Elastomeric Coatings
+          </h3>
+          <p
+            style="
+              color: var(--gray-light, #64748b);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin: 0 0 1.5rem 0;
+            "
+          >
+            Weatherproof your building envelope with high-build elastomeric wall coatings designed to bridge hairline cracks and resist moisture penetration.
+          </p>
+        </div>
+        <a
+          href="#exterior-coatings"
+          style="
+            color: var(--primary, #0066ff);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+          "
+        >
+          Explore Exterior Solutions &rarr;
+        </a>
+      </div>
+
+      <!-- Service Card 2: Interior Finishes -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div>
+          <div
+            style="
+              background: #eff6ff;
+              color: var(--primary, #0066ff);
+              width: 48px;
+              height: 48px;
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 1.25rem;
+              font-weight: 700;
+              margin-bottom: 1.25rem;
+              border: 1px solid rgba(0, 102, 255, 0.15);
+            "
+          >
+            02
+          </div>
+          <h3
+            style="
+              font-size: 1.25rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin-bottom: 0.75rem;
+              letter-spacing: -0.01em;
+            "
+          >
+            Premium Interior Painting
+          </h3>
+          <p
+            style="
+              color: var(--gray-light, #64748b);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin: 0 0 1.5rem 0;
+            "
+          >
+            Transform your living and working spaces with immaculate wall preparation, crisp trim lines, and durable, washable designer finishes.
+          </p>
+        </div>
+        <a
+          href="#interior-painting"
+          style="
+            color: var(--primary, #0066ff);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+          "
+        >
+          Explore Interior Finishes &rarr;
+        </a>
+      </div>
+
+      <!-- Service Card 3: Cabinet & Wood Refinishing -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div>
+          <div
+            style="
+              background: #eff6ff;
+              color: var(--primary, #0066ff);
+              width: 48px;
+              height: 48px;
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 1.25rem;
+              font-weight: 700;
+              margin-bottom: 1.25rem;
+              border: 1px solid rgba(0, 102, 255, 0.15);
+            "
+          >
+            03
+          </div>
+          <h3
+            style="
+              font-size: 1.25rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin-bottom: 0.75rem;
+              letter-spacing: -0.01em;
+            "
+          >
+            Cabinet Refinishing &amp; HVLP Spraying
+          </h3>
+          <p
+            style="
+              color: var(--gray-light, #64748b);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin: 0 0 1.5rem 0;
+            "
+          >
+            Achieve a factory-smooth finish on kitchen cabinets, built-ins, and woodwork using advanced HVLP spray application techniques.
+          </p>
+        </div>
+        <a
+          href="#cabinet-refinishing"
+          style="
+            color: var(--primary, #0066ff);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+          "
+        >
+          Explore Spray Services &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Our Painting Process Section with Side-by-Side Visual Anchor -->
+    <section
+      class="painting-process-section"
+      style="padding: 6rem 0; background: var(--white)"
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <!-- Section Header -->
+        <div
+          class="section-title"
+          style="text-align: center; margin-bottom: 4rem"
+        >
+          <span
+            class="badge"
+            style="
+              background: #eff6ff;
+              color: var(--primary);
+              padding: 0.4rem 1rem;
+              border-radius: 50px;
+              font-size: 0.85rem;
+              font-weight: 700;
+              display: inline-block;
+              margin-bottom: 1.25rem;
+              border: 1px solid rgba(0, 102, 255, 0.2);
+            "
+            >Our Painting Process</span
+          >
+          <h2
+            style="
+              font-size: 2.5rem;
+              font-weight: 800;
+              color: var(--primary);
+              margin-bottom: 0.75rem;
+            "
+          >
+            A Simpler Way to Get Your Project Done
+          </h2>
+          <p
+            style="
+              color: var(--gray-light);
+              font-size: 1.1rem;
+              max-width: 650px;
+              margin: 0 auto;
+              line-height: 1.6;
+            "
+          >
+            Discover our transparent lead-generation network designed to connect
+            property owners with elite local professionals effortlessly.
+          </p>
+        </div>
+
+        <!-- Featured Banner Image -->
+        <div
+          style="
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 4rem;
+          "
+        >
+          <img
+            src="images/homeowner-consulting-with-the-painter.jpg"
+            alt="Homeowner consulting with painting professional"
+            style="
+              width: 100%;
+              height: 350px;
+              object-fit: cover;
+              display: block;
+            "
+          />
+          <div
+            style="
+              position: absolute;
+              inset: 0;
+              background: linear-gradient(
+                to right,
+                rgba(15, 23, 42, 0.8),
+                rgba(15, 23, 42, 0.3)
+              );
+              display: flex;
+              align-items: center;
+              padding: 3rem;
+            "
+          >
+            <div style="max-width: 600px; color: var(--white)">
+              <h3
+                style="
+                  font-size: 1.75rem;
+                  font-weight: 700;
+                  margin-bottom: 0.75rem;
+                  color: var(--white);
+                "
+              >
+                Seamless Collaboration from Start to Finish
+              </h3>
+              <p
+                style="
+                  font-size: 1rem;
+                  color: #cbd5e1;
+                  margin: 0;
+                  line-height: 1.6;
+                "
+              >
+                We eliminate the stress of searching for reliable contractors by
+                bringing vetted professionals directly to your doorstep.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Grid (5 Steps) -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+          "
+        >
+          <!-- Step 1 -->
+          <div
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              padding: 2rem 1.5rem;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              position: relative;
+            "
+          >
+            <div>
+              <div
+                style="
+                  color: var(--primary);
+                  font-size: 1.5rem;
+                  font-weight: 800;
+                  margin-bottom: 1rem;
+                "
+              >
+                01
+              </div>
+              <h3
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Tell Us About Your Project
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.85rem;
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                Submit a few details about your property and what you need
+                painted.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              padding: 2rem 1.5rem;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              position: relative;
+            "
+          >
+            <div>
+              <div
+                style="
+                  color: var(--primary);
+                  font-size: 1.5rem;
+                  font-weight: 800;
+                  margin-bottom: 1rem;
+                "
+              >
+                02
+              </div>
+              <h3
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Get Matched
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.85rem;
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                We connect your request with suitable local painting
+                professionals.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              padding: 2rem 1.5rem;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              position: relative;
+            "
+          >
+            <div>
+              <div
+                style="
+                  color: var(--primary);
+                  font-size: 1.5rem;
+                  font-weight: 800;
+                  margin-bottom: 1rem;
+                "
+              >
+                03
+              </div>
+              <h3
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Compare Your Options
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.85rem;
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                Discuss your project requirements, scope and pricing directly
+                with the professionals.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              padding: 2rem 1.5rem;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              position: relative;
+            "
+          >
+            <div>
+              <div
+                style="
+                  color: var(--primary);
+                  font-size: 1.5rem;
+                  font-weight: 800;
+                  margin-bottom: 1rem;
+                "
+              >
+                04
+              </div>
+              <h3
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--dark);
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Choose Your Painter
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.85rem;
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                Select the professional that best fits your project.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div
+            style="
+              background: var(--bg-light);
+              border: 1px solid var(--border);
+              border-radius: var(--radius);
+              padding: 2rem 1.5rem;
+              box-shadow: var(--shadow-sm);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              position: relative;
+            "
+          >
+            <div>
+              <div
+                style="
+                  color: var(--primary);
+                  font-size: 1.5rem;
+                  font-weight: 800;
+                  margin-bottom: 1rem;
+                "
+              >
+                05
+              </div>
+              <h3
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--primary);
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Transform Your Space
+              </h3>
+              <p
+                style="
+                  color: var(--gray-dark);
+                  font-size: 0.85rem;
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                Your selected painting professional completes the work according
+                to the agreed scope.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Before & After Showcase Section -->
+   <section
+  class="before-after-section"
+  style="
+    padding: clamp(4rem, 8vw, 7rem) 0;
+    background: var(--bg-light, #f8fafc);
+    border-top: 1px solid var(--border, #e2e8f0);
+    border-bottom: 1px solid var(--border, #e2e8f0);
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  "
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1rem; width: 100%; box-sizing: border-box;"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: clamp(2.5rem, 5vw, 4rem); padding: 0 0.5rem;"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.35rem 1rem;
+          border-radius: 50px;
+          font-size: 0.75rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Visual Results</span
+      >
+      <h2
+        style="
+          font-size: clamp(2rem, 5vw, 2.75rem);
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 0.75rem;
+          letter-spacing: -0.02em;
+          line-height: 1.2;
+        "
+      >
+        See the Difference Professional Painting Makes
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: clamp(1rem, 2vw, 1.15rem);
+          max-width: 750px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        Explore dramatic transformations delivered by our vetted network of local painting and surface restoration professionals.
+      </p>
+    </div>
+
+    <!-- Showcase Grid -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      "
+    >
+      <!-- Card 1: Living Room Transformation -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+          "
+        >
+          <!-- Before Image -->
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-right: 2px solid var(--white, #ffffff);
+            "
+          >
+            <img
+              src="path-to-living-room-before.jpg"
+              alt="Living Room Before Transformation"
+              style="
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
+                display: block;
+              "
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                left: 0.75rem;
+                background: rgba(15, 23, 42, 0.75);
+                color: var(--white, #ffffff);
+                padding: 0.2rem 0.6rem;
+                border-radius: 4px;
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+              >Before</span
+            >
+          </div>
+          <!-- After Image -->
+          <div style="position: relative; overflow: hidden">
+            <img
+              src="path-to-living-room-after.jpg"
+              alt="Living Room After Transformation"
+              style="
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
+                display: block;
+              "
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                right: 0.75rem;
+                background: var(--primary, #0066ff);
+                color: var(--white, #ffffff);
+                padding: 0.2rem 0.6rem;
+                border-radius: 4px;
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+              >After</span
+            >
+          </div>
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+          <h3
+            style="
+              font-size: 1.15rem;
+              font-weight: 700;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.35rem;
+            "
+          >
+            Living Room Transformation
+          </h3>
+          <p
+            style="color: var(--gray-dark, #1e293b); font-size: 0.9rem; margin: 0; line-height: 1.5;"
+          >
+            Complete interior refresh with flawless trim work and crisp modern wall colors.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2: Exterior Refresh -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+          "
+        >
+          <!-- Before Image -->
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-right: 2px solid var(--white, #ffffff);
+            "
+          >
+            <img
+              src="path-to-exterior-before.jpg"
+              alt="Exterior Before Transformation"
+              style="
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
+                display: block;
+              "
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                left: 0.75rem;
+                background: rgba(15, 23, 42, 0.75);
+                color: var(--white, #ffffff);
+                padding: 0.2rem 0.6rem;
+                border-radius: 4px;
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+              >Before</span
+            >
+          </div>
+          <!-- After Image -->
+          <div style="position: relative; overflow: hidden">
+            <img
+              src="path-to-exterior-after.jpg"
+              alt="Exterior After Transformation"
+              style="
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
+                display: block;
+              "
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                right: 0.75rem;
+                background: var(--primary, #0066ff);
+                color: var(--white, #ffffff);
+                padding: 0.2rem 0.6rem;
+                border-radius: 4px;
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+              >After</span
+            >
+          </div>
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+          <h3
+            style="
+              font-size: 1.15rem;
+              font-weight: 700;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.35rem;
+            "
+          >
+            Exterior Refresh
+          </h3>
+          <p
+            style="color: var(--gray-dark, #1e293b); font-size: 0.9rem; margin: 0; line-height: 1.5;"
+          >
+            Power washed, professionally primed, and coated with weather-resistant finishes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3: Cabinet Makeover -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+          "
+        >
+          <!-- Before Image -->
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-right: 2px solid var(--white, #ffffff);
+            "
+          >
+            <img
+              src="path-to-cabinet-before.jpg"
+              alt="Cabinet Before Transformation"
+              style="
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
+                display: block;
+              "
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                left: 0.75rem;
+                background: rgba(15, 23, 42, 0.75);
+                color: var(--white, #ffffff);
+                padding: 0.2rem 0.6rem;
+                border-radius: 4px;
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+              >Before</span
+            >
+          </div>
+          <!-- After Image -->
+          <div style="position: relative; overflow: hidden">
+            <img
+              src="path-to-cabinet-after.jpg"
+              alt="Cabinet After Transformation"
+              style="
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
+                display: block;
+              "
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                right: 0.75rem;
+                background: var(--primary, #0066ff);
+                color: var(--white, #ffffff);
+                padding: 0.2rem 0.6rem;
+                border-radius: 4px;
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+              >After</span
+            >
+          </div>
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+          <h3
+            style="
+              font-size: 1.15rem;
+              font-weight: 700;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.35rem;
+            "
+          >
+            Cabinet Makeover
+          </h3>
+          <p
+            style="color: var(--gray-dark, #1e293b); font-size: 0.9rem; margin: 0; line-height: 1.5;"
+          >
+            Factory-smooth sprayed conversion varnish yielding an upscale kitchen upgrade.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4: Commercial Property -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          display: flex;
+          flex-direction: column;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+          "
+        >
+          <!-- Before Image -->
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-right: 2px solid var(--white, #ffffff);
+            "
+          >
+            <img
+              src="path-to-commercial-before.jpg"
+              alt="Commercial Property Before Transformation"
+              style="
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
+                display: block;
+              "
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                left: 0.75rem;
+                background: rgba(15, 23, 42, 0.75);
+                color: var(--white, #ffffff);
+                padding: 0.2rem 0.6rem;
+                border-radius: 4px;
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+              >Before</span
+            >
+          </div>
+          <!-- After Image -->
+          <div style="position: relative; overflow: hidden">
+            <img
+              src="path-to-commercial-after.jpg"
+              alt="Commercial Property After Transformation"
+              style="
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
+                display: block;
+              "
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                right: 0.75rem;
+                background: var(--primary, #0066ff);
+                color: var(--white, #ffffff);
+                padding: 0.2rem 0.6rem;
+                border-radius: 4px;
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+              "
+              >After</span
+            >
+          </div>
+        </div>
+        <div style="padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+          <h3
+            style="
+              font-size: 1.15rem;
+              font-weight: 700;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.35rem;
+            "
+          >
+            Commercial Property
+          </h3>
+          <p
+            style="color: var(--gray-dark, #1e293b); font-size: 0.9rem; margin: 0; line-height: 1.5;"
+          >
+            Large-scale office exterior coating executed with zero business downtime.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- View Full Gallery Call to Action -->
+    <div style="text-align: center">
+      <a
+        href="gallery.html"
+        style="
+          color: var(--primary, #0066ff);
+          font-size: 1.05rem;
+          font-weight: 700;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+        "
+      >
+        View Full Gallery <span style="font-size: 1.2rem">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+    <!-- Surface Preparation Section -->
+   <section
+  class="services-grid-section"
+  style="
+    padding: clamp(4rem, 8vw, 7rem) 0;
+    background: var(--white, #ffffff);
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  "
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1rem; width: 100%; box-sizing: border-box;"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: clamp(2.5rem, 5vw, 4rem); padding: 0 0.5rem;"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.35rem 1rem;
+          border-radius: 50px;
+          font-size: 0.75rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Our Core Services</span
+      >
+      <h2
+        style="
+          font-size: clamp(2rem, 5vw, 2.75rem);
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 0.75rem;
+          letter-spacing: -0.02em;
+          line-height: 1.2;
+        "
+      >
+        Comprehensive Painting & Restoration Solutions
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: clamp(1rem, 2vw, 1.15rem);
+          max-width: 750px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        From custom residential interiors to heavy-duty commercial surface coatings, we deliver enduring quality built to last.
+      </p>
+    </div>
+
+    <!-- Services Cards Grid -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      "
+    >
+      <!-- Card 1: Interior Painting -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          padding: 2.25rem 2rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div>
+          <div
+            style="
+              width: 50px;
+              height: 50px;
+              background: #eff6ff;
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 1.5rem;
+              color: var(--primary, #0066ff);
+              font-weight: 800;
+              font-size: 1.25rem;
+            "
+          >
+            01
+          </div>
+          <h3
+            style="
+              font-size: 1.25rem;
+              font-weight: 700;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Interior Painting
+          </h3>
+          <p
+            style="
+              color: var(--gray-dark, #1e293b);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin: 0 0 1.5rem 0;
+            "
+          >
+            Revitalize your living spaces, ceilings, and trim work with crisp lines, premium zero-VOC paints, and meticulous protection for your belongings.
+          </p>
+        </div>
+        <a
+          href="#contact"
+          style="
+            color: var(--primary, #0066ff);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+          "
+        >
+          Learn More <span>&rarr;</span>
+        </a>
+      </div>
+
+      <!-- Card 2: Exterior Painting -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          padding: 2.25rem 2rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div>
+          <div
+            style="
+              width: 50px;
+              height: 50px;
+              background: #eff6ff;
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 1.5rem;
+              color: var(--primary, #0066ff);
+              font-weight: 800;
+              font-size: 1.25rem;
+            "
+          >
+            02
+          </div>
+          <h3
+            style="
+              font-size: 1.25rem;
+              font-weight: 700;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Exterior Painting
+          </h3>
+          <p
+            style="
+              color: var(--gray-dark, #1e293b);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin: 0 0 1.5rem 0;
+            "
+          >
+            Protect your property from harsh weather elements with industrial-grade weatherproofing, expert pressure washing, and durable elastomeric coatings.
+          </p>
+        </div>
+        <a
+          href="#contact"
+          style="
+            color: var(--primary, #0066ff);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+          "
+        >
+          Learn More <span>&rarr;</span>
+        </a>
+      </div>
+
+      <!-- Card 3: Cabinet Refinishing -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          padding: 2.25rem 2rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div>
+          <div
+            style="
+              width: 50px;
+              height: 50px;
+              background: #eff6ff;
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 1.5rem;
+              color: var(--primary, #0066ff);
+              font-weight: 800;
+              font-size: 1.25rem;
+            "
+          >
+            03
+          </div>
+          <h3
+            style="
+              font-size: 1.25rem;
+              font-weight: 700;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Cabinet Refinishing
+          </h3>
+          <p
+            style="
+              color: var(--gray-dark, #1e293b);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin: 0 0 1.5rem 0;
+            "
+          >
+            Transform your kitchen or bathroom cabinets with factory-smooth sprayed conversion varnishes, offering a luxury look at a fraction of replacement costs.
+          </p>
+        </div>
+        <a
+          href="#contact"
+          style="
+            color: var(--primary, #0066ff);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+          "
+        >
+          Learn More <span>&rarr;</span>
+        </a>
+      </div>
+
+      <!-- Card 4: Commercial Coatings -->
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          padding: 2.25rem 2rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div>
+          <div
+            style="
+              width: 50px;
+              height: 50px;
+              background: #eff6ff;
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 1.5rem;
+              color: var(--primary, #0066ff);
+              font-weight: 800;
+              font-size: 1.25rem;
+            "
+          >
+            04
+          </div>
+          <h3
+            style="
+              font-size: 1.25rem;
+              font-weight: 700;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Commercial Coatings
+          </h3>
+          <p
+            style="
+              color: var(--gray-dark, #1e293b);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin: 0 0 1.5rem 0;
+            "
+          >
+            Large-scale painting services for offices, retail storefronts, and industrial facilities executed with flexible scheduling to ensure zero business downtime.
+          </p>
+        </div>
+        <a
+          href="#contact"
+          style="
+            color: var(--primary, #0066ff);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+          "
+        >
+          Learn More <span>&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Residential vs Commercial Split Section -->
+<section
+  class="residential-commercial-section"
+  style="
+    padding: clamp(4rem, 8vw, 7rem) 0;
+    background: var(--bg-light, #f8fafc);
+    border-top: 1px solid var(--border, #e2e8f0);
+    border-bottom: 1px solid var(--border, #e2e8f0);
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  "
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1rem; width: 100%; box-sizing: border-box;"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: clamp(2.5rem, 5vw, 4rem); padding: 0 0.5rem;"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.35rem 1rem;
+          border-radius: 50px;
+          font-size: 0.75rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Property Solutions</span
+      >
+      <h2
+        style="
+          font-size: clamp(2rem, 5vw, 2.75rem);
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 0.75rem;
+          letter-spacing: -0.02em;
+          line-height: 1.2;
+        "
+      >
+        Residential vs Commercial
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: clamp(1rem, 2vw, 1.15rem);
+          max-width: 650px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        Tailored professional coating and painting networks built for every scale of property.
+      </p>
+    </div>
+
+    <!-- Split Grid Layout -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      "
+    >
+      <!-- Residential Card -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          padding: 2.25rem 2rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div>
+          <div
+            style="
+              width: 50px;
+              height: 50px;
+              background: #eff6ff;
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 1.5rem;
+              color: var(--primary, #0066ff);
+              font-size: 1.5rem;
+            "
+          >
+            
+          </div>
+          <h3
+            style="
+              font-size: 1.5rem;
+              font-weight: 800;
+              color: var(--dark, #0f172a);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Residential Projects
+          </h3>
+          <p
+            style="
+              color: var(--gray-dark, #334155);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin-bottom: 1.75rem;
+            "
+          >
+            Refresh a single room, transform an entire home or update your property's exterior with absolute precision and care.
+          </p>
+
+          <div
+            style="
+              font-weight: 700;
+              color: var(--dark, #0f172a);
+              font-size: 0.85rem;
+              margin-bottom: 0.75rem;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+            "
+          >
+            Ideal for:
+          </div>
+          <ul
+            style="
+              list-style: none;
+              padding: 0;
+              margin: 0 0 2rem 0;
+              display: flex;
+              flex-direction: column;
+              gap: 0.6rem;
+            "
+          >
+            <li style="color: var(--gray-dark, #334155); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff); font-weight: 700">✓</span> Homeowners
+            </li>
+            <li style="color: var(--gray-dark, #334155); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff); font-weight: 700">✓</span> Landlords
+            </li>
+            <li style="color: var(--gray-dark, #334155); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff); font-weight: 700">✓</span> Property investors
+            </li>
+            <li style="color: var(--gray-dark, #334155); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff); font-weight: 700">✓</span> Residential estates
+            </li>
+            <li style="color: var(--gray-dark, #334155); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff); font-weight: 700">✓</span> Renovation projects
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href="residential.html"
+          style="
+            color: var(--primary, #0066ff);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+          "
+        >
+          Explore Residential <span style="font-size: 1.1rem">&rarr;</span>
+        </a>
+      </div>
+
+      <!-- Commercial Card -->
+      <div
+        style="
+          background: var(--white, #ffffff);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          padding: 2.25rem 2rem;
+          box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        "
+        onmouseover="this.style.transform = 'translateY(-4px)'; this.style.boxShadow = '0 12px 24px rgba(0,102,255,0.08)';"
+        onmouseout="this.style.transform = 'translateY(0)'; this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.02)';"
+      >
+        <div>
+          <div
+            style="
+              width: 50px;
+              height: 50px;
+              background: #eff6ff;
+              border-radius: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 1.5rem;
+              color: var(--primary, #0066ff);
+              font-size: 1.5rem;
+            "
+          >
+            
+          </div>
+          <h3
+            style="
+              font-size: 1.5rem;
+              font-weight: 800;
+              color: var(--dark, #0f172a);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Commercial Projects
+          </h3>
+          <p
+            style="
+              color: var(--gray-dark, #334155);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin-bottom: 1.75rem;
+            "
+          >
+            Professional painting solutions designed around business schedules, property requirements and larger-scale enterprise projects.
+          </p>
+
+          <div
+            style="
+              font-weight: 700;
+              color: var(--dark, #0f172a);
+              font-size: 0.85rem;
+              margin-bottom: 0.75rem;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+            "
+          >
+            Ideal for:
+          </div>
+          <ul
+            style="
+              list-style: none;
+              padding: 0;
+              margin: 0 0 2rem 0;
+              display: flex;
+              flex-direction: column;
+              gap: 0.6rem;
+            "
+          >
+            <li style="color: var(--gray-dark, #334155); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff); font-weight: 700">✓</span> Offices
+            </li>
+            <li style="color: var(--gray-dark, #334155); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff); font-weight: 700">✓</span> Retail properties
+            </li>
+            <li style="color: var(--gray-dark, #334155); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff); font-weight: 700">✓</span> Restaurants
+            </li>
+            <li style="color: var(--gray-dark, #334155); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff); font-weight: 700">✓</span> Apartment buildings
+            </li>
+            <li style="color: var(--gray-dark, #334155); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff); font-weight: 700">✓</span> Warehouses
+            </li>
+            <li style="color: var(--gray-dark, #334155); font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--primary, #0066ff); font-weight: 700">✓</span> Property developments
+            </li>
+          </ul>
+        </div>
+
+        <a
+          href="commercial.html"
+          style="
+            color: var(--primary, #0066ff);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+          "
+        >
+          Explore Commercial <span style="font-size: 1.1rem">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- What We Paint Section with Side Image Layout -->
+   <section
+  class="what-we-paint-section"
+  style="padding: 4rem 0; background: var(--white)"
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: 3rem;"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary);
+          padding: 0.4rem 1rem;
+          border-radius: 50px;
+          font-size: 0.85rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+        "
+        >Comprehensive Coverage</span
+      >
+      <h2
+        style="
+          font-size: clamp(2rem, 4vw, 2.5rem);
+          font-weight: 800;
+          color: var(--dark);
+          margin-bottom: 0.75rem;
+        "
+      >
+        From Walls to Complete Properties
+      </h2>
+      <p
+        style="
+          color: var(--gray-light);
+          font-size: 1rem;
+          max-width: 650px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        Explore our wide-ranging professional painting capabilities tailored
+        for every surface of your home or commercial building.
+      </p>
+    </div>
+
+    <!-- Main Responsive Layout Container -->
+    <div
+      class="what-we-paint-grid"
+      style="
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      "
+    >
+      <!-- Left Column: Featured Professional Painting Image -->
+      <div
+        style="
+          position: relative;
+          border-radius: var(--radius);
+          overflow: hidden;
+          box-shadow: var(--shadow-sm);
+          border: 1px solid var(--border);
+          min-height: 350px;
+          display: flex;
+        "
+      >
+        <img
+          src="images/precision-surface-coverage.jpg"
+          alt="Professional Painter at Work"
+          style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          "
+        />
+        <div
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(
+              to top,
+              rgba(15, 23, 42, 0.85),
+              transparent
+            );
+            padding: 2rem 1.5rem 1.5rem;
+            color: var(--white);
+          "
+        >
+          <span
+            style="
+              background: var(--primary);
+              color: var(--white);
+              padding: 0.2rem 0.6rem;
+              border-radius: 4px;
+              font-size: 0.7rem;
+              font-weight: 700;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              display: inline-block;
+              margin-bottom: 0.5rem;
+            "
+            >Expert Execution</span
+          >
+          <h3
+            style="
+              font-size: 1.25rem;
+              font-weight: 700;
+              margin: 0 0 0.25rem 0;
+              color: var(--white);
+            "
+          >
+            Precision Surface Coverage
+          </h3>
+          <p
+            style="
+              font-size: 0.85rem;
+              margin: 0;
+              color: rgba(255, 255, 255, 0.8);
+              line-height: 1.4;
+            "
+          >
+            Delivering seamless lines and durable protective coats across
+            all architectural elements.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Column: Cards Grid Wrapper -->
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 1.5rem;
+        "
+      >
+        <!-- Interior Card -->
+        <div
+          style="
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: #eff6ff;
+                color: var(--primary);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1rem;
+                border: 1px solid rgba(0, 102, 255, 0.15);
+              "
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <h3
+              style="
+                font-size: 1.15rem;
+                font-weight: 800;
+                color: var(--dark);
+                margin-bottom: 1rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Interior
+            </h3>
+
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+              "
+            >
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Walls
+              </li>
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Ceilings
+              </li>
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Doors
+              </li>
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Trim
+              </li>
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Baseboards
+              </li>
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Cabinets
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Exterior Card -->
+        <div
+          style="
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: #eff6ff;
+                color: var(--primary);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1rem;
+                border: 1px solid rgba(0, 102, 255, 0.15);
+              "
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M2 20h20" />
+                <path d="M5 20V8h14v12" />
+                <path d="M10 20v-6h4v6" />
+              </svg>
+            </div>
+            <h3
+              style="
+                font-size: 1.15rem;
+                font-weight: 800;
+                color: var(--dark);
+                margin-bottom: 1rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Exterior
+            </h3>
+
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+              "
+            >
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Siding
+              </li>
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Stucco
+              </li>
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Brick
+              </li>
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Wood
+              </li>
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Fascia
+              </li>
+              <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="color: var(--primary); font-weight: 700">✓</span> Soffits
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Specialty Card -->
+        <div
+          style="
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            grid-column: 1 / -1;
+          "
+        >
+          <div>
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                background: #eff6ff;
+                color: var(--primary);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1rem;
+                border: 1px solid rgba(0, 102, 255, 0.15);
+              "
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 2v20" />
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+              </svg>
+            </div>
+            <h3
+              style="
+                font-size: 1.15rem;
+                font-weight: 800;
+                color: var(--dark);
+                margin-bottom: 1rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid var(--border);
+              "
+            >
+              Specialty
+            </h3>
+
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+                gap: 0.5rem;
+              "
+            >
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;"><span style="color: var(--primary); font-weight: 700">✓</span> Decks</li>
+                <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;"><span style="color: var(--primary); font-weight: 700">✓</span> Fences</li>
+              </ul>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;"><span style="color: var(--primary); font-weight: 700">✓</span> Garages</li>
+                <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;"><span style="color: var(--primary); font-weight: 700">✓</span> Cabinets</li>
+              </ul>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;"><span style="color: var(--primary); font-weight: 700">✓</span> Concrete</li>
+                <li style="color: var(--gray-dark); font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem;"><span style="color: var(--primary); font-weight: 700">✓</span> Metal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Responsive CSS Breakpoint Setup -->
+  <style>
+    @media (min-width: 992px) {
+      .what-we-paint-grid {
+        grid-template-columns: 1fr 1.6fr !important;
+        gap: 3rem !important;
+      }
+    }
+  </style>
+</section>
+    <!-- Paint & Finish Options Section -->
+    <section class="paint-finishes-section" style="padding: 6rem 0; background: var(--bg-light); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+        
+        <!-- Section Header -->
+        <div class="section-title" style="text-align: center; margin-bottom: 4rem;">
+          <span class="badge" style="background: #eff6ff; color: var(--primary); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 700; display: inline-block; margin-bottom: 1.25rem; border: 1px solid rgba(0, 102, 255, 0.2);">Expert Specifications</span>
+          <h2 style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">The Right Finish for Every Surface</h2>
+          <p style="color: var(--gray-light); font-size: 1.1rem; max-width: 650px; margin: 0 auto; line-height: 1.6;">
+            Selecting the ideal sheen and coating ensures lasting durability, aesthetic depth, and tailored protection for every architectural element.
+          </p>
+        </div>
+
+        <!-- 5-Column or Responsive Grid for Sheens -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 3.5rem;">
+          
+          <!-- Matte -->
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem 1.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-size: 0.75rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Sheen Level 01</div>
+              <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--dark); margin-bottom: 0.75rem;">Matte</h3>
+              <p style="color: var(--gray-dark); font-size: 0.9rem; line-height: 1.5; margin: 0;">Elegant, low-reflective finish for many interior walls.</p>
+            </div>
+          </div>
+
+          <!-- Eggshell -->
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem 1.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-size: 0.75rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Sheen Level 02</div>
+              <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--dark); margin-bottom: 0.75rem;">Eggshell</h3>
+              <p style="color: var(--gray-dark); font-size: 0.9rem; line-height: 1.5; margin: 0;">Subtle sheen with practical durability.</p>
+            </div>
+          </div>
+
+          <!-- Satin -->
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem 1.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-size: 0.75rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Sheen Level 03</div>
+              <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--dark); margin-bottom: 0.75rem;">Satin</h3>
+              <p style="color: var(--gray-dark); font-size: 0.9rem; line-height: 1.5; margin: 0;">A versatile finish for high-traffic areas.</p>
+            </div>
+          </div>
+
+          <!-- Semi-Gloss -->
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem 1.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-size: 0.75rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Sheen Level 04</div>
+              <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--dark); margin-bottom: 0.75rem;">Semi-Gloss</h3>
+              <p style="color: var(--gray-dark); font-size: 0.9rem; line-height: 1.5; margin: 0;">Durable and easy to clean for trim, doors and selected rooms.</p>
+            </div>
+          </div>
+
+          <!-- High-Gloss -->
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem 1.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="font-size: 0.75rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Sheen Level 05</div>
+              <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--dark); margin-bottom: 0.75rem;">High-Gloss</h3>
+              <p style="color: var(--gray-dark); font-size: 0.9rem; line-height: 1.5; margin: 0;">Bold, reflective finish for specific architectural details.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Additional Specialized Coatings Callout Bar -->
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem 2.5rem; box-shadow: var(--shadow-sm);">
+          <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+            <div style="font-weight: 800; color: var(--dark); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Specialized Coatings & Formulations Available:</div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+              <div style="display: flex; align-items: center; gap: 0.50rem; color: var(--gray-dark); font-size: 0.95rem; font-weight: 600;">
+                <span style="color: var(--primary); font-weight: 700;">✓</span> Exterior coatings
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.50rem; color: var(--gray-dark); font-size: 0.95rem; font-weight: 600;">
+                <span style="color: var(--primary); font-weight: 700;">✓</span> Wood stains
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.50rem; color: var(--gray-dark); font-size: 0.95rem; font-weight: 600;">
+                <span style="color: var(--primary); font-weight: 700;">✓</span> Protective coatings
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.50rem; color: var(--gray-dark); font-size: 0.95rem; font-weight: 600;">
+                <span style="color: var(--primary); font-weight: 700;">✓</span> Low-VOC options
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.50rem; color: var(--gray-dark); font-size: 0.95rem; font-weight: 600;">
+                <span style="color: var(--primary); font-weight: 700;">✓</span> Specialty finishes
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+   <!-- Trust & Quality Section with Side Image Layout -->
+   <section
+  class="trust-quality-section"
+  style="padding: 4rem 0; background: var(--white); border-top: 1px solid var(--border);"
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: 3rem;"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary);
+          padding: 0.4rem 1rem;
+          border-radius: 50px;
+          font-size: 0.85rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+        "
+        >Industry Standards</span
+      >
+      <h2
+        style="
+          font-size: clamp(2rem, 4vw, 2.5rem);
+          font-weight: 800;
+          color: var(--dark);
+          margin-bottom: 0.75rem;
+        "
+      >
+        What to Look for in a Painting Professional
+      </h2>
+      <p
+        style="
+          color: var(--gray-light);
+          font-size: 1rem;
+          max-width: 650px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        We believe in educating homeowners and businesses so you can make informed,
+        confident choices for your property.
+      </p>
+    </div>
+
+    <!-- Main Responsive Layout Container -->
+    <div
+      class="trust-quality-grid"
+      style="
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      "
+    >
+      <!-- Left Column: 5 Cards Grid -->
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 1.5rem;
+        "
+      >
+        <!-- Experience Card -->
+        <div
+          style="
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <div
+              style="
+                width: 36px;
+                height: 36px;
+                background: #eff6ff;
+                color: var(--primary);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+                border: 1px solid rgba(0, 102, 255, 0.15);
+              "
+            >
+              ✓
+            </div>
+            <h3
+              style="
+                font-size: 1.15rem;
+                font-weight: 800;
+                color: var(--dark);
+                margin-bottom: 0.5rem;
+              "
+            >
+              Experience
+            </h3>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 0.85rem;
+                line-height: 1.5;
+                margin: 0;
+              "
+            >
+              Look for professionals with experience relevant to your type of
+              project.
+            </p>
+          </div>
+        </div>
+
+        <!-- Preparation Card -->
+        <div
+          style="
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <div
+              style="
+                width: 36px;
+                height: 36px;
+                background: #eff6ff;
+                color: var(--primary);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+                border: 1px solid rgba(0, 102, 255, 0.15);
+              "
+            >
+              ✓
+            </div>
+            <h3
+              style="
+                font-size: 1.15rem;
+                font-weight: 800;
+                color: var(--dark);
+                margin-bottom: 0.5rem;
+              "
+            >
+              Preparation
+            </h3>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 0.85rem;
+                line-height: 1.5;
+                margin: 0;
+              "
+            >
+              Ask how surfaces will be repaired and prepared before painting.
+            </p>
+          </div>
+        </div>
+
+        <!-- Clear Scope Card -->
+        <div
+          style="
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <div
+              style="
+                width: 36px;
+                height: 36px;
+                background: #eff6ff;
+                color: var(--primary);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+                border: 1px solid rgba(0, 102, 255, 0.15);
+              "
+            >
+              ✓
+            </div>
+            <h3
+              style="
+                font-size: 1.15rem;
+                font-weight: 800;
+                color: var(--dark);
+                margin-bottom: 0.5rem;
+              "
+            >
+              Clear Scope
+            </h3>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 0.85rem;
+                line-height: 1.5;
+                margin: 0;
+              "
+            >
+              Make sure the work, materials and expected finish are clearly
+              discussed.
+            </p>
+          </div>
+        </div>
+
+        <!-- Insurance & Credentials Card -->
+        <div
+          style="
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <div
+              style="
+                width: 36px;
+                height: 36px;
+                background: #eff6ff;
+                color: var(--primary);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+                border: 1px solid rgba(0, 102, 255, 0.15);
+              "
+            >
+              ✓
+            </div>
+            <h3
+              style="
+                font-size: 1.15rem;
+                font-weight: 800;
+                color: var(--dark);
+                margin-bottom: 0.5rem;
+              "
+            >
+              Insurance & Credentials
+            </h3>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 0.85rem;
+                line-height: 1.5;
+                margin: 0;
+              "
+            >
+              Verify applicable insurance, licensing or credentials where
+              required.
+            </p>
+          </div>
+        </div>
+
+        <!-- Written Estimate Card -->
+        <div
+          style="
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            grid-column: 1 / -1;
+          "
+        >
+          <div>
+            <div
+              style="
+                width: 36px;
+                height: 36px;
+                background: #eff6ff;
+                color: var(--primary);
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+                border: 1px solid rgba(0, 102, 255, 0.15);
+              "
+            >
+              ✓
+            </div>
+            <h3
+              style="
+                font-size: 1.15rem;
+                font-weight: 800;
+                color: var(--dark);
+                margin-bottom: 0.5rem;
+              "
+            >
+              Written Estimate
+            </h3>
+            <p
+              style="
+                color: var(--gray-dark);
+                font-size: 0.85rem;
+                line-height: 1.5;
+                margin: 0;
+              "
+            >
+              Understand what's included before work begins with transparent,
+              itemized quotes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Featured Image -->
+      <div
+        style="
+          position: relative;
+          border-radius: var(--radius);
+          overflow: hidden;
+          box-shadow: var(--shadow-sm);
+          border: 1px solid var(--border);
+          min-height: 350px;
+          display: flex;
+        "
+      >
+        <img
+          src="images/painter-consulting-a client.jpg"
+          alt="Professional Painter Consulting Client"
+          style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          "
+        />
+        <div
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(
+              to top,
+              rgba(15, 23, 42, 0.85),
+              transparent
+            );
+            padding: 2rem 1.5rem 1.5rem;
+            color: var(--white);
+          "
+        >
+          <span
+            style="
+              background: var(--primary);
+              color: var(--white);
+              padding: 0.2rem 0.6rem;
+              border-radius: 4px;
+              font-size: 0.7rem;
+              font-weight: 700;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              display: inline-block;
+              margin-bottom: 0.5rem;
+            "
+            >Verified Excellence</span
+          >
+          <h3
+            style="
+              font-size: 1.25rem;
+              font-weight: 700;
+              margin: 0 0 0.25rem 0;
+              color: var(--white);
+            "
+          >
+            Built on Trust & Transparency
+          </h3>
+          <p
+            style="
+              font-size: 0.85rem;
+              margin: 0;
+              color: rgba(255, 255, 255, 0.8);
+              line-height: 1.4;
+            "
+          >
+            Connecting property owners with vetted professionals who deliver
+            uncompromising standards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Responsive CSS Breakpoint Setup -->
+  <style>
+    @media (min-width: 992px) {
+      .trust-quality-grid {
+        grid-template-columns: 1.6fr 1fr !important;
+        gap: 3rem !important;
+        align-items: stretch !important;
+      }
+    }
+  </style>
+</section>
+    <!--Testimonials-->
+    <section class="testimonials-section" style="padding: 6rem 0; background: var(--bg-light); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+        
+        <div class="section-title" style="text-align: center; margin-bottom: 4rem;">
+          <span class="badge" style="background: #eff6ff; color: var(--primary); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 700; display: inline-block; margin-bottom: 1.25rem; border: 1px solid rgba(0, 102, 255, 0.2);">Customer Feedback</span>
+          <h2 style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">Homeowners & Businesses Love a Professional Finish</h2>
+          <p style="color: var(--gray-light); font-size: 1.1rem; max-width: 650px; margin: 0 auto; line-height: 1.6;">
+            Hear what property owners across South Africa have to say about their experience with our network of painting professionals.
+          </p>
+        </div>
+
+        <div style="background: rgba(0, 102, 255, 0.05); border: 1px dashed rgba(0, 102, 255, 0.3); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; max-width: 500px; margin: 0 auto 2.5rem; color: var(--gray-dark); font-size: 0.8rem; font-weight: 600;">
+          📌 Note: Review placeholders shown below. Replace with verified client testimonials before official site launch.
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+          
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="color: #f59e0b; font-size: 1.25rem; letter-spacing: 0.15rem; margin-bottom: 1.25rem;">★★★★★</div>
+              <p style="color: var(--gray-dark); font-size: 1rem; line-height: 1.7; font-style: italic; margin-bottom: 2rem;">
+                "The process was incredibly easy. We explained what we needed and were connected with a local professional who understood the project."
+              </p>
+            </div>
+            <div>
+              <div style="font-weight: 800; color: var(--dark); font-size: 1rem;">— Homeowner</div>
+              <div style="color: var(--primary); font-size: 0.85rem; font-weight: 600;">Sandton, Johannesburg</div>
+            </div>
+          </div>
+
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="color: #f59e0b; font-size: 1.25rem; letter-spacing: 0.15rem; margin-bottom: 1.25rem;">★★★★★</div>
+              <p style="color: var(--gray-dark); font-size: 1rem; line-height: 1.7; font-style: italic; margin-bottom: 2rem;">
+                "Our office needed painting without disrupting business operations. The contractor we connected with was professional and efficient."
+              </p>
+            </div>
+            <div>
+              <div style="font-weight: 800; color: var(--dark); font-size: 1rem;">— Business Owner</div>
+              <div style="color: var(--primary); font-size: 0.85rem; font-weight: 600;">Johannesburg</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="faq-section" style="padding: 6rem 0; background: var(--white); border-top: 1px solid var(--border);">
+      <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 1.5rem;">
+        
+        <!-- Section Header -->
+        <div class="section-title" style="text-align: center; margin-bottom: 4rem;">
+          <span class="badge" style="background: #eff6ff; color: var(--primary); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 700; display: inline-block; margin-bottom: 1.25rem; border: 1px solid rgba(0, 102, 255, 0.2);">Got Questions?</span>
+          <h2 style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">Painting Questions? We've Got Answers.</h2>
+          <p style="color: var(--gray-light); font-size: 1.1rem; max-width: 650px; margin: 0 auto; line-height: 1.6;">
+            Everything you need to know about our professional painting network, project preparation, and quotation process.
+          </p>
+        </div>
+
+        <!-- FAQ Accordion / Grid List -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          
+          <!-- FAQ Item 1 -->
+          <div style="background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <span style="color: var(--primary); font-size: 1.25rem;">Q.</span> How much does professional painting cost?
+            </h3>
+            <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0 0 0 1.8rem;">
+              Painting costs vary based on project scale, surface condition, interior versus exterior scope, and specific material selections. We connect you with local professionals who provide tailored, itemized quotes for your exact requirements.
+            </p>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div style="background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <span style="color: var(--primary); font-size: 1.25rem;">Q.</span> How long does an interior painting project take?
+            </h3>
+            <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0 0 0 1.8rem;">
+              A single room can often be completed in a day or two, while complete multi-room interiors or entire homes may take anywhere from several days to a week, depending on prep work and drying times between coats.
+            </p>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div style="background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <span style="color: var(--primary); font-size: 1.25rem;">Q.</span> Do painters repair damaged walls before painting?
+            </h3>
+            <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0 0 0 1.8rem;">
+              Yes. Proper surface preparation is essential for a professional finish. Contractors in our network handle minor patching, sanding, crack filling, and priming to ensure a smooth, durable foundation before applying paint.
+            </p>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div style="background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <span style="color: var(--primary); font-size: 1.25rem;">Q.</span> How many coats of paint are normally required?
+            </h3>
+            <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0 0 0 1.8rem;">
+              Standard practice involves a primer plus two finish coats to achieve rich, true color depth and full opacity. Dramatic color transitions or porous surfaces may require additional coats for ideal coverage.
+            </p>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div style="background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <span style="color: var(--primary); font-size: 1.25rem;">Q.</span> Should I move furniture before painters arrive?
+            </h3>
+            <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0 0 0 1.8rem;">
+              It is generally recommended to remove small items and valuables. For larger furniture, many contractors are happy to assist with shifting items to the center of the room and covering them securely with protective drop cloths.
+            </p>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div style="background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <span style="color: var(--primary); font-size: 1.25rem;">Q.</span> Can you paint over existing colors?
+            </h3>
+            <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0 0 0 1.8rem;">
+              Absolutely. With high-quality primers and modern formulations, professionals can effortlessly cover dark colors with lighter shades or transition seamlessly between different palettes.
+            </p>
+          </div>
+
+          <!-- FAQ Item 7 -->
+          <div style="background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <span style="color: var(--primary); font-size: 1.25rem;">Q.</span> Do you provide exterior painting services?
+            </h3>
+            <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0 0 0 1.8rem;">
+              Yes, our network includes experienced professionals specializing in exterior siding, stucco, brick, wood, decks, and weather-resistant protective coatings.
+            </p>
+          </div>
+
+          <!-- FAQ Item 8 -->
+          <div style="background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <span style="color: var(--primary); font-size: 1.25rem;">Q.</span> Can I request commercial painting quotes?
+            </h3>
+            <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0 0 0 1.8rem;">
+              Yes! We cater to both residential and commercial properties, connecting businesses, offices, retail spaces, and property managers with contractors equipped for larger-scale schedules.
+            </p>
+          </div>
+
+          <!-- FAQ Item 9 -->
+          <div style="background: var(--bg-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;">
+              <span style="color: var(--primary); font-size: 1.25rem;">Q.</span> How does the PrimePainters matching process work?
+            </h3>
+            <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0 0 0 1.8rem;">
+              You share your project details and requirements through our simple online request form. We then match you with a vetted, qualified local professional who reaches out to discuss your project and provide a transparent estimate.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Service Area Section -->
+   <section class="service-area-section" style="padding: 7rem 0; background: var(--bg-light); border-top: 1px solid var(--border); position: relative; overflow: hidden;">
+      
+      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.03; pointer-events: none; background-image: radial-gradient(var(--primary) 1px, transparent 1px); background-size: 24px 24px;"></div>
+
+      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1;">
+        
+        <div class="section-title" style="text-align: center; margin-bottom: 4.5rem;">
+          <span class="badge" style="background: #eff6ff; color: var(--primary); padding: 0.4rem 1.1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 700; display: inline-block; margin-bottom: 1.25rem; border: 1px solid rgba(0, 102, 255, 0.2); letter-spacing: 0.05em; text-transform: uppercase;">Local Coverage</span>
+          <h2 style="font-size: 2.75rem; font-weight: 800; color: var(--primary); margin-bottom: 1rem; letter-spacing: -0.02em;">Professional Painting Services Near You</h2>
+          <p style="color: var(--gray-light); font-size: 1.15rem; max-width: 650px; margin: 0 auto; line-height: 1.6;">
+            Connecting homeowners and businesses with vetted local painting contractors across key commercial and residential hubs.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 3.5rem;">
+          
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem 2rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.25s ease, box-shadow 0.25s ease; position: relative;">
+            <div style="position: absolute; top: 0; left: 2rem; right: 2rem; height: 3px; background: var(--primary); border-radius: 3px 3px 0 0;"></div>
+            <div>
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.75rem;">Hub 01</span>
+              <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--dark); margin-bottom: 1rem; letter-spacing: -0.01em;">Sandton</h3>
+              <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0;">Residential & commercial painting</p>
+            </div>
+            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--gray-light); text-transform: uppercase; letter-spacing: 0.05em;">Active Region</span>
+              <span style="color: var(--primary); font-size: 0.9rem; font-weight: 700;">Available &rarr;</span>
+            </div>
+          </div>
+
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem 2rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.25s ease, box-shadow 0.25s ease; position: relative;">
+            <div style="position: absolute; top: 0; left: 2rem; right: 2rem; height: 3px; background: var(--primary); border-radius: 3px 3px 0 0;"></div>
+            <div>
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.75rem;">Hub 02</span>
+              <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--dark); margin-bottom: 1rem; letter-spacing: -0.01em;">Midrand</h3>
+              <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0;">Homes, developments & businesses</p>
+            </div>
+            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--gray-light); text-transform: uppercase; letter-spacing: 0.05em;">Active Region</span>
+              <span style="color: var(--primary); font-size: 0.9rem; font-weight: 700;">Available &rarr;</span>
+            </div>
+          </div>
+
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem 2rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.25s ease, box-shadow 0.25s ease; position: relative;">
+            <div style="position: absolute; top: 0; left: 2rem; right: 2rem; height: 3px; background: var(--primary); border-radius: 3px 3px 0 0;"></div>
+            <div>
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.75rem;">Hub 03</span>
+              <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--dark); margin-bottom: 1rem; letter-spacing: -0.01em;">Rosebank</h3>
+              <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0;">Interior & commercial projects</p>
+            </div>
+            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--gray-light); text-transform: uppercase; letter-spacing: 0.05em;">Active Region</span>
+              <span style="color: var(--primary); font-size: 0.9rem; font-weight: 700;">Available &rarr;</span>
+            </div>
+          </div>
+
+          <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem 2rem; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.25s ease, box-shadow 0.25s ease; position: relative;">
+            <div style="position: absolute; top: 0; left: 2rem; right: 2rem; height: 3px; background: var(--primary); border-radius: 3px 3px 0 0;"></div>
+            <div>
+              <span style="font-size: 0.75rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.75rem;">Hub 04</span>
+              <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--dark); margin-bottom: 1rem; letter-spacing: -0.01em;">Randburg</h3>
+              <p style="color: var(--gray-dark); font-size: 0.95rem; line-height: 1.6; margin: 0;">Residential & exterior painting</p>
+            </div>
+            <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--gray-light); text-transform: uppercase; letter-spacing: 0.05em;">Active Region</span>
+              <span style="color: var(--primary); font-size: 0.9rem; font-weight: 700;">Available &rarr;</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center;">
+          <a href="#service-areas" style="background: var(--white); color: var(--primary); border: 1px solid rgba(0, 102, 255, 0.3); padding: 1rem 2.5rem; border-radius: 50px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; box-shadow: var(--shadow-sm); transition: all 0.2s ease;">
+            View All Service Areas <span style="font-size: 1.25rem;">&rarr;</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- Conversion / Project Matcher Section -->
+    <section class="conversion-section" style="padding: 7rem 0; background: linear-gradient(135deg, var(--dark) 0%, #1e293b 100%); color: var(--white); position: relative; overflow: hidden;">
+      
+      <!-- Decorative background accent glow -->
+      <div style="position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: rgba(0, 102, 255, 0.15); border-radius: 50%; filter: blur(80px); pointer-events: none;"></div>
+
+      <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1; text-align: center;">
+        
+        <!-- Section Badge -->
+        <span class="badge" style="background: rgba(0, 102, 255, 0.2); color: #60a5fa; padding: 0.4rem 1.2rem; border-radius: 50px; font-size: 0.85rem; font-weight: 700; display: inline-block; margin-bottom: 1.5rem; border: 1px solid rgba(96, 165, 250, 0.3); letter-spacing: 0.05em; text-transform: uppercase;">Project Matching</span>
+        
+        <!-- Heading -->
+        <h2 style="font-size: 2.75rem; font-weight: 800; color: var(--white); margin-bottom: 1.25rem; letter-spacing: -0.02em; line-height: 1.2;">
+          Not Sure Which Service You Need?
+        </h2>
+        
+        <!-- Description -->
+        <p style="color: #94a3b8; font-size: 1.15rem; max-width: 650px; margin: 0 auto 3rem; line-height: 1.6;">
+          Tell us what you're looking to repair, paint or transform. We'll help match your project with an appropriate local professional.
+        </p>
+
+        <!-- Call to Action Button -->
+        <div>
+          <a href="#contact" style="background: var(--primary); color: var(--white); padding: 1.15rem 3rem; border-radius: 50px; font-weight: 800; font-size: 1.1rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; box-shadow: 0 10px 25px rgba(0, 102, 255, 0.4); transition: transform 0.2s ease, background 0.2s ease;">
+            Tell Us About Your Project <span style="font-size: 1.25rem;">&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Microcopy reassurance -->
+        <p style="color: #64748b; font-size: 0.85rem; margin-top: 1.5rem; font-weight: 500;">
+          Free consultation &bull; No obligation &bull; Quick response time
+        </p>
+
+      </div>
+    </section>
+    <!-- Final Lead CTA Section -->
+    <section class="final-cta-section" style="padding: 7rem 0; background: var(--white); position: relative; overflow: hidden; border-top: 1px solid var(--border);">
+      
+      <div class="container" style="max-width: 900px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 1; text-align: center;">
+        
+        <!-- Section Badge -->
+        <span class="badge" style="background: #eff6ff; color: var(--primary); padding: 0.4rem 1.2rem; border-radius: 50px; font-size: 0.85rem; font-weight: 700; display: inline-block; margin-bottom: 1.5rem; border: 1px solid rgba(0, 102, 255, 0.2); letter-spacing: 0.05em; text-transform: uppercase;">Get Started Today</span>
+        
+        <!-- Heading -->
+        <h2 style="font-size: 2.75rem; font-weight: 800; color: var(--dark); margin-bottom: 1.25rem; letter-spacing: -0.02em; line-height: 1.2;">
+          Ready to Transform Your Property?
+        </h2>
+        
+        <!-- Description -->
+        <p style="color: var(--gray-dark); font-size: 1.15rem; max-width: 650px; margin: 0 auto 3rem; line-height: 1.6;">
+          Tell us about your painting project and get connected with local professionals who can help bring your vision to life.
+        </p>
+
+        <!-- Call to Action Button -->
+        <div style="margin-bottom: 1.75rem;">
+          <a href="#quote-form" style="background: var(--primary); color: var(--white); padding: 1.15rem 3rem; border-radius: 50px; font-weight: 800; font-size: 1.1rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.75rem; box-shadow: 0 10px 25px rgba(0, 102, 255, 0.25); transition: transform 0.2s ease, background 0.2s ease;">
+            Get My Free Quotes <span style="font-size: 1.25rem;">&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Small Supporting Text -->
+        <p style="color: var(--gray-light); font-size: 0.9rem; font-weight: 600; letter-spacing: 0.02em; margin: 0;">
+          No obligation &bull; Tell us about your project &bull; Local professionals
+        </p>
+
+      </div>
+    </section>
+    <!--Footer-->
+    <footer
+      class="site-footer"
+      style="
+        background: #0f172a;
+        color: #cbd5e1;
+        padding: 4rem 0 2rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      "
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <!-- Main Footer Grid -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+          "
+        >
+          <!-- Col 1: Brand Info -->
+          <div>
+            <h3
+              style="
+                color: #ffffff;
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+              "
+            >
+              PrimePainters
+            </h3>
+            <p
+              style="
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #94a3b8;
+                margin-bottom: 1.25rem;
+              "
+            >
+              Connecting homeowners and businesses with trusted, vetted painting
+              and coating professionals across Sandton, Midrand, Rosebank, and
+              Randburg.
+            </p>
+            <div style="font-size: 0.85rem; color: #64748b">
+              &copy; 2026 PrimePainters. All rights reserved.
+            </div>
+          </div>
+
+          <!-- Col 2: Navigation Links (All Navbar Items) -->
+          <div>
+            <h4
+              style="
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Quick Navigation
+            </h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.65rem;
+              "
+            >
+              <li>
+                <a
+                  href="index.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="how-it-works.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="service-areas.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Service Areas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contractors.html"
+                  style="
+                    color: var(--accent);
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    transition: color 0.2s;
+                  "
+                  >For Painters</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Service Hubs -->
+          <div>
+            <h4
+              style="
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Service Areas
+            </h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.65rem;
+                font-size: 0.9rem;
+                color: #94a3b8;
+              "
+            >
+              <li>Sandton Residential Estates</li>
+              <li>Midrand Developments</li>
+              <li>Rosebank & Illovo</li>
+              <li>Randburg Suburbs</li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact & Support -->
+          <div>
+            <h4
+              style="
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Get Connected
+            </h4>
+            <p
+              style="
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #94a3b8;
+                margin-bottom: 1rem;
+              "
+            >
+              Receive up to 3 competitive quotes from vetted local pros in under
+              60 seconds.
+            </p>
+            <a
+              href="contact.html"
+              style="
+                display: inline-block;
+                background: var(--accent);
+                color: #ffffff;
+                padding: 0.65rem 1.25rem;
+                border-radius: 6px;
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 0.85rem;
+              "
+              >Request Free Quote</a
+            >
+          </div>
+        </div>
+
+        <!-- Bottom Credit Bar -->
+        <div
+          style="
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: #64748b;
+          "
+        >
+          <div>
+            Designed & Developed by
+            <span style="color: #cbd5e1; font-weight: 600"
+              >Sam Web Studios</span
+            >
+          </div>
+          <div style="display: flex; gap: 1.5rem">
+            <a href="privacy.html" style="color: #64748b; text-decoration: none"
+              >Privacy Policy</a
+            >
+            <a href="terms.html" style="color: #64748b; text-decoration: none"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

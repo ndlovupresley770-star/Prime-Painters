@@ -1,0 +1,2973 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Project Gallery & Transformations | PrimePainters Sandton & Johannesburg
+    </title>
+    <meta
+      name="description"
+      content="Explore our professional painting gallery showcasing interior makeovers, exterior home painting, commercial projects, and custom cabinet refinishing across Sandton, Midrand, Rosebank, and Randburg."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Gallery Specific Enhancements */
+      .gallery-filters {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+      }
+
+      .filter-btn {
+        background: var(--white);
+        border: 1px solid var(--border);
+        padding: 0.5rem 1.25rem;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--gray);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .filter-btn:hover,
+      .filter-btn.active {
+        background: var(--primary);
+        color: var(--white);
+        border-color: var(--accent);
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-bottom: 4rem;
+      }
+
+      .gallery-card {
+        background: var(--white);
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      .gallery-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+
+      .gallery-img-wrapper {
+        position: relative;
+        height: 260px;
+        overflow: hidden;
+        background: #e2e8f0;
+      }
+
+      .gallery-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .gallery-card:hover .gallery-img-wrapper img {
+        transform: scale(1.05);
+      }
+
+      .gallery-badge {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        background: rgba(15, 23, 42, 0.8);
+        color: #ffffff;
+        padding: 0.25rem 0.75rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        backdrop-filter: blur(4px);
+      }
+
+      .gallery-content {
+        padding: 1.5rem;
+      }
+
+      .gallery-content h3 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--primary);
+      }
+
+      .gallery-content p {
+        color: var(--gray);
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Site Header -->
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">Prime<span>Painters</span></a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button
+          class="mobile-menu-toggle"
+          id="mobileMenuBtn"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="how-it-works.html" class="active">How It Works</a>
+
+          <!-- Services Dropdown (Single instance controlled by CSS/JS) -->
+          <div class="dropdown" id="servicesDropdown">
+            <a href="services.html" class="dropdown-trigger">Services</a>
+            <div class="dropdown-content">
+              <a href="interior-painting.html">Interior Painting</a>
+              <a href="exterior-painting.html">Exterior Painting</a>
+              <a href="commercial-painting.html">Commercial Painting</a>
+              <a href="cabinet-refinishing.html">Cabinet Refinishing</a>
+            </div>
+          </div>
+
+          <a href="service-areas.html">Service Areas</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+
+          <!-- Mobile-only CTA placement inside the drawer -->
+          <div class="mobile-cta-container">
+            <a href="contractors.html" class="btn-outline">For Painters</a>
+          </div>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="nav-cta desktop-cta">
+          <a href="contractors.html" class="btn-outline">For Painters</a>
+        </div>
+      </div>
+    </header>
+    <!-- Page Header Section -->
+    <section
+      class="page-header-section"
+      style="
+        background:
+          linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
+          url(&quot;images/gallery-hero.jpg&quot;) no-repeat center center /
+            cover;
+        padding: 6rem 0;
+        color: #ffffff;
+      "
+    >
+      <div class="container text-center">
+        <span
+          class="badge"
+          style="
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            border: none;
+          "
+          >Sandton, Midrand, Rosebank & Randburg</span
+        >
+        <h1
+          style="
+            color: #ffffff;
+            margin-top: 1rem;
+            font-size: 2.5rem;
+            font-weight: 800;
+          "
+        >
+          Our Project Gallery
+        </h1>
+        <p
+          style="
+            color: #cbd5e1;
+            max-width: 700px;
+            margin: 1rem auto 0;
+            font-size: 1.15rem;
+          "
+        >
+          Browse our latest residential transformations, commercial facility
+          upgrades, and architectural finishes completed across Johannesburg's
+          prime neighborhoods.
+        </p>
+      </div>
+    </section>
+    <!-- Project Statistics / Trust Bar Section with Featured Visual -->
+    <section
+  class="project-stats-section"
+  style="
+    padding: 4rem 0;
+    background: var(--bg-light, #f8fafc);
+    border-top: 1px solid var(--border, #e2e8f0);
+    border-bottom: 1px solid var(--border, #e2e8f0);
+  "
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;"
+  >
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: 2.5rem;"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.4rem 1.1rem;
+          border-radius: 50px;
+          font-size: 0.8rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Network Capabilities</span
+      >
+      <h2
+        style="
+          font-size: clamp(1.8rem, 4vw, 2.75rem);
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 1rem;
+          letter-spacing: -0.02em;
+          line-height: 1.2;
+        "
+      >
+        Comprehensive Painting Solutions
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: 1rem;
+          max-width: 700px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        Designed to connect you with verified regional professionals specialized across diverse residential and commercial scopes.
+      </p>
+    </div>
+
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      "
+    >
+      <div
+        style="
+          position: relative;
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+          border: 1px solid var(--border, #e2e8f0);
+          height: 380px;
+          width: 100%;
+        "
+      >
+        <img
+          src="images/acrylic-exterior-paint.jpg"
+          alt="Professional painter performing precise surface preparation and finishing"
+          style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          "
+        />
+        <div
+          style="
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+              to top,
+              rgba(15, 23, 42, 0.85) 0%,
+              transparent 60%
+            );
+          "
+        ></div>
+        <div
+          style="
+            position: absolute;
+            bottom: 1.5rem;
+            left: 1.5rem;
+            right: 1.5rem;
+            color: #ffffff;
+          "
+        >
+          <span
+            style="
+              background: rgba(0, 102, 255, 0.9);
+              backdrop-filter: blur(4px);
+              padding: 0.35rem 0.9rem;
+              border-radius: 50px;
+              font-size: 0.75rem;
+              font-weight: 700;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              display: inline-block;
+              margin-bottom: 0.5rem;
+            "
+            >Verified Quality</span
+          >
+          <h4
+            style="
+              font-size: 1.1rem;
+              font-weight: 700;
+              margin: 0;
+              line-height: 1.4;
+            "
+          >
+            Rigorous standards from preparation to final coat.
+          </h4>
+        </div>
+      </div>
+
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          gap: 1.25rem;
+        "
+      >
+        <div
+          style="
+            background: var(--white, #ffffff);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+          "
+        >
+          <h3
+            style="
+              font-size: 1.1rem;
+              font-weight: 800;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.4rem;
+            "
+          >
+            Residential Projects
+          </h3>
+          <p
+            style="
+              font-size: 0.9rem;
+              color: var(--gray-dark, #1e293b);
+              line-height: 1.6;
+              margin: 0;
+            "
+          >
+            Interior and exterior transformations for homes, apartments and estates.
+          </p>
+        </div>
+
+        <div
+          style="
+            background: var(--white, #ffffff);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+          "
+        >
+          <h3
+            style="
+              font-size: 1.1rem;
+              font-weight: 800;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.4rem;
+            "
+          >
+            Commercial Projects
+          </h3>
+          <p
+            style="
+              font-size: 0.9rem;
+              color: var(--gray-dark, #1e293b);
+              line-height: 1.6;
+              margin: 0;
+            "
+          >
+            Offices, retail spaces, complexes and other business properties.
+          </p>
+        </div>
+
+        <div
+          style="
+            background: var(--white, #ffffff);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+          "
+        >
+          <h3
+            style="
+              font-size: 1.1rem;
+              font-weight: 800;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.4rem;
+            "
+          >
+            Professional Preparation
+          </h3>
+          <p
+            style="
+              font-size: 0.9rem;
+              color: var(--gray-dark, #1e293b);
+              line-height: 1.6;
+              margin: 0;
+            "
+          >
+            Surface preparation, repairs, priming and finishing before painting.
+          </p>
+        </div>
+
+        <div
+          style="
+            background: var(--white, #ffffff);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+          "
+        >
+          <h3
+            style="
+              font-size: 1.1rem;
+              font-weight: 800;
+              color: var(--primary, #0066ff);
+              margin-bottom: 0.4rem;
+            "
+          >
+            Multiple Gauteng Areas
+          </h3>
+          <p
+            style="
+              font-size: 0.9rem;
+              color: var(--gray-dark, #1e293b);
+              line-height: 1.6;
+              margin: 0;
+            "
+          >
+            Connecting customers with painters across Sandton, Midrand, Rosebank, Randburg and surrounding areas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Main Gallery Section -->
+    <main class="main-content" style="padding: 4rem 0">
+      <div class="container">
+        <!-- Category Filters -->
+        <div class="gallery-filters">
+          <button class="filter-btn active">All Projects</button>
+          <button class="filter-btn">Interior Painting</button>
+          <button class="filter-btn">Exterior Painting</button>
+          <button class="filter-btn">Commercial</button>
+          <button class="filter-btn">Cabinet Refinishing</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- Item 1 -->
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <span class="gallery-badge">Interior</span>
+              <img
+                src="images/interior-makeover.jpg"
+                alt="Modern Apartment Interior Makeover in Rosebank"
+              />
+            </div>
+            <div class="gallery-content">
+              <h3>Contemporary Rosebank Apartment</h3>
+              <p>
+                Complete wall restoration, skimming, and low-VOC satin finish in
+                a luxury residential high-rise.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <span class="gallery-badge">Exterior</span>
+              <img
+                src="images/estate-exterior-painting-in sandton.jpg"
+                alt="Double Story Estate Exterior Painting in Sandton"
+              />
+            </div>
+            <div class="gallery-content">
+              <h3>Sandton Residential Estate</h3>
+              <p>
+                Weather-resistant exterior wall coating with specialized
+                damp-proofing and crisp architectural framing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <span class="gallery-badge">Commercial</span>
+              <img
+                src="images/office-park-spray-application.jpg"
+                alt="Office Park Spray Application in Midrand"
+              />
+            </div>
+            <div class="gallery-content">
+              <h3>Midrand Corporate Office Park</h3>
+              <p>
+                Large-scale industrial spray application providing a clean,
+                professional corporate identity with minimal downtime.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <span class="gallery-badge">Cabinets</span>
+              <img
+                src="images/kitchen-cupboard-refinishing-in-randburg.jpg"
+                alt="Custom Kitchen Cupboard Refinishing in Randburg"
+              />
+            </div>
+            <div class="gallery-content">
+              <h3>Randburg Kitchen Renovation</h3>
+              <p>
+                Factory-grade HVLP spray finish transforming outdated oak
+                cupboards into sleek modern matte charcoal surfaces.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <span class="gallery-badge">Interior</span>
+              <img
+                src="images/feature-wall-and-trim-work-in-sandhurst.jpg"
+                alt="Feature Wall and Trim Work in Sandhurst"
+              />
+            </div>
+            <div class="gallery-content">
+              <h3>Sandhurst Luxury Residence</h3>
+              <p>
+                Precision crown molding details, bespoke accent walls, and
+                immaculate trim line cutting.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-card">
+            <div class="gallery-img-wrapper">
+              <span class="gallery-badge">Commercial</span>
+              <img
+                src="images/retail-frontage-coating-in-rosebank.jpg"
+                alt="Retail Frontage Coating in Rosebank Mall area"
+              />
+            </div>
+            <div class="gallery-content">
+              <h3>Rosebank Retail Boutique</h3>
+              <p>
+                Durable, high-traffic commercial wall coatings engineered to
+                handle heavy retail customer foot traffic.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action Box -->
+        <div
+          class="about-highlight-box text-center"
+          style="
+            background: linear-gradient(135deg, #f0f4ff 0%, #f8fafc 100%);
+            padding: 3rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+          "
+        >
+          <h3>Inspired by What You See?</h3>
+          <p style="margin: 1rem 0; color: var(--gray); font-size: 1.05rem">
+            Let us bring this level of craftsmanship to your home or business
+            property today.
+          </p>
+          <a
+            href="contact.html"
+            class="btn-primary"
+            style="
+              display: inline-block;
+              background: var(--primary);
+              color: var(--white);
+              padding: 14px 36px;
+              border-radius: 6px;
+              font-weight: 600;
+              text-decoration: none;
+              margin-top: 1rem;
+              transition: opacity 0.2s;
+            "
+            >Request Your Free Quote</a
+          >
+        </div>
+      </div>
+      <!-- Featured Painting Transformations Section -->
+   <section
+  class="featured-transformations-section"
+  style="
+    padding: 4rem 0;
+    background: var(--white, #ffffff);
+    border-top: 1px solid var(--border, #e2e8f0);
+  "
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;"
+  >
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: 3rem;"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.4rem 1.1rem;
+          border-radius: 50px;
+          font-size: 0.85rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1.25rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Portfolio Highlights</span
+      >
+      <h2
+        style="
+          font-size: clamp(2rem, 5vw, 2.75rem);
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 1rem;
+          letter-spacing: -0.02em;
+        "
+      >
+        Featured Painting Transformations
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: 1.05rem;
+          max-width: 750px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        Explore selected residential and commercial projects showcasing
+        the preparation, craftsmanship and finishes available through the
+        PrimePainters network.
+      </p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 3rem;">
+      
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 10px 30px rgba(0, 0, 0, 0.04));
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: #0f172a;
+            position: relative;
+            min-height: 240px;
+          "
+        >
+          <div style="position: relative; overflow: hidden;">
+            <img
+              src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=700&q=80"
+              alt="Sandton Luxury Estate exterior before painting"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;"
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                left: 0.75rem;
+                background: rgba(15, 23, 42, 0.8);
+                color: #ffffff;
+                font-size: 0.7rem;
+                font-weight: 700;
+                padding: 0.25rem 0.6rem;
+                border-radius: 4px;
+                text-transform: uppercase;
+              "
+              >Before</span
+            >
+          </div>
+          <div style="position: relative; overflow: hidden;">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80"
+              alt="Sandton Luxury Estate exterior after painting"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;"
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                right: 0.75rem;
+                background: var(--primary, #0066ff);
+                color: #ffffff;
+                font-size: 0.7rem;
+                font-weight: 700;
+                padding: 0.25rem 0.6rem;
+                border-radius: 4px;
+                text-transform: uppercase;
+              "
+              >After</span
+            >
+          </div>
+        </div>
+
+        <div style="padding: 2rem; display: flex; flex-direction: column; justify-content: center;">
+          <span
+            style="
+              color: var(--primary, #0066ff);
+              font-size: 0.8rem;
+              font-weight: 800;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              margin-bottom: 0.4rem;
+            "
+            >Sandton Luxury Estate</span
+          >
+          <h3
+            style="
+              font-size: 1.5rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Exterior Painting &amp; Weatherproofing
+          </h3>
+          <p
+            style="
+              color: var(--gray-light, #64748b);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin: 0;
+            "
+          >
+            Comprehensive exterior restoration featuring meticulous crack
+            repair, high-grade primer application, and durable
+            weather-resistant acrylic coatings tailored for high-end
+            residential architecture.
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 10px 30px rgba(0, 0, 0, 0.04));
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: #0f172a;
+            position: relative;
+            min-height: 240px;
+          "
+        >
+          <div style="position: relative; overflow: hidden;">
+            <img
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=80"
+              alt="Rosebank apartment interior before wall restoration"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;"
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                left: 0.75rem;
+                background: rgba(15, 23, 42, 0.8);
+                color: #ffffff;
+                font-size: 0.7rem;
+                font-weight: 700;
+                padding: 0.25rem 0.6rem;
+                border-radius: 4px;
+                text-transform: uppercase;
+              "
+              >Before</span
+            >
+          </div>
+          <div style="position: relative; overflow: hidden;">
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=80"
+              alt="Rosebank apartment interior after painting"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;"
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                right: 0.75rem;
+                background: var(--primary, #0066ff);
+                color: #ffffff;
+                font-size: 0.7rem;
+                font-weight: 700;
+                padding: 0.25rem 0.6rem;
+                border-radius: 4px;
+                text-transform: uppercase;
+              "
+              >After</span
+            >
+          </div>
+        </div>
+
+        <div style="padding: 2rem; display: flex; flex-direction: column; justify-content: center;">
+          <span
+            style="
+              color: var(--primary, #0066ff);
+              font-size: 0.8rem;
+              font-weight: 800;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              margin-bottom: 0.4rem;
+            "
+            >Rosebank Apartment</span
+          >
+          <h3
+            style="
+              font-size: 1.5rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Interior Painting &amp; Wall Restoration
+          </h3>
+          <p
+            style="
+              color: var(--gray-light, #64748b);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin: 0;
+            "
+          >
+            Complete interior refresh involving plaster patching, skim
+            coating, professional priming, and precision roll-and-brush
+            finish work to create smooth, contemporary living spaces.
+          </p>
+        </div>
+      </div>
+
+      <div
+        style="
+          background: var(--bg-light, #f8fafc);
+          border: 1px solid var(--border, #e2e8f0);
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: var(--shadow-sm, 0 10px 30px rgba(0, 0, 0, 0.04));
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: #0f172a;
+            position: relative;
+            min-height: 240px;
+          "
+        >
+          <div style="position: relative; overflow: hidden;">
+            <img
+              src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=700&q=80"
+              alt="Randburg kitchen cabinetry before refinishing"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;"
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                left: 0.75rem;
+                background: rgba(15, 23, 42, 0.8);
+                color: #ffffff;
+                font-size: 0.7rem;
+                font-weight: 700;
+                padding: 0.25rem 0.6rem;
+                border-radius: 4px;
+                text-transform: uppercase;
+              "
+              >Before</span
+            >
+          </div>
+          <div style="position: relative; overflow: hidden;">
+            <img
+              src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=700&q=80"
+              alt="Randburg kitchen cabinetry after refinishing"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;"
+            />
+            <span
+              style="
+                position: absolute;
+                top: 0.75rem;
+                right: 0.75rem;
+                background: var(--primary, #0066ff);
+                color: #ffffff;
+                font-size: 0.7rem;
+                font-weight: 700;
+                padding: 0.25rem 0.6rem;
+                border-radius: 4px;
+                text-transform: uppercase;
+              "
+              >After</span
+            >
+          </div>
+        </div>
+
+        <div style="padding: 2rem; display: flex; flex-direction: column; justify-content: center;">
+          <span
+            style="
+              color: var(--primary, #0066ff);
+              font-size: 0.8rem;
+              font-weight: 800;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              margin-bottom: 0.4rem;
+            "
+            >Randburg Kitchen</span
+          >
+          <h3
+            style="
+              font-size: 1.5rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin-bottom: 0.75rem;
+            "
+          >
+            Cabinet Refinishing
+          </h3>
+          <p
+            style="
+              color: var(--gray-light, #64748b);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin: 0;
+            "
+          >
+            Specialized kitchen cabinet transformation utilizing dust-free
+            sanding, bonding primers, and factory-smooth spray finishes to
+            give tired cabinetry a modern, flawless aesthetic without full
+            replacement.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+      <!-- Before & After Transformations Showcase Section -->
+      <section
+        class="transformations-showcase-section"
+        style="
+          padding: 7rem 0;
+          background: var(--bg-light, #f8fafc);
+          border-top: 1px solid var(--border, #e2e8f0);
+        "
+      >
+        <div
+          class="container"
+          style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+        >
+          <!-- Section Header -->
+          <div
+            class="section-title"
+            style="text-align: center; margin-bottom: 5rem"
+          >
+            <span
+              class="badge"
+              style="
+                background: #eff6ff;
+                color: var(--primary, #0066ff);
+                padding: 0.4rem 1.1rem;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                display: inline-block;
+                margin-bottom: 1.25rem;
+                border: 1px solid rgba(0, 102, 255, 0.2);
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+              "
+              >Visual Impact</span
+            >
+            <h2
+              style="
+                font-size: 2.75rem;
+                font-weight: 800;
+                color: var(--primary, #0066ff);
+                margin-bottom: 1rem;
+                letter-spacing: -0.02em;
+              "
+            >
+              From Worn to Refreshed
+            </h2>
+            <p
+              style="
+                color: var(--gray-light, #64748b);
+                font-size: 1.15rem;
+                max-width: 700px;
+                margin: 0 auto;
+                line-height: 1.6;
+              "
+            >
+              See how professional preparation, repairs and quality coatings can
+              completely transform a property's appearance.
+            </p>
+          </div>
+
+          <!-- Transformations Cards Grid -->
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+              gap: 2.5rem;
+            "
+          >
+            <!-- Transformation Card 01: Cracked Interior Wall -->
+            <div
+              style="
+                background: var(--white, #ffffff);
+                border: 1px solid var(--border, #e2e8f0);
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+                display: flex;
+                flex-direction: column;
+                transition:
+                  transform 0.2s ease,
+                  box-shadow 0.2s ease;
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-4px)';
+                this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow =
+                  'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+              "
+            >
+              <!-- Split Before / After Image Container -->
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  height: 200px;
+                  position: relative;
+                  background: #0f172a;
+                "
+              >
+                <!-- Before -->
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1595846519845-68e298c087d1?auto=format&fit=crop&w=500&q=80"
+                    alt="Cracked interior wall before repair and painting"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                  <span
+                    style="
+                      position: absolute;
+                      top: 0.75rem;
+                      left: 0.75rem;
+                      background: rgba(15, 23, 42, 0.85);
+                      color: #ffffff;
+                      font-size: 0.65rem;
+                      font-weight: 700;
+                      padding: 0.2rem 0.6rem;
+                      border-radius: 4px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.05em;
+                    "
+                    >Before</span
+                  >
+                </div>
+                <!-- After -->
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=500&q=80"
+                    alt="Smooth painted finish after professional work"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                  <span
+                    style="
+                      position: absolute;
+                      top: 0.75rem;
+                      right: 0.75rem;
+                      background: var(--primary, #0066ff);
+                      color: #ffffff;
+                      font-size: 0.65rem;
+                      font-weight: 700;
+                      padding: 0.2rem 0.6rem;
+                      border-radius: 4px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.05em;
+                    "
+                    >After</span
+                  >
+                </div>
+              </div>
+              <!-- Card Body -->
+              <div
+                style="
+                  padding: 1.75rem;
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                "
+              >
+                <h3
+                  style="
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    color: var(--primary, #0066ff);
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  Cracked Interior Wall
+                </h3>
+                <p
+                  style="
+                    font-size: 0.925rem;
+                    color: var(--gray-dark, #1e293b);
+                    line-height: 1.5;
+                    margin: 0;
+                  "
+                >
+                  Smooth painted finish achieved through careful plaster repair,
+                  priming, and precision rolling.
+                </p>
+              </div>
+            </div>
+
+            <!-- Transformation Card 02: Faded Exterior -->
+            <div
+              style="
+                background: var(--white, #ffffff);
+                border: 1px solid var(--border, #e2e8f0);
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+                display: flex;
+                flex-direction: column;
+                transition:
+                  transform 0.2s ease,
+                  box-shadow 0.2s ease;
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-4px)';
+                this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow =
+                  'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+              "
+            >
+              <!-- Split Before / After Image Container -->
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  height: 200px;
+                  position: relative;
+                  background: #0f172a;
+                "
+              >
+                <!-- Before -->
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=500&q=80"
+                    alt="Faded exterior wall before weatherproofing and painting"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                  <span
+                    style="
+                      position: absolute;
+                      top: 0.75rem;
+                      left: 0.75rem;
+                      background: rgba(15, 23, 42, 0.85);
+                      color: #ffffff;
+                      font-size: 0.65rem;
+                      font-weight: 700;
+                      padding: 0.2rem 0.6rem;
+                      border-radius: 4px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.05em;
+                    "
+                    >Before</span
+                  >
+                </div>
+                <!-- After -->
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80"
+                    alt="Fresh weather-resistant finish after professional application"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                  <span
+                    style="
+                      position: absolute;
+                      top: 0.75rem;
+                      right: 0.75rem;
+                      background: var(--primary, #0066ff);
+                      color: #ffffff;
+                      font-size: 0.65rem;
+                      font-weight: 700;
+                      padding: 0.2rem 0.6rem;
+                      border-radius: 4px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.05em;
+                    "
+                    >After</span
+                  >
+                </div>
+              </div>
+              <!-- Card Body -->
+              <div
+                style="
+                  padding: 1.75rem;
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                "
+              >
+                <h3
+                  style="
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    color: var(--primary, #0066ff);
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  Faded Exterior
+                </h3>
+                <p
+                  style="
+                    font-size: 0.925rem;
+                    color: var(--gray-dark, #1e293b);
+                    line-height: 1.5;
+                    margin: 0;
+                  "
+                >
+                  Fresh weather-resistant finish providing long-lasting
+                  protection against regional climate elements.
+                </p>
+              </div>
+            </div>
+
+            <!-- Transformation Card 03: Old Kitchen Cabinets -->
+            <div
+              style="
+                background: var(--white, #ffffff);
+                border: 1px solid var(--border, #e2e8f0);
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+                display: flex;
+                flex-direction: column;
+                transition:
+                  transform 0.2s ease,
+                  box-shadow 0.2s ease;
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-4px)';
+                this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow =
+                  'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+              "
+            >
+              <!-- Split Before / After Image Container -->
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  height: 200px;
+                  position: relative;
+                  background: #0f172a;
+                "
+              >
+                <!-- Before -->
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=500&q=80"
+                    alt="Old kitchen cabinets before refinishing"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                  <span
+                    style="
+                      position: absolute;
+                      top: 0.75rem;
+                      left: 0.75rem;
+                      background: rgba(15, 23, 42, 0.85);
+                      color: #ffffff;
+                      font-size: 0.65rem;
+                      font-weight: 700;
+                      padding: 0.2rem 0.6rem;
+                      border-radius: 4px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.05em;
+                    "
+                    >Before</span
+                  >
+                </div>
+                <!-- After -->
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=500&q=80"
+                    alt="Modern refinished cabinets after spray coating"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                  <span
+                    style="
+                      position: absolute;
+                      top: 0.75rem;
+                      right: 0.75rem;
+                      background: var(--primary, #0066ff);
+                      color: #ffffff;
+                      font-size: 0.65rem;
+                      font-weight: 700;
+                      padding: 0.2rem 0.6rem;
+                      border-radius: 4px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.05em;
+                    "
+                    >After</span
+                  >
+                </div>
+              </div>
+              <!-- Card Body -->
+              <div
+                style="
+                  padding: 1.75rem;
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                "
+              >
+                <h3
+                  style="
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    color: var(--primary, #0066ff);
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  Old Kitchen Cabinets
+                </h3>
+                <p
+                  style="
+                    font-size: 0.925rem;
+                    color: var(--gray-dark, #1e293b);
+                    line-height: 1.5;
+                    margin: 0;
+                  "
+                >
+                  Modern refinished cabinets delivering a flawless factory-grade
+                  spray finish without full replacement.
+                </p>
+              </div>
+            </div>
+
+            <!-- Transformation Card 04: Tired Office -->
+            <div
+              style="
+                background: var(--white, #ffffff);
+                border: 1px solid var(--border, #e2e8f0);
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+                display: flex;
+                flex-direction: column;
+                transition:
+                  transform 0.2s ease,
+                  box-shadow 0.2s ease;
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-4px)';
+                this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow =
+                  'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+              "
+            >
+              <!-- Split Before / After Image Container -->
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  height: 200px;
+                  position: relative;
+                  background: #0f172a;
+                "
+              >
+                <!-- Before -->
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=500&q=80"
+                    alt="Tired office space before professional commercial painting"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                  <span
+                    style="
+                      position: absolute;
+                      top: 0.75rem;
+                      left: 0.75rem;
+                      background: rgba(15, 23, 42, 0.85);
+                      color: #ffffff;
+                      font-size: 0.65rem;
+                      font-weight: 700;
+                      padding: 0.2rem 0.6rem;
+                      border-radius: 4px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.05em;
+                    "
+                    >Before</span
+                  >
+                </div>
+                <!-- After -->
+                <div style="position: relative; overflow: hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80"
+                    alt="Professional commercial environment after painting"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                    "
+                  />
+                  <span
+                    style="
+                      position: absolute;
+                      top: 0.75rem;
+                      right: 0.75rem;
+                      background: var(--primary, #0066ff);
+                      color: #ffffff;
+                      font-size: 0.65rem;
+                      font-weight: 700;
+                      padding: 0.2rem 0.6rem;
+                      border-radius: 4px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.05em;
+                    "
+                    >After</span
+                  >
+                </div>
+              </div>
+              <!-- Card Body -->
+              <div
+                style="
+                  padding: 1.75rem;
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                "
+              >
+                <h3
+                  style="
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    color: var(--primary, #0066ff);
+                    margin-bottom: 0.5rem;
+                  "
+                >
+                  Tired Office
+                </h3>
+                <p
+                  style="
+                    font-size: 0.925rem;
+                    color: var(--gray-dark, #1e293b);
+                    line-height: 1.5;
+                    margin: 0;
+                  "
+                >
+                  Professional commercial environment revitalized with minimal
+                  disruption to daily business operations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Painting Standards-->
+      <div
+  style="
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    align-items: center;
+  "
+>
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    "
+  >
+    <div
+      style="
+        background: var(--bg-light, #f8fafc);
+        border: 1px solid var(--border, #e2e8f0);
+        border-radius: 20px;
+        padding: 2rem 1.5rem;
+        box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      "
+      onmouseover="
+        this.style.transform = 'translateY(-4px)';
+        this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+      "
+      onmouseout="
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = 'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+      "
+    >
+      <span
+        style="
+          font-size: 1.35rem;
+          font-weight: 900;
+          color: var(--primary, #0066ff);
+          opacity: 0.3;
+          margin-bottom: 0.75rem;
+          display: block;
+          letter-spacing: -0.02em;
+        "
+        >01</span
+      >
+      <h3
+        style="
+          font-size: 1.15rem;
+          font-weight: 800;
+          color: var(--gray-dark, #1e293b);
+          margin-bottom: 0.5rem;
+          letter-spacing: -0.01em;
+        "
+      >
+        Surface Preparation
+      </h3>
+      <p
+        style="
+          font-size: 0.9rem;
+          color: var(--gray-light, #64748b);
+          line-height: 1.6;
+          margin: 0;
+        "
+      >
+        Cleaning, sanding, scraping, and wall repair for a smooth
+        foundation.
+      </p>
+    </div>
+
+    <div
+      style="
+        background: var(--bg-light, #f8fafc);
+        border: 1px solid var(--border, #e2e8f0);
+        border-radius: 20px;
+        padding: 2rem 1.5rem;
+        box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      "
+      onmouseover="
+        this.style.transform = 'translateY(-4px)';
+        this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+      "
+      onmouseout="
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = 'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+      "
+    >
+      <span
+        style="
+          font-size: 1.35rem;
+          font-weight: 900;
+          color: var(--primary, #0066ff);
+          opacity: 0.3;
+          margin-bottom: 0.75rem;
+          display: block;
+          letter-spacing: -0.02em;
+        "
+        >02</span
+      >
+      <h3
+        style="
+          font-size: 1.15rem;
+          font-weight: 800;
+          color: var(--gray-dark, #1e293b);
+          margin-bottom: 0.5rem;
+          letter-spacing: -0.01em;
+        "
+      >
+        Protection
+      </h3>
+      <p
+        style="
+          font-size: 0.9rem;
+          color: var(--gray-light, #64748b);
+          line-height: 1.6;
+          margin: 0;
+        "
+      >
+        Furniture, flooring, and surrounding areas thoroughly covered
+        before work.
+      </p>
+    </div>
+
+    <div
+      style="
+        background: var(--bg-light, #f8fafc);
+        border: 1px solid var(--border, #e2e8f0);
+        border-radius: 20px;
+        padding: 2rem 1.5rem;
+        box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      "
+      onmouseover="
+        this.style.transform = 'translateY(-4px)';
+        this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+      "
+      onmouseout="
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = 'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+      "
+    >
+      <span
+        style="
+          font-size: 1.35rem;
+          font-weight: 900;
+          color: var(--primary, #0066ff);
+          opacity: 0.3;
+          margin-bottom: 0.75rem;
+          display: block;
+          letter-spacing: -0.02em;
+        "
+        >03</span
+      >
+      <h3
+        style="
+          font-size: 1.15rem;
+          font-weight: 800;
+          color: var(--gray-dark, #1e293b);
+          margin-bottom: 0.5rem;
+          letter-spacing: -0.01em;
+        "
+      >
+        Professional Application
+      </h3>
+      <p
+        style="
+          font-size: 0.9rem;
+          color: var(--gray-light, #64748b);
+          line-height: 1.6;
+          margin: 0;
+        "
+      >
+        High-grade primers, paints, and specialized coatings selected for
+        surfaces.
+      </p>
+    </div>
+
+    <div
+      style="
+        background: var(--bg-light, #f8fafc);
+        border: 1px solid var(--border, #e2e8f0);
+        border-radius: 20px;
+        padding: 2rem 1.5rem;
+        box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      "
+      onmouseover="
+        this.style.transform = 'translateY(-4px)';
+        this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+      "
+      onmouseout="
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = 'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+      "
+    >
+      <span
+        style="
+          font-size: 1.35rem;
+          font-weight: 900;
+          color: var(--primary, #0066ff);
+          opacity: 0.3;
+          margin-bottom: 0.75rem;
+          display: block;
+          letter-spacing: -0.02em;
+        "
+        >04</span
+      >
+      <h3
+        style="
+          font-size: 1.15rem;
+          font-weight: 800;
+          color: var(--gray-dark, #1e293b);
+          margin-bottom: 0.5rem;
+          letter-spacing: -0.01em;
+        "
+      >
+        Final Inspection
+      </h3>
+      <p
+        style="
+          font-size: 0.9rem;
+          color: var(--gray-light, #64748b);
+          line-height: 1.6;
+          margin: 0;
+        "
+      >
+        Detailed checks for clean lines, coverage, and overall
+        consistency.
+      </p>
+    </div>
+  </div>
+
+  <div
+    style="
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      border: 1px solid var(--border, #e2e8f0);
+      min-height: 480px;
+      display: flex;
+      align-items: flex-end;
+    "
+  >
+    <img
+      src="images/body-corporate-complexes.jpg"
+      alt="Professional painter meticulously executing wall finishing and application"
+      style="
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      "
+    />
+    <div
+      style="
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(15, 23, 42, 0.85) 0%,
+          rgba(15, 23, 42, 0.2) 60%
+        );
+      "
+    ></div>
+    <div
+      style="
+        position: relative;
+        padding: 2.5rem;
+        color: #ffffff;
+        z-index: 2;
+      "
+    >
+      <span
+        style="
+          background: var(--primary, #0066ff);
+          padding: 0.35rem 0.9rem;
+          border-radius: 50px;
+          font-size: 0.75rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          display: inline-block;
+          margin-bottom: 0.75rem;
+        "
+        >Attention to Detail</span
+      >
+      <h3
+        style="
+          font-size: 1.5rem;
+          font-weight: 800;
+          margin: 0 0 0.5rem 0;
+          line-height: 1.3;
+        "
+      >
+        Built on standard-setting execution.
+      </h3>
+      <p
+        style="
+          font-size: 0.95rem;
+          color: #cbd5e1;
+          margin: 0;
+          line-height: 1.5;
+        "
+      >
+        Every contractor in our network follows strict methodology to
+        protect your property investment.
+      </p>
+    </div>
+  </div>
+</div>
+
+      <!-- Areas We Serve Section -->
+      <section
+        class="areas-we-serve-section"
+        style="
+          padding: 7rem 0;
+          background: var(--bg-light, #f8fafc);
+          border-top: 1px solid var(--border, #e2e8f0);
+          border-bottom: 1px solid var(--border, #e2e8f0);
+        "
+      >
+        <div
+          class="container"
+          style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+        >
+          <!-- Section Header -->
+          <div
+            class="section-title"
+            style="text-align: center; margin-bottom: 4rem"
+          >
+            <span
+              class="badge"
+              style="
+                background: #eff6ff;
+                color: var(--primary, #0066ff);
+                padding: 0.4rem 1.1rem;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                display: inline-block;
+                margin-bottom: 1.25rem;
+                border: 1px solid rgba(0, 102, 255, 0.2);
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+              "
+              >Regional Coverage</span
+            >
+            <h2
+              style="
+                font-size: 2.75rem;
+                font-weight: 800;
+                color: var(--primary, #0066ff);
+                margin-bottom: 1rem;
+                letter-spacing: -0.02em;
+              "
+            >
+              Painting Projects Across Gauteng
+            </h2>
+            <p
+              style="
+                color: var(--gray-light, #64748b);
+                font-size: 1.15rem;
+                max-width: 750px;
+                margin: 0 auto;
+                line-height: 1.6;
+              "
+            >
+              PrimePainters connects homeowners and businesses with painting
+              professionals serving communities throughout Johannesburg and
+              surrounding Gauteng areas.
+            </p>
+          </div>
+
+          <!-- Location Cards Grid -->
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+              gap: 2rem;
+              margin-bottom: 3.5rem;
+            "
+          >
+            <!-- Sandton -->
+            <div
+              style="
+                background: var(--white, #ffffff);
+                border: 1px solid var(--border, #e2e8f0);
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+                display: flex;
+                flex-direction: column;
+                transition:
+                  transform 0.2s ease,
+                  box-shadow 0.2s ease;
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-4px)';
+                this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow =
+                  'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+              "
+            >
+              <!-- Card Image -->
+              <div
+                style="
+                  height: 180px;
+                  position: relative;
+                  overflow: hidden;
+                  background: #0f172a;
+                "
+              >
+                <img
+                  src="images/sandton.avif"
+                  alt="Luxury homes and properties in Sandton"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(15, 23, 42, 0.4) 0%,
+                      transparent 60%
+                    );
+                  "
+                ></div>
+              </div>
+              <!-- Card Body -->
+              <div
+                style="
+                  padding: 2rem;
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    margin-bottom: 0.75rem;
+                  "
+                >
+                  <div
+                    style="
+                      width: 8px;
+                      height: 8px;
+                      background: var(--primary, #0066ff);
+                      border-radius: 50%;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      font-size: 1.25rem;
+                      font-weight: 800;
+                      color: var(--gray-dark, #1e293b);
+                      margin: 0;
+                    "
+                  >
+                    Sandton
+                  </h3>
+                </div>
+                <p
+                  style="
+                    font-size: 0.925rem;
+                    color: var(--gray-light, #64748b);
+                    line-height: 1.6;
+                    margin: 0;
+                  "
+                >
+                  Luxury homes, estates, apartments and commercial properties.
+                </p>
+              </div>
+            </div>
+
+            <!-- Midrand -->
+            <div
+              style="
+                background: var(--white, #ffffff);
+                border: 1px solid var(--border, #e2e8f0);
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+                display: flex;
+                flex-direction: column;
+                transition:
+                  transform 0.2s ease,
+                  box-shadow 0.2s ease;
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-4px)';
+                this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow =
+                  'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+              "
+            >
+              <!-- Card Image -->
+              <div
+                style="
+                  height: 180px;
+                  position: relative;
+                  overflow: hidden;
+                  background: #0f172a;
+                "
+              >
+                <img
+                  src="images/midrand.avif"
+                  alt="Residential developments and complexes in Midrand"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(15, 23, 42, 0.4) 0%,
+                      transparent 60%
+                    );
+                  "
+                ></div>
+              </div>
+              <!-- Card Body -->
+              <div
+                style="
+                  padding: 2rem;
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    margin-bottom: 0.75rem;
+                  "
+                >
+                  <div
+                    style="
+                      width: 8px;
+                      height: 8px;
+                      background: var(--primary, #0066ff);
+                      border-radius: 50%;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      font-size: 1.25rem;
+                      font-weight: 800;
+                      color: var(--gray-dark, #1e293b);
+                      margin: 0;
+                    "
+                  >
+                    Midrand
+                  </h3>
+                </div>
+                <p
+                  style="
+                    font-size: 0.925rem;
+                    color: var(--gray-light, #64748b);
+                    line-height: 1.6;
+                    margin: 0;
+                  "
+                >
+                  Residential developments, complexes and businesses.
+                </p>
+              </div>
+            </div>
+
+            <!-- Rosebank -->
+            <div
+              style="
+                background: var(--white, #ffffff);
+                border: 1px solid var(--border, #e2e8f0);
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+                display: flex;
+                flex-direction: column;
+                transition:
+                  transform 0.2s ease,
+                  box-shadow 0.2s ease;
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-4px)';
+                this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow =
+                  'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+              "
+            >
+              <!-- Card Image -->
+              <div
+                style="
+                  height: 180px;
+                  position: relative;
+                  overflow: hidden;
+                  background: #0f172a;
+                "
+              >
+                <img
+                  src="images/rosebank.avif"
+                  alt="Apartments and retail spaces in Rosebank"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(15, 23, 42, 0.4) 0%,
+                      transparent 60%
+                    );
+                  "
+                ></div>
+              </div>
+              <!-- Card Body -->
+              <div
+                style="
+                  padding: 2rem;
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    margin-bottom: 0.75rem;
+                  "
+                >
+                  <div
+                    style="
+                      width: 8px;
+                      height: 8px;
+                      background: var(--primary, #0066ff);
+                      border-radius: 50%;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      font-size: 1.25rem;
+                      font-weight: 800;
+                      color: var(--gray-dark, #1e293b);
+                      margin: 0;
+                    "
+                  >
+                    Rosebank
+                  </h3>
+                </div>
+                <p
+                  style="
+                    font-size: 0.925rem;
+                    color: var(--gray-light, #64748b);
+                    line-height: 1.6;
+                    margin: 0;
+                  "
+                >
+                  Apartments, offices, retail and residential properties.
+                </p>
+              </div>
+            </div>
+
+            <!-- Randburg -->
+            <div
+              style="
+                background: var(--white, #ffffff);
+                border: 1px solid var(--border, #e2e8f0);
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+                display: flex;
+                flex-direction: column;
+                transition:
+                  transform 0.2s ease,
+                  box-shadow 0.2s ease;
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-4px)';
+                this.style.boxShadow = '0 12px 30px rgba(0,0,0,0.08)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow =
+                  'var(--shadow-sm, 0 4px 6px rgba(0,0,0,0.02))';
+              "
+            >
+              <!-- Card Image -->
+              <div
+                style="
+                  height: 180px;
+                  position: relative;
+                  overflow: hidden;
+                  background: #0f172a;
+                "
+              >
+                <img
+                  src="images/randburg.avif"
+                  alt="Family homes and complexes in Randburg"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(15, 23, 42, 0.4) 0%,
+                      transparent 60%
+                    );
+                  "
+                ></div>
+              </div>
+              <!-- Card Body -->
+              <div
+                style="
+                  padding: 2rem;
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    margin-bottom: 0.75rem;
+                  "
+                >
+                  <div
+                    style="
+                      width: 8px;
+                      height: 8px;
+                      background: var(--primary, #0066ff);
+                      border-radius: 50%;
+                    "
+                  ></div>
+                  <h3
+                    style="
+                      font-size: 1.25rem;
+                      font-weight: 800;
+                      color: var(--gray-dark, #1e293b);
+                      margin: 0;
+                    "
+                  >
+                    Randburg
+                  </h3>
+                </div>
+                <p
+                  style="
+                    font-size: 0.925rem;
+                    color: var(--gray-light, #64748b);
+                    line-height: 1.6;
+                    margin: 0;
+                  "
+                >
+                  Family homes, complexes and commercial properties.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Call to Action Footer for Other Areas -->
+          <div
+            style="
+              text-align: center;
+              background: var(--white, #ffffff);
+              border: 1px solid var(--border, #e2e8f0);
+              border-radius: 20px;
+              padding: 3rem 2rem;
+              box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
+              max-width: 800px;
+              margin: 0 auto;
+            "
+          >
+            <h3
+              style="
+                font-size: 1.5rem;
+                font-weight: 800;
+                color: var(--gray-dark, #1e293b);
+                margin-bottom: 0.75rem;
+                letter-spacing: -0.01em;
+              "
+            >
+              Looking for a painter in another Gauteng area?
+            </h3>
+            <p
+              style="
+                color: var(--gray-light, #64748b);
+                font-size: 1rem;
+                margin-bottom: 1.75rem;
+              "
+            >
+              We operate across the broader Gauteng region. Tell us where your
+              project is located, and we'll connect you with a verified local
+              professional.
+            </p>
+            <a
+              href="#lead-form"
+              style="
+                background: var(--primary, #0066ff);
+                color: #ffffff;
+                padding: 0.9rem 2.25rem;
+                border-radius: 50px;
+                font-size: 1rem;
+                font-weight: 700;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                box-shadow: 0 4px 14px rgba(0, 102, 255, 0.35);
+                transition:
+                  background 0.2s ease,
+                  transform 0.2s ease;
+              "
+              onmouseover="
+                this.style.background = '#0052cc';
+                this.style.transform = 'translateY(-2px)';
+              "
+              onmouseout="
+                this.style.background = 'var(--primary, #0066ff)';
+                this.style.transform = 'translateY(0)';
+              "
+            >
+              Check Your Area &rarr;
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Final Professional CTA Section -->
+      <section
+        class="final-cta-section"
+        style="
+          padding: 7rem 0;
+          background: linear-gradient(135deg, var(--primary) 0%, #004ecc 100%);
+          color: var(--white);
+          position: relative;
+          overflow: hidden;
+        "
+      >
+        <!-- Background Decorative Glow -->
+        <div
+          style="
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            pointer-events: none;
+          "
+        ></div>
+
+        <div
+          class="container"
+          style="
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            position: relative;
+            z-index: 2;
+          "
+        >
+          <div class="cta-content" style="text-align: center">
+            <span
+              class="badge"
+              style="
+                background: rgba(255, 255, 255, 0.1);
+                color: var(--white);
+                padding: 0.4rem 1.1rem;
+                border-radius: 50px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                display: inline-block;
+                margin-bottom: 1.25rem;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                backdrop-filter: blur(4px);
+              "
+              >Get Started Today</span
+            >
+            <h2
+              style="
+                font-size: 3rem;
+                font-weight: 800;
+                color: var(--white);
+                margin-bottom: 1.25rem;
+                letter-spacing: -0.02em;
+                line-height: 1.2;
+              "
+            >
+              Ready to Transform Your Property's Exterior?
+            </h2>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.85);
+                font-size: 1.2rem;
+                max-width: 700px;
+                margin: 0 auto 3rem auto;
+                line-height: 1.6;
+              "
+            >
+              Connect with professional painting contractors across
+              Johannesburg. Request your detailed, no-obligation quotation today
+              and secure premium weather-resistant protection.
+            </p>
+
+            <!-- Action Buttons Wrapper -->
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.25rem;
+                align-items: center;
+              "
+            >
+              <!-- Primary Action -->
+              <a
+                href="/contact"
+                style="
+                  background: var(--white);
+                  color: var(--primary);
+                  padding: 1.15rem 2.75rem;
+                  border-radius: 50px;
+                  font-weight: 800;
+                  font-size: 1.1rem;
+                  text-decoration: none;
+                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+                  transition:
+                    transform 0.2s ease,
+                    background 0.2s ease,
+                    box-shadow 0.2s ease;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                "
+                onmouseover="
+                  this.style.transform = 'translateY(-2px)';
+                  this.style.background = '#f8fafc';
+                  this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.2)';
+                "
+                onmouseout="
+                  this.style.transform = 'translateY(0)';
+                  this.style.background = 'var(--white)';
+                  this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.15)';
+                "
+              >
+                Request a Free Quote <span>&rarr;</span>
+              </a>
+
+              <!-- Secondary Action (Phone / WhatsApp) -->
+              <a
+                href="tel:0110000000"
+                style="
+                  background: transparent;
+                  color: var(--white);
+                  padding: 1.15rem 2.5rem;
+                  border-radius: 50px;
+                  font-weight: 800;
+                  font-size: 1.1rem;
+                  text-decoration: none;
+                  border: 2px solid rgba(255, 255, 255, 0.4);
+                  transition:
+                    background 0.2s ease,
+                    border-color 0.2s ease;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.6rem;
+                "
+                onmouseover="
+                  this.style.background = 'rgba(255, 255, 255, 0.1)';
+                  this.style.borderColor = 'var(--white)';
+                "
+                onmouseout="
+                  this.style.background = 'transparent';
+                  this.style.borderColor = 'rgba(255, 255, 255, 0.4)';
+                "
+              >
+                <span></span> Call 011 000 0000
+              </a>
+            </div>
+
+            <!-- Trust Subtext -->
+            <div
+              style="
+                margin-top: 2.5rem;
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                flex-wrap: wrap;
+                font-size: 0.9rem;
+                color: rgba(255, 255, 255, 0.75);
+              "
+            >
+              <span
+                style="display: inline-flex; align-items: center; gap: 0.4rem"
+              >
+                <span style="color: #4ade80">✔</span> Fully Insured Contractors
+              </span>
+              <span
+                style="display: inline-flex; align-items: center; gap: 0.4rem"
+              >
+                <span style="color: #4ade80">✔</span> Premium Weather Guarantees
+              </span>
+              <span
+                style="display: inline-flex; align-items: center; gap: 0.4rem"
+              >
+                <span style="color: #4ade80">✔</span> Fast Turnaround Times
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Professional Footer Section -->
+    <footer
+      class="site-footer"
+      style="
+        background: #0f172a;
+        color: #cbd5e1;
+        padding: 4rem 0 2rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      "
+    >
+      <div
+        class="container"
+        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+      >
+        <!-- Main Footer Grid -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+          "
+        >
+          <!-- Col 1: Brand Info -->
+          <div>
+            <h3
+              style="
+                color: #ffffff;
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+              "
+            >
+              PrimePainters
+            </h3>
+            <p
+              style="
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #94a3b8;
+                margin-bottom: 1.25rem;
+              "
+            >
+              Connecting homeowners and businesses with trusted, vetted painting
+              and coating professionals across Sandton, Midrand, Rosebank, and
+              Randburg.
+            </p>
+            <div style="font-size: 0.85rem; color: #64748b">
+              &copy; 2026 PrimePainters. All rights reserved.
+            </div>
+          </div>
+
+          <!-- Col 2: Navigation Links (All Navbar Items) -->
+          <div>
+            <h4
+              style="
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Quick Navigation
+            </h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.65rem;
+              "
+            >
+              <li>
+                <a
+                  href="index.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="how-it-works.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="service-areas.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Service Areas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="blog.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  style="
+                    color: #cbd5e1;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s;
+                  "
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contractors.html"
+                  style="
+                    color: var(--accent);
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    transition: color 0.2s;
+                  "
+                  >For Painters</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Service Hubs -->
+          <div>
+            <h4
+              style="
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Service Areas
+            </h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.65rem;
+                font-size: 0.9rem;
+                color: #94a3b8;
+              "
+            >
+              <li>Sandton Residential Estates</li>
+              <li>Midrand Developments</li>
+              <li>Rosebank & Illovo</li>
+              <li>Randburg Suburbs</li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Contact & Support -->
+          <div>
+            <h4
+              style="
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              "
+            >
+              Get Connected
+            </h4>
+            <p
+              style="
+                font-size: 0.9rem;
+                line-height: 1.6;
+                color: #94a3b8;
+                margin-bottom: 1rem;
+              "
+            >
+              Receive up to 3 competitive quotes from vetted local pros in under
+              60 seconds.
+            </p>
+            <a
+              href="contact.html"
+              style="
+                display: inline-block;
+                background: var(--accent);
+                color: #ffffff;
+                padding: 0.65rem 1.25rem;
+                border-radius: 6px;
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 0.85rem;
+              "
+              >Request Free Quote</a
+            >
+          </div>
+        </div>
+
+        <!-- Bottom Credit Bar -->
+        <div
+          style="
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: #64748b;
+          "
+        >
+          <div>
+            Designed & Developed by
+            <span style="color: #cbd5e1; font-weight: 600"
+              >Sam Web Studios</span
+            >
+          </div>
+          <div style="display: flex; gap: 1.5rem">
+            <a href="privacy.html" style="color: #64748b; text-decoration: none"
+              >Privacy Policy</a
+            >
+            <a href="terms.html" style="color: #64748b; text-decoration: none"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
