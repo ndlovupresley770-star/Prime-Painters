@@ -223,4 +223,20 @@ function switchTransform(category) {
       servicesDropdown.classList.toggle('mobile-open');
     }
   });
+  let mybutton = document.getElementById("scrollTopBtn");
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+};
+
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
 

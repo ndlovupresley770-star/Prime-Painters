@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us | PrimePainters Network</title>
     <link rel="stylesheet" href="style.css" />
@@ -11,8 +12,28 @@
     />
   </head>
   <body>
-    <!-- Header & Navigation -->
-  <header class="site-header">
+    
+<!-- Top Utility Bar (Outside the header) -->
+<div class="top-bar">
+  <div class="container top-bar-container">
+    <div class="top-contact-info">
+      <a href="https://wa.me/27XXXXXXXXX" target="_blank" class="top-link">
+        <i class="fab fa-whatsapp"></i> +27 XX XXX XXXX
+      </a>
+      <a href="mailto:info@primepainters.co.za" class="top-link">
+        <i class="far fa-envelope"></i> info@primepainters.co.za
+      </a>
+    </div>
+    <div class="top-social-links">
+      <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Main Header / Navbar -->
+<header class="site-header">
   <div class="container nav-container">
     <a href="index.html" class="logo">Prime<span>Painters</span></a>
     
@@ -25,10 +46,10 @@
 
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="how-it-works.html" class="active">How It Works</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="how-it-works.html" >How It Works</a>
 
-      <!-- Services Dropdown (Single instance controlled by CSS/JS) -->
+      <!-- Services Dropdown -->
       <div class="dropdown" id="servicesDropdown">
         <a href="services.html" class="dropdown-trigger">Services</a>
         <div class="dropdown-content">
@@ -44,8 +65,12 @@
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
       
-      <!-- Mobile-only CTA placement inside the drawer -->
-      <div class="mobile-cta-container">
+      <!-- Mobile-only extras -->
+      <div class="mobile-extra-container">
+        <div class="mobile-contact-info">
+          <a href="https://wa.me/27XXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+          <a href="mailto:info@primepainters.co.za"><i class="far fa-envelope"></i> Email Us</a>
+        </div>
         <a href="contractors.html" class="btn-outline">For Painters</a>
       </div>
     </nav>
@@ -1389,7 +1414,7 @@
           "
         >
           <img
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80"
+            src="images/vet-painting-hero.avif"
             alt="Professional painter quality inspection and vetting"
             style="
               width: 100%;
@@ -1473,7 +1498,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80"
+                src="images/bussiness-indentity-&-verification.avif"
                 alt="Business and identity verification"
                 style="
                   width: 100%;
@@ -1561,7 +1586,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=500&q=80"
+                src="images/insurance-verification.avif"
                 alt="Insurance verification"
                 style="
                   width: 100%;
@@ -1649,7 +1674,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=500&q=80"
+                src="images/expert-interior-painting-services-hero.jpg"
                 alt="Experience and workmanship review"
                 style="
                   width: 100%;
@@ -1738,7 +1763,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80"
+                src="images/homeowner-consulting-with-the-painter.jpg"
                 alt="References and reputation checks"
                 style="
                   width: 100%;
@@ -1826,7 +1851,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=500&q=80"
+                src="images/ongoing-monitoring.jpg"
                 alt="Ongoing quality monitoring"
                 style="
                   width: 100%;
@@ -2107,7 +2132,7 @@
       <!-- Right Column: Visual Image -->
       <div class="mobile-sticky-fix" style="position: sticky; top: 100px;">
         <img 
-            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1000&q=80" 
+            src="images/dining-rooms.jpg" 
             alt="Professional painter transforming a wall in a modern home" 
             style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); display: block;"
         >
@@ -2734,5 +2759,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
   </body>
 </html>

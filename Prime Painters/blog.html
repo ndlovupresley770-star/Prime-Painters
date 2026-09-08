@@ -11,9 +11,31 @@
     />
   </head>
   <body>
-    <!-- Header & Navigation with Dropdown -->
-    
- <header class="site-header">
+
+
+    <!-- Top Utility Bar (Outside the header) -->
+
+ <!-- Top Utility Bar (Outside the header) -->
+<div class="top-bar">
+  <div class="container top-bar-container">
+    <div class="top-contact-info">
+      <a href="https://wa.me/27XXXXXXXXX" target="_blank" class="top-link">
+        <i class="fab fa-whatsapp"></i> +27 XX XXX XXXX
+      </a>
+      <a href="mailto:info@primepainters.co.za" class="top-link">
+        <i class="far fa-envelope"></i> info@primepainters.co.za
+      </a>
+    </div>
+    <div class="top-social-links">
+      <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Main Header / Navbar -->
+<header class="site-header">
   <div class="container nav-container">
     <a href="index.html" class="logo">Prime<span>Painters</span></a>
     
@@ -27,9 +49,9 @@
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="how-it-works.html" class="active">How It Works</a>
+      <a href="how-it-works.html">How It Works</a>
 
-      <!-- Services Dropdown (Single instance controlled by CSS/JS) -->
+      <!-- Services Dropdown -->
       <div class="dropdown" id="servicesDropdown">
         <a href="services.html" class="dropdown-trigger">Services</a>
         <div class="dropdown-content">
@@ -42,11 +64,15 @@
 
       <a href="service-areas.html">Service Areas</a>
       <a href="gallery.html">Gallery</a>
-      <a href="blog.html">Blog</a>
+      <a href="blog.html"  class="active">Blog</a>
       <a href="contact.html">Contact</a>
       
-      <!-- Mobile-only CTA placement inside the drawer -->
-      <div class="mobile-cta-container">
+      <!-- Mobile-only extras -->
+      <div class="mobile-extra-container">
+        <div class="mobile-contact-info">
+          <a href="https://wa.me/27XXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+          <a href="mailto:info@primepainters.co.za"><i class="far fa-envelope"></i> Email Us</a>
+        </div>
         <a href="contractors.html" class="btn-outline">For Painters</a>
       </div>
     </nav>
@@ -161,7 +187,7 @@
             "
           >
             <img
-              src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1000&q=80"
+              src="images/roller.avif"
               alt="Homeowner reviewing professional painting guide and project planning details"
               style="
                 position: absolute;
@@ -672,7 +698,7 @@
       >
         <div style="height: 160px; position: relative; overflow: hidden; background: #0f172a;">
           <img
-            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80"
+            src="images/interior-painting-&-decorating.jpg"
             alt="Interior painting project"
             style="width: 100%; height: 100%; object-fit: cover; display: block;"
           />
@@ -702,7 +728,7 @@
       >
         <div style="height: 160px; position: relative; overflow: hidden; background: #0f172a;">
           <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
+            src="images/exterior-painting-hero.png"
             alt="Exterior painting project"
             style="width: 100%; height: 100%; object-fit: cover; display: block;"
           />
@@ -732,7 +758,7 @@
       >
         <div style="height: 160px; position: relative; overflow: hidden; background: #0f172a;">
           <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
+            src="images/commercial-property-after-painted.jpg"
             alt="Commercial painting project"
             style="width: 100%; height: 100%; object-fit: cover; display: block;"
           />
@@ -762,7 +788,7 @@
       >
         <div style="height: 160px; position: relative; overflow: hidden; background: #0f172a;">
           <img
-            src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80"
+            src="images/cabinet-after-transformation.jpg"
             alt="Cabinet refinishing project"
             style="width: 100%; height: 100%; object-fit: cover; display: block;"
           />
@@ -1940,7 +1966,7 @@
             "
           >
             <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+              src="images/sandton.avif"
               alt="Professional exterior house painting and weatherproofing project"
               style="
                 position: absolute;
@@ -2162,7 +2188,7 @@
             "
           >
             <img
-              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80"
+              src="images/sandton-skyscrappers.jpg"
               alt="Sophisticated modern interior with curated color palette and designer furniture"
               style="
                 position: absolute;
@@ -2785,7 +2811,7 @@
         >
           <!-- Living Room Card -->
           <a
-            href="#living-room-guide"
+            href="https://www.housebeautiful.com/room-decorating/colors/g1181/living-room-paint-color-ideas/"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -2818,7 +2844,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
+                src="images/living-room.jpg"
                 alt="Living room interior painting guide"
                 style="
                   width: 100%;
@@ -2887,7 +2913,7 @@
 
           <!-- Bedroom Card -->
           <a
-            href="#bedroom-guide"
+            href="https://www.housebeautiful.com/room-decorating/colors/g1287/colorful-bedroom-decorating-ideas/"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -2920,7 +2946,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80"
+                src="images/bedroom.avif"
                 alt="Bedroom interior painting guide"
                 style="
                   width: 100%;
@@ -2989,7 +3015,7 @@
 
           <!-- Kitchen Card -->
           <a
-            href="#kitchen-guide"
+            href="https://www.dulux.co.uk/en/kitchens"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -3022,7 +3048,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80"
+                src="images/kitchen-cupboard.avif"
                 alt="Kitchen painting and cabinet guide"
                 style="
                   width: 100%;
@@ -3091,7 +3117,7 @@
 
           <!-- Bathroom Card -->
           <a
-            href="#bathroom-guide"
+            href="https://www.dulux.co.uk/en/articles/22-small-bathroom-colour-and-decor-ideas-to-make-your-space-look-stylish"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -3124,7 +3150,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80"
+                src="images/bathroom-painting.jpg"
                 alt="Bathroom painting and mold prevention guide"
                 style="
                   width: 100%;
@@ -3193,7 +3219,7 @@
 
           <!-- Children's Room Card -->
           <a
-            href="#kids-room-guide"
+            href="https://www.dulux.co.uk/en/kids-bedrooms"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -3226,7 +3252,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=600&q=80"
+                src="images/child-room.jpg"
                 alt="Children's room painting guide"
                 style="
                   width: 100%;
@@ -3295,7 +3321,7 @@
 
           <!-- Hallways & Staircases Card -->
           <a
-            href="#hallways-guide"
+            href="https://www.dulux.co.uk/en/articles/5-hallways-colour-schemes-make-entrance"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -3328,7 +3354,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80"
+                src="images/hallway-&-staircases.jpg"
                 alt="Hallways and staircases painting guide"
                 style="
                   width: 100%;
@@ -3397,7 +3423,7 @@
 
           <!-- Home Office Card -->
           <a
-            href="#home-office-guide"
+            href="https://www.dulux.co.uk/en/home-office"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -3430,7 +3456,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=600&q=80"
+                src="images/home-office.jpg"
                 alt="Home office painting guide"
                 style="
                   width: 100%;
@@ -3499,7 +3525,7 @@
 
           <!-- Dining Room Card -->
           <a
-            href="#dining-room-guide"
+            href="https://www.dulux.co.uk/en/dining-rooms"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -3532,7 +3558,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1617806118233-18e1c0c558c3?auto=format&fit=crop&w=600&q=80"
+                src="images/dining-room.jpg"
                 alt="Dining room painting guide"
                 style="
                   width: 100%;
@@ -6083,7 +6109,7 @@
           "
         >
           <a
-            href="#article-interior-colors"
+            href="https://www.dulux.co.za/en/colour-inspiration"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -6116,7 +6142,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80"
+                src="images/interior-masking-protection.jpg"
                 alt="Interior paint color palette guide"
                 style="
                   width: 100%;
@@ -6184,7 +6210,7 @@
           </a>
 
           <a
-            href="#article-painting-cost"
+            href="https://paintingpricepersquaremeter.co.za/locations/gauteng/"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -6217,7 +6243,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=600&q=80"
+                src="images/home-repainting.jpg"
                 alt="House painting cost calculator and breakdown"
                 style="
                   width: 100%;
@@ -6285,7 +6311,8 @@
           </a>
 
           <a
-            href="#article-interior-vs-exterior"
+            href="https://www.dulux.co.za/en/colour-inspiration
+            "
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -6318,7 +6345,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80"
+                src="images/exterior-wall-painting.jpg"
                 alt="Interior vs exterior paint comparison"
                 style="
                   width: 100%;
@@ -6386,7 +6413,7 @@
           </a>
 
           <a
-            href="#article-wall-prep"
+            href="https://www.dulux.co.uk/en/articles/preparation-and-tools"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -6419,7 +6446,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80"
+                src="images/feature-wall-and-trim-work-in-sandhurst.jpg"
                 alt="Wall preparation and sanding guide"
                 style="
                   width: 100%;
@@ -6487,7 +6514,7 @@
           </a>
 
           <a
-            href="#article-cabinet-refinishing"
+            href="http://benjaminmoore.com/en-us/project-ideas-inspiration/interiors/kitchen-cabinets-ideas-inspiration"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -6520,7 +6547,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80"
+                src="images/kitchen-cupboard-refinishing-in-randburg.jpg"
                 alt="Kitchen cabinet refinishing vs replacement"
                 style="
                   width: 100%;
@@ -6588,7 +6615,7 @@
           </a>
 
           <a
-            href="#article-when-to-repaint"
+            href="http://blesserhouse.com/15-ways-to-transform-your-entire-house-with-just-paint/"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -6621,7 +6648,7 @@
               "
             >
               <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
+                src="images/exterior-metalwork-&-gate-after-painted.jpg"
                 alt="How often should you repaint your home"
                 style="
                   width: 100%;
@@ -7354,5 +7381,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
   </body>
 </html>

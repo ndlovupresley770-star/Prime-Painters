@@ -18,6 +18,24 @@
     />
   </head>
   <body>
+    <!--Top Bar-->
+<div class="top-bar">
+  <div class="container top-bar-container">
+    <div class="top-contact-info">
+      <a href="https://wa.me/27XXXXXXXXX" target="_blank" class="top-link">
+        <i class="fab fa-whatsapp"></i> +27 XX XXX XXXX
+      </a>
+      <a href="mailto:info@primepainters.co.za" class="top-link">
+        <i class="far fa-envelope"></i> info@primepainters.co.za
+      </a>
+    </div>
+    <div class="top-social-links">
+      <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
     <header class="site-header">
   <div class="container nav-container">
     <a href="index.html" class="logo">Prime<span>Painters</span></a>
@@ -32,13 +50,13 @@
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="how-it-works.html" class="active">How It Works</a>
+      <a href="how-it-works.html" >How It Works</a>
 
       <!-- Services Dropdown (Single instance controlled by CSS/JS) -->
       <div class="dropdown" id="servicesDropdown">
         <a href="services.html" class="dropdown-trigger">Services</a>
         <div class="dropdown-content">
-          <a href="interior-painting.html">Interior Painting</a>
+          <a href="interior-painting.html" class="active">Interior Painting</a>
           <a href="exterior-painting.html">Exterior Painting</a>
           <a href="commercial-painting.html">Commercial Painting</a>
           <a href="cabinet-refinishing.html">Cabinet Refinishing</a>
@@ -63,6 +81,7 @@
   </div>
 </header>
 
+<!--Hero-->
     <section
       class="page-header-section"
       style="
@@ -3216,13 +3235,13 @@
             
             <!-- AFTER Image (Base Layer) -->
             <div style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;">
-              <img id="img-after" src="path-to-living-after.jpg" alt="After Transformation" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <img id="img-after" src="images/living-room-after-painted.jpg" alt="After Transformation" style="width: 100%; height: 100%; object-fit: cover; display: block;">
               <span style="position: absolute; bottom: 20px; right: 20px; background: rgba(0,0,0,0.75); color: white; padding: 0.35rem 0.85rem; border-radius: 4px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">After</span>
             </div>
 
             <!-- BEFORE Image (Overlay Layer with Clipping) -->
             <div id="img-before-wrapper" style="position: absolute; width: 50%; height: 100%; top: 0; left: 0; overflow: hidden; border-right: 3px solid white;">
-              <img id="img-before" src="path-to-living-before.jpg" alt="Before Transformation" style="position: absolute; width: 100%; height: 100%; object-fit: cover; display: block; max-width: none;">
+              <img id="img-before" src="images/living-room-before-painted.jpg" alt="Before Transformation" style="position: absolute; width: 100%; height: 100%; object-fit: cover; display: block; max-width: none;">
               <span style="position: absolute; bottom: 20px; left: 20px; background: rgba(0,0,0,0.75); color: white; padding: 0.35rem 0.85rem; border-radius: 4px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">Before</span>
             </div>
 
@@ -3268,7 +3287,7 @@
       </div>
     </section>
 
-<!-- Add this responsive CSS override to your stylesheet -->
+<!--Responsive CSS override to your stylesheet -->
 <style>
   @media (max-width: 992px) {
     .transform-grid {
@@ -3412,7 +3431,7 @@
     }
   }
 </style>
-
+<!--Footer-->
     <footer
       class="site-footer"
       style="
@@ -3707,5 +3726,6 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
   </body>
 </html>

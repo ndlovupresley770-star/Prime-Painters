@@ -11,6 +11,24 @@
     />
   </head>
   <body>
+    <!--Top Bar-->
+<div class="top-bar">
+  <div class="container top-bar-container">
+    <div class="top-contact-info">
+      <a href="https://wa.me/27XXXXXXXXX" target="_blank" class="top-link">
+        <i class="fab fa-whatsapp"></i> +27 63 990 4310
+      </a>
+      <a href="mailto:info@primepainters.co.za" class="top-link">
+        <i class="far fa-envelope"></i> info@primepainters.co.za
+      </a>
+    </div>
+    <div class="top-social-links">
+      <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
     <!-- Header & Navigation with Dropdown -->
      <header class="site-header">
   <div class="container nav-container">
@@ -26,11 +44,11 @@
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="how-it-works.html" class="active">How It Works</a>
+      <a href="how-it-works.html" >How It Works</a>
 
       <!-- Services Dropdown (Single instance controlled by CSS/JS) -->
       <div class="dropdown" id="servicesDropdown">
-        <a href="services.html" class="dropdown-trigger">Services</a>
+        <a href="services.html" class="active" class="dropdown-trigger">Services</a>
         <div class="dropdown-content">
           <a href="interior-painting.html">Interior Painting</a>
           <a href="exterior-painting.html">Exterior Painting</a>
@@ -1824,7 +1842,7 @@
             "
           >
             <img
-              src="path-to-living-room-before.jpg"
+              src="images/living-room-before-painted.jpg"
               alt="Living Room Before Transformation"
               style="
                 width: 100%;
@@ -1853,7 +1871,7 @@
           <!-- After Image -->
           <div style="position: relative; overflow: hidden">
             <img
-              src="path-to-living-room-after.jpg"
+              src="images/living-room-after-painted.jpg"
               alt="Living Room After Transformation"
               style="
                 width: 100%;
@@ -1931,7 +1949,7 @@
             "
           >
             <img
-              src="path-to-exterior-before.jpg"
+              src="images/exterior-wall-before-painted.jpg"
               alt="Exterior Before Transformation"
               style="
                 width: 100%;
@@ -1960,7 +1978,7 @@
           <!-- After Image -->
           <div style="position: relative; overflow: hidden">
             <img
-              src="path-to-exterior-after.jpg"
+              src="images/exterior-wall-after-painted.jpg"
               alt="Exterior After Transformation"
               style="
                 width: 100%;
@@ -2038,7 +2056,7 @@
             "
           >
             <img
-              src="path-to-cabinet-before.jpg"
+              src="images/cabinet-before-transformation.jpg"
               alt="Cabinet Before Transformation"
               style="
                 width: 100%;
@@ -2067,7 +2085,7 @@
           <!-- After Image -->
           <div style="position: relative; overflow: hidden">
             <img
-              src="path-to-cabinet-after.jpg"
+              src="images/cabinet-after-transformation.jpg"
               alt="Cabinet After Transformation"
               style="
                 width: 100%;
@@ -2145,7 +2163,7 @@
             "
           >
             <img
-              src="path-to-commercial-before.jpg"
+              src="images/commercial-property-before-painted.jpg"
               alt="Commercial Property Before Transformation"
               style="
                 width: 100%;
@@ -2174,7 +2192,7 @@
           <!-- After Image -->
           <div style="position: relative; overflow: hidden">
             <img
-              src="path-to-commercial-after.jpg"
+              src="images/commercial-property-after-painted.jpg"
               alt="Commercial Property After Transformation"
               style="
                 width: 100%;
@@ -2974,7 +2992,7 @@
         "
       >
         <img
-          src="images/precision-surface-coverage.jpg"
+          src="images/expert-interior-painting-services-hero.jpg"
           alt="Professional Painter at Work"
           style="
             width: 100%;
@@ -4442,5 +4460,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
   </body>
 </html>

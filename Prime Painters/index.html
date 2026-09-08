@@ -12,6 +12,24 @@
     />
   </head>
   <body>
+    <!--Top Bar-->
+<div class="top-bar">
+  <div class="container top-bar-container">
+    <div class="top-contact-info">
+      <a href="https://wa.me/27XXXXXXXXX" target="_blank" class="top-link">
+        <i class="fab fa-whatsapp"></i> +27 XX XXX XXXX
+      </a>
+      <a href="mailto:info@primepainters.co.za" class="top-link">
+        <i class="far fa-envelope"></i> info@primepainters.co.za
+      </a>
+    </div>
+    <div class="top-social-links">
+      <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
     <!-- Header & Navigation (Responsive with Mobile Drawer & Dropdown) -->
 
    
@@ -27,9 +45,9 @@
     </button>
 
     <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About Us</a>
-      <a href="how-it-works.html" class="active">How It Works</a>
+      <a href="how-it-works.html" >How It Works</a>
 
       <!-- Services Dropdown (Single instance controlled by CSS/JS) -->
       <div class="dropdown" id="servicesDropdown">
@@ -8739,5 +8757,6 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
   </body>
 </html>

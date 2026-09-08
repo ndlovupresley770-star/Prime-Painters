@@ -17,7 +17,24 @@
     />
   </head>
   <body>
-   
+   <!--Top Bar-->
+<div class="top-bar">
+  <div class="container top-bar-container">
+    <div class="top-contact-info">
+      <a href="https://wa.me/27XXXXXXXXX" target="_blank" class="top-link">
+        <i class="fab fa-whatsapp"></i> +27 XX XXX XXXX
+      </a>
+      <a href="mailto:info@primepainters.co.za" class="top-link">
+        <i class="far fa-envelope"></i> info@primepainters.co.za
+      </a>
+    </div>
+    <div class="top-social-links">
+      <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
  <header class="site-header">
   <div class="container nav-container">
     <a href="index.html" class="logo">Prime<span>Painters</span></a>
@@ -32,14 +49,14 @@
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="how-it-works.html" class="active">How It Works</a>
+      <a href="how-it-works.html" >How It Works</a>
 
       <!-- Services Dropdown (Single instance controlled by CSS/JS) -->
       <div class="dropdown" id="servicesDropdown">
         <a href="services.html" class="dropdown-trigger">Services</a>
         <div class="dropdown-content">
           <a href="interior-painting.html">Interior Painting</a>
-          <a href="exterior-painting.html">Exterior Painting</a>
+          <a href="exterior-painting.html" class="active">Exterior Painting</a>
           <a href="commercial-painting.html">Commercial Painting</a>
           <a href="cabinet-refinishing.html">Cabinet Refinishing</a>
         </div>
@@ -2714,7 +2731,7 @@
           "
         >
           <img
-            src="your-image-metal.jpg"
+            src="images/metal coating.jpg"
             alt="Metal Coatings"
             style="
               width: 100%;
@@ -2853,7 +2870,7 @@
           "
         >
           <img
-            src="your-image-wood.jpg"
+            src="images/exterior-woodwork-painting.jpg"
             alt="Exterior Wood Stains & Coatings"
             style="
               width: 100%;
@@ -3099,7 +3116,7 @@
               >
                 <!-- After Image (Base Layer) -->
                 <img
-                  src="your-house-after.jpg"
+                  src="images/exterior-wall-after-painted.jpg"
                   alt="House Exterior After"
                   style="
                     width: 100%;
@@ -3137,7 +3154,7 @@
                   "
                 >
                   <img
-                    src="your-house-before.jpg"
+                    src="images/exterior-wall-before-painted.jpg"
                     alt="House Exterior Before"
                     style="
                       width: 200%;
@@ -3318,7 +3335,7 @@
               >
                 <!-- After Image (Base Layer) -->
                 <img
-                  src="your-wall-after.jpg"
+                  src="images/boundary-wall-and-perimeter-after-painted.jpg"
                   alt="Boundary Wall After"
                   style="
                     width: 100%;
@@ -3356,7 +3373,7 @@
                   "
                 >
                   <img
-                    src="your-wall-before.jpg"
+                    src="images/boundary-wall-&-perimeter-before-painted.jpg"
                     alt="Boundary Wall Before"
                     style="
                       width: 200%;
@@ -3537,7 +3554,7 @@
               >
                 <!-- After Image (Base Layer) -->
                 <img
-                  src="your-metal-after.jpg"
+                  src="images/exterior-metalwork-&-gate-after-painted.jpg"
                   alt="Metalwork After"
                   style="
                     width: 100%;
@@ -3575,7 +3592,7 @@
                   "
                 >
                   <img
-                    src="your-metal-before.jpg"
+                    src="images/exterior-metalwork-&-gate-before-painted.jpg"
                     alt="Metalwork Before"
                     style="
                       width: 200%;
@@ -3756,7 +3773,7 @@
               >
                 <!-- After Image (Base Layer) -->
                 <img
-                  src="your-roof-after.jpg"
+                  src="images/Roof after-coating-restoration.jpg"
                   alt="Roof After"
                   style="
                     width: 100%;
@@ -3794,7 +3811,7 @@
                   "
                 >
                   <img
-                    src="your-roof-before.jpg"
+                    src="images/roof-before-coating-restoration.jpg"
                     alt="Roof Before"
                     style="
                       width: 200%;
@@ -5985,5 +6002,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
   </body>
 </html>

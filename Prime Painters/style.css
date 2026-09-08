@@ -368,7 +368,90 @@ ul {
 
     transform: translateY(-1px);
 }
+/* Top Utility Bar Styles */
+.top-bar {
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: 13px;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--primary);
+  width: 100%;
+  position: relative;
+  z-index: 1001;
+}
 
+.top-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.top-contact-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.top-link, .top-social-links a {
+  color: var(--gray-light);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.top-link:hover, .top-social-links a:hover {
+  color: var(--accent);
+}
+
+.top-social-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .top-bar {
+    display: none; 
+  }
+}
+
+/* Mobile Drawer Extra Contact Info */
+.mobile-extra-container {
+  display: none;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobile-contact-info a {
+  color: var(--gray-dark);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.mobile-contact-info a:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .mobile-extra-container {
+    display: flex;
+  }
+}
 
 /* =========================================================
    MOBILE MENU BUTTON
@@ -2287,4 +2370,25 @@ body {
     padding: 0.75rem !important;
   }
 
+}
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #10a82a;
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background-color: #0056b3;
 }
