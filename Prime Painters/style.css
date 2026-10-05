@@ -398,7 +398,7 @@ ul {
 }
 
 .top-link, .top-social-links a {
-  color: var(--gray-light);
+  color: #ffffff; /* Temporarily force white to test */
   text-decoration: none;
   transition: color 0.2s ease;
   display: inline-flex;
@@ -406,7 +406,6 @@ ul {
   gap: 8px;
   white-space: nowrap;
 }
-
 .top-link:hover, .top-social-links a:hover {
   color: var(--accent);
 }
