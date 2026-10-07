@@ -613,7 +613,7 @@
       </div>
     </section>
     <!--Painting Cost Guide-->
-   <section
+  <section
   class="painting-cost-guide-section"
   style="
     padding: 4rem 0;
@@ -629,9 +629,10 @@
     class="container"
     style="max-width: 1200px; margin: 0 auto; padding: 0 1rem; width: 100%; box-sizing: border-box;"
   >
+    <!-- Section Header -->
     <div
       class="section-title"
-      style="text-align: center; margin-bottom: 3rem; padding: 0 0.5rem;"
+      style="text-align: center; margin-bottom: 2.5rem; padding: 0 0.5rem;"
     >
       <span
         class="badge"
@@ -677,6 +678,62 @@
       </p>
     </div>
 
+    <!-- Single Hero Image Banner -->
+    <div
+      style="
+        max-width: 900px;
+        margin: 0 auto 3rem auto;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        background: #0f172a;
+        height: 320px;
+        position: relative;
+      "
+    >
+      <img
+        src="images/exterior-painting-hero.png"
+        alt="Professional painting services in Gauteng"
+        style="width: 100%; height: 100%; object-fit: cover; display: block;"
+      />
+      <div
+        style="
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(to top, rgba(15, 23, 42, 0.6) 0%, transparent 70%);
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          bottom: 1.5rem;
+          left: 2rem;
+          right: 2rem;
+          color: #ffffff;
+        "
+      >
+        <span
+          style="
+            background: var(--primary, #0066ff);
+            color: #ffffff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+          "
+          >Quality & Value</span
+        >
+        <h3 style="font-size: 1.5rem; font-weight: 800; margin: 0; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+          Professional Execution Tailored to Your Property
+        </h3>
+      </div>
+    </div>
+
+    <!-- Service Cards Grid (Image-Free & Professional) -->
     <div
       style="
         display: grid;
@@ -690,29 +747,24 @@
         style="
           background: var(--white, #ffffff);
           border: 1px solid var(--border, #e2e8f0);
+          border-top: 4px solid var(--primary, #0066ff);
           border-radius: 20px;
-          overflow: hidden;
+          padding: 2rem 1.5rem;
           box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
           display: flex;
           flex-direction: column;
+          flex-grow: 1;
         "
       >
-        <div style="height: 160px; position: relative; overflow: hidden; background: #0f172a;">
-          <img
-            src="images/interior-painting-&-decorating.jpg"
-            alt="Interior painting project"
-            style="width: 100%; height: 100%; object-fit: cover; display: block;"
-          />
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 23, 42, 0.4) 0%, transparent 60%);"></div>
-        </div>
-        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
-          <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin-bottom: 0.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <div style="width: 8px; height: 8px; background: var(--primary, #0066ff); border-radius: 50%;"></div>
+          <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0;">
             Interior Painting
           </h3>
-          <p style="font-size: 0.9rem; color: var(--gray-light, #64748b); line-height: 1.5; margin: 0;">
-            Tailored rates for walls, ceilings, trim, and doors. Costs typically scale based on room dimensions and surface prep required.
-          </p>
         </div>
+        <p style="font-size: 0.9rem; color: var(--gray-light, #64748b); line-height: 1.6; margin: 0;">
+          Tailored rates for walls, ceilings, trim, and doors. Costs typically scale based on room dimensions and surface prep required.
+        </p>
       </div>
 
       <!-- Card 2: Exterior -->
@@ -720,29 +772,24 @@
         style="
           background: var(--white, #ffffff);
           border: 1px solid var(--border, #e2e8f0);
+          border-top: 4px solid var(--primary, #0066ff);
           border-radius: 20px;
-          overflow: hidden;
+          padding: 2rem 1.5rem;
           box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
           display: flex;
           flex-direction: column;
+          flex-grow: 1;
         "
       >
-        <div style="height: 160px; position: relative; overflow: hidden; background: #0f172a;">
-          <img
-            src="images/exterior-painting-hero.png"
-            alt="Exterior painting project"
-            style="width: 100%; height: 100%; object-fit: cover; display: block;"
-          />
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 23, 42, 0.4) 0%, transparent 60%);"></div>
-        </div>
-        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
-          <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin-bottom: 0.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <div style="width: 8px; height: 8px; background: var(--primary, #0066ff); border-radius: 50%;"></div>
+          <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0;">
             Exterior Painting
           </h3>
-          <p style="font-size: 0.9rem; color: var(--gray-light, #64748b); line-height: 1.5; margin: 0;">
-            Includes weatherproofing, waterproofing, and protective coatings designed to shield your facade against local climate elements.
-          </p>
         </div>
+        <p style="font-size: 0.9rem; color: var(--gray-light, #64748b); line-height: 1.6; margin: 0;">
+          Includes weatherproofing, waterproofing, and protective coatings designed to shield your facade against local climate elements.
+        </p>
       </div>
 
       <!-- Card 3: Commercial -->
@@ -750,29 +797,24 @@
         style="
           background: var(--white, #ffffff);
           border: 1px solid var(--border, #e2e8f0);
+          border-top: 4px solid var(--primary, #0066ff);
           border-radius: 20px;
-          overflow: hidden;
+          padding: 2rem 1.5rem;
           box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
           display: flex;
           flex-direction: column;
+          flex-grow: 1;
         "
       >
-        <div style="height: 160px; position: relative; overflow: hidden; background: #0f172a;">
-          <img
-            src="images/commercial-property-after-painted.jpg"
-            alt="Commercial painting project"
-            style="width: 100%; height: 100%; object-fit: cover; display: block;"
-          />
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 23, 42, 0.4) 0%, transparent 60%);"></div>
-        </div>
-        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
-          <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin-bottom: 0.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <div style="width: 8px; height: 8px; background: var(--primary, #0066ff); border-radius: 50%;"></div>
+          <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0;">
             Commercial Painting
           </h3>
-          <p style="font-size: 0.9rem; color: var(--gray-light, #64748b); line-height: 1.5; margin: 0;">
-            Specialized project budgeting for offices, retail spaces, and complexes with flexible scheduling to minimize business downtime.
-          </p>
         </div>
+        <p style="font-size: 0.9rem; color: var(--gray-light, #64748b); line-height: 1.6; margin: 0;">
+          Specialized project budgeting for offices, retail spaces, and complexes with flexible scheduling to minimize business downtime.
+        </p>
       </div>
 
       <!-- Card 4: Cabinet Refinishing -->
@@ -780,29 +822,24 @@
         style="
           background: var(--white, #ffffff);
           border: 1px solid var(--border, #e2e8f0);
+          border-top: 4px solid var(--primary, #0066ff);
           border-radius: 20px;
-          overflow: hidden;
+          padding: 2rem 1.5rem;
           box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
           display: flex;
           flex-direction: column;
+          flex-grow: 1;
         "
       >
-        <div style="height: 160px; position: relative; overflow: hidden; background: #0f172a;">
-          <img
-            src="images/cabinet-after-transformation.jpg"
-            alt="Cabinet refinishing project"
-            style="width: 100%; height: 100%; object-fit: cover; display: block;"
-          />
-          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 23, 42, 0.4) 0%, transparent 60%);"></div>
-        </div>
-        <div style="padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1;">
-          <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin-bottom: 0.5rem;">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <div style="width: 8px; height: 8px; background: var(--primary, #0066ff); border-radius: 50%;"></div>
+          <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0;">
             Cabinet Refinishing
           </h3>
-          <p style="font-size: 0.9rem; color: var(--gray-light, #64748b); line-height: 1.5; margin: 0;">
-            A cost-effective alternative to full kitchen replacements, featuring professional spray coating and durable finish application.
-          </p>
         </div>
+        <p style="font-size: 0.9rem; color: var(--gray-light, #64748b); line-height: 1.6; margin: 0;">
+          A cost-effective alternative to full kitchen replacements, featuring professional spray coating and durable finish application.
+        </p>
       </div>
     </div>
 
@@ -812,7 +849,7 @@
         background: var(--white, #ffffff);
         border: 1px solid var(--border, #e2e8f0);
         border-radius: 20px;
-        padding: 2rem 1.5rem;
+        padding: 2.5rem 2rem;
         box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
         margin-bottom: 3rem;
       "
@@ -822,7 +859,7 @@
           font-size: clamp(1.35rem, 3vw, 1.75rem);
           font-weight: 800;
           color: var(--gray-dark, #1e293b);
-          margin-bottom: 1.5rem;
+          margin-bottom: 1.75rem;
           letter-spacing: -0.02em;
           text-align: center;
         "
@@ -940,581 +977,519 @@
   </div>
 </section>
     <!--Interior Painting Tips Section-->
-    <section
-      class="interior-painting-tips-section"
+   <section
+  class="interior-painting-tips-section"
+  style="
+    padding: 7rem 0;
+    background: var(--white, #ffffff);
+    border-top: 1px solid var(--border, #e2e8f0);
+    border-bottom: 1px solid var(--border, #e2e8f0);
+  "
+>
+  <div
+    class="container"
+    style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+  >
+    <!-- Section Header -->
+    <div
+      class="section-title"
+      style="text-align: center; margin-bottom: 5rem"
+    >
+      <span
+        class="badge"
+        style="
+          background: #eff6ff;
+          color: var(--primary, #0066ff);
+          padding: 0.4rem 1.1rem;
+          border-radius: 50px;
+          font-size: 0.85rem;
+          font-weight: 700;
+          display: inline-block;
+          margin-bottom: 1.25rem;
+          border: 1px solid rgba(0, 102, 255, 0.2);
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        "
+        >Expert Advice</span
+      >
+      <h2
+        style="
+          font-size: 2.75rem;
+          font-weight: 800;
+          color: var(--primary, #0066ff);
+          margin-bottom: 1rem;
+          letter-spacing: -0.02em;
+        "
+      >
+        Interior Painting Tips & Blog
+      </h2>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: 1.15rem;
+          max-width: 750px;
+          margin: 0 auto;
+          line-height: 1.6;
+        "
+      >
+        Everything you need to master your indoor spaces. Explore
+        professional recommendations on color selection, finishes,
+        application techniques, and prep work.
+      </p>
+    </div>
+
+    <!-- Hero Feature & Cards Layout Container -->
+    <div
       style="
-        padding: 7rem 0;
-        background: var(--white, #ffffff);
-        border-top: 1px solid var(--border, #e2e8f0);
-        border-bottom: 1px solid var(--border, #e2e8f0);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-bottom: 4rem;
       "
     >
+      <!-- Big Beautiful Hero Feature Card -->
       <div
-        class="container"
-        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
+        style="
+          position: relative;
+          border-radius: 28px;
+          overflow: hidden;
+          box-shadow: 0 24px 48px rgba(0, 0, 0, 0.1);
+          border: 1px solid var(--border, #e2e8f0);
+          min-height: 560px;
+          display: flex;
+          align-items: flex-end;
+        "
       >
+        <img
+          src="images/blog-hero.jpg"
+          alt="Beautiful interior room painted with professional finish and color coordination"
+          style="
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          "
+        />
         <div
-          class="section-title"
-          style="text-align: center; margin-bottom: 5rem"
+          style="
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+              to top,
+              rgba(15, 23, 42, 0.9) 0%,
+              rgba(15, 23, 42, 0.4) 50%,
+              rgba(15, 23, 42, 0.05) 100%
+            );
+          "
+        ></div>
+        <div
+          style="
+            position: relative;
+            padding: 3rem;
+            color: #ffffff;
+            z-index: 2;
+            max-width: 800px;
+          "
         >
           <span
-            class="badge"
             style="
-              background: #eff6ff;
-              color: var(--primary, #0066ff);
-              padding: 0.4rem 1.1rem;
+              background: var(--primary, #0066ff);
+              padding: 0.4rem 1rem;
               border-radius: 50px;
-              font-size: 0.85rem;
+              font-size: 0.8rem;
               font-weight: 700;
-              display: inline-block;
-              margin-bottom: 1.25rem;
-              border: 1px solid rgba(0, 102, 255, 0.2);
-              letter-spacing: 0.05em;
               text-transform: uppercase;
-            "
-            >Expert Advice</span
-          >
-          <h2
-            style="
-              font-size: 2.75rem;
-              font-weight: 800;
-              color: var(--primary, #0066ff);
+              letter-spacing: 0.05em;
+              display: inline-block;
               margin-bottom: 1rem;
-              letter-spacing: -0.02em;
             "
+            >Room Transformations</span
           >
-            Interior Painting Tips & Blog
-          </h2>
-          <p
-            style="
-              color: var(--gray-light, #64748b);
-              font-size: 1.15rem;
-              max-width: 750px;
-              margin: 0 auto;
-              line-height: 1.6;
-            "
-          >
-            Everything you need to master your indoor spaces. Explore
-            professional recommendations on color selection, finishes,
-            application techniques, and prep work.
-          </p>
-        </div>
-
-        <div
-          style="
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 4rem;
-            align-items: center;
-            margin-bottom: 4rem;
-          "
-        >
-          <div
-            style="
-              position: relative;
-              border-radius: 24px;
-              overflow: hidden;
-              box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-              border: 1px solid var(--border, #e2e8f0);
-              min-height: 520px;
-              display: flex;
-              align-items: flex-end;
-            "
-          >
-            <img
-              src="images/blog-hero.jpg"
-              alt="Beautiful interior room painted with professional finish and color coordination"
-              style="
-                position: absolute;
-                inset: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-              "
-            />
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                background: linear-gradient(
-                  to top,
-                  rgba(15, 23, 42, 0.85) 0%,
-                  rgba(15, 23, 42, 0.1) 60%
-                );
-              "
-            ></div>
-            <div
-              style="
-                position: relative;
-                padding: 2.5rem;
-                color: #ffffff;
-                z-index: 2;
-              "
-            >
-              <span
-                style="
-                  background: var(--primary, #0066ff);
-                  padding: 0.35rem 0.9rem;
-                  border-radius: 50px;
-                  font-size: 0.75rem;
-                  font-weight: 700;
-                  text-transform: uppercase;
-                  letter-spacing: 0.05em;
-                  display: inline-block;
-                  margin-bottom: 0.75rem;
-                "
-                >Room Transformations</span
-              >
-              <h3
-                style="
-                  font-size: 1.5rem;
-                  font-weight: 800;
-                  margin: 0 0 0.5rem 0;
-                  line-height: 1.3;
-                "
-              >
-                Mastering the Art of Interior Finishes
-              </h3>
-              <p
-                style="
-                  font-size: 0.95rem;
-                  color: #cbd5e1;
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Learn how proper technique and paint selection create flawless,
-                long-lasting results.
-              </p>
-            </div>
-          </div>
-
-          <div
-            style="
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-              gap: 1.5rem;
-            "
-          >
-            <div
-              style="
-                background: var(--bg-light, #f8fafc);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Color Selection
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                How to choose interior paint colours that fit your lighting and
-                mood.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--bg-light, #f8fafc);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Bedroom Finishes
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Discover the best relaxing paint finishes and sheens for
-                bedrooms.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--bg-light, #f8fafc);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Kitchen Finishes
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Durable, moisture-resistant options suited for high-wear
-                kitchens.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--bg-light, #f8fafc);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Wall Preparation
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Step-by-step methods to clean, patch, and prime walls before
-                painting.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--bg-light, #f8fafc);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Coat Calculation
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Determining how many coats of paint are actually needed for
-                solid coverage.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--bg-light, #f8fafc);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Streak Prevention
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Techniques to avoid roller marks, lap lines, and paint streaks.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--bg-light, #f8fafc);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Drying Times
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Understanding touch-dry versus cure times for interior coatings.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--bg-light, #f8fafc);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Sheen Comparison
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                How to choose between matte, satin, and high gloss finishes.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          style="
-            text-align: center;
-            background: var(--bg-light, #f8fafc);
-            border: 1px solid var(--border, #e2e8f0);
-            border-radius: 20px;
-            padding: 3rem 2rem;
-            box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
-            max-width: 800px;
-            margin: 0 auto;
-          "
-        >
           <h3
             style="
-              font-size: 1.5rem;
+              font-size: 2.25rem;
               font-weight: 800;
-              color: var(--gray-dark, #1e293b);
-              margin-bottom: 0.75rem;
+              margin: 0 0 0.75rem 0;
+              line-height: 1.2;
               letter-spacing: -0.01em;
             "
           >
-            Ready to take your interior project further?
+            Mastering the Art of Interior Finishes
           </h3>
           <p
             style="
-              color: var(--gray-light, #64748b);
-              font-size: 1rem;
-              margin-bottom: 1.75rem;
+              font-size: 1.1rem;
+              color: #cbd5e1;
+              margin: 0;
+              line-height: 1.6;
             "
           >
-            Dive deeper into our complete library of professional tips, color
-            guides, and application tutorials.
+            Learn how proper technique and paint selection create flawless,
+            long-lasting results that elevate your residential or commercial space.
           </p>
-          <a
-            href="#interior-guides"
-            style="
-              background: var(--primary, #0066ff);
-              color: #ffffff;
-              padding: 0.9rem 2.25rem;
-              border-radius: 50px;
-              font-size: 1rem;
-              font-weight: 700;
-              text-decoration: none;
-              display: inline-flex;
-              align-items: center;
-              gap: 0.5rem;
-              box-shadow: 0 4px 14px rgba(0, 102, 255, 0.35);
-              transition:
-                background 0.2s ease,
-                transform 0.2s ease;
-            "
-            onmouseover="
-              this.style.background = '#0052cc';
-              this.style.transform = 'translateY(-2px)';
-            "
-            onmouseout="
-              this.style.background = 'var(--primary, #0066ff)';
-              this.style.transform = 'translateY(0)';
-            "
-          >
-            Explore Interior Painting Guides &rarr;
-          </a>
         </div>
       </div>
-    </section>
+
+      <!-- Professional 3-Column Grid for Tips Cards -->
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 1.75rem;
+        "
+      >
+        <!-- Card 1: Color Selection -->
+        <div
+          style="
+            background: var(--bg-light, #f8fafc);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+          "
+          onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+          <h4
+            style="
+              font-size: 1.15rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin: 0 0 0.75rem 0;
+            "
+          >
+            Color Selection
+          </h4>
+          <p
+            style="
+              font-size: 0.95rem;
+              color: var(--gray-light, #64748b);
+              margin: 0;
+              line-height: 1.6;
+            "
+          >
+            How to choose interior paint colours that fit your lighting and mood.
+          </p>
+        </div>
+
+        <!-- Card 2: Bedroom Finishes -->
+        <div
+          style="
+            background: var(--bg-light, #f8fafc);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+          "
+          onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+          <h4
+            style="
+              font-size: 1.15rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin: 0 0 0.75rem 0;
+            "
+          >
+            Bedroom Finishes
+          </h4>
+          <p
+            style="
+              font-size: 0.95rem;
+              color: var(--gray-light, #64748b);
+              margin: 0;
+              line-height: 1.6;
+            "
+          >
+            Discover the best relaxing paint finishes and sheens for bedrooms.
+          </p>
+        </div>
+
+        <!-- Card 3: Kitchen Finishes -->
+        <div
+          style="
+            background: var(--bg-light, #f8fafc);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+          "
+          onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+          <h4
+            style="
+              font-size: 1.15rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin: 0 0 0.75rem 0;
+            "
+          >
+            Kitchen Finishes
+          </h4>
+          <p
+            style="
+              font-size: 0.95rem;
+              color: var(--gray-light, #64748b);
+              margin: 0;
+              line-height: 1.6;
+            "
+          >
+            Durable, moisture-resistant options suited for high-wear kitchens.
+          </p>
+        </div>
+
+        <!-- Card 4: Wall Preparation -->
+        <div
+          style="
+            background: var(--bg-light, #f8fafc);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+          "
+          onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+          <h4
+            style="
+              font-size: 1.15rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin: 0 0 0.75rem 0;
+            "
+          >
+            Wall Preparation
+          </h4>
+          <p
+            style="
+              font-size: 0.95rem;
+              color: var(--gray-light, #64748b);
+              margin: 0;
+              line-height: 1.6;
+            "
+          >
+            Step-by-step methods to clean, patch, and prime walls before painting.
+          </p>
+        </div>
+
+        <!-- Card 5: Coat Calculation -->
+        <div
+          style="
+            background: var(--bg-light, #f8fafc);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+          "
+          onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+          <h4
+            style="
+              font-size: 1.15rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin: 0 0 0.75rem 0;
+            "
+          >
+            Coat Calculation
+          </h4>
+          <p
+            style="
+              font-size: 0.95rem;
+              color: var(--gray-light, #64748b);
+              margin: 0;
+              line-height: 1.6;
+            "
+          >
+            Determining how many coats of paint are actually needed for solid coverage.
+          </p>
+        </div>
+
+        <!-- Card 6: Streak Prevention -->
+        <div
+          style="
+            background: var(--bg-light, #f8fafc);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+          "
+          onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+          <h4
+            style="
+              font-size: 1.15rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin: 0 0 0.75rem 0;
+            "
+          >
+            Streak Prevention
+          </h4>
+          <p
+            style="
+              font-size: 0.95rem;
+              color: var(--gray-light, #64748b);
+              margin: 0;
+              line-height: 1.6;
+            "
+          >
+            Techniques to avoid roller marks, lap lines, and paint streaks.
+          </p>
+        </div>
+
+        <!-- Card 7: Drying Times -->
+        <div
+          style="
+            background: var(--bg-light, #f8fafc);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+          "
+          onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+          <h4
+            style="
+              font-size: 1.15rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin: 0 0 0.75rem 0;
+            "
+          >
+            Drying Times
+          </h4>
+          <p
+            style="
+              font-size: 0.95rem;
+              color: var(--gray-light, #64748b);
+              margin: 0;
+              line-height: 1.6;
+            "
+          >
+            Understanding touch-dry versus cure times for interior coatings.
+          </p>
+        </div>
+
+        <!-- Card 8: Sheen Comparison -->
+        <div
+          style="
+            background: var(--bg-light, #f8fafc);
+            border: 1px solid var(--border, #e2e8f0);
+            border-radius: 20px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+          "
+          onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)';"
+          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+        >
+          <h4
+            style="
+              font-size: 1.15rem;
+              font-weight: 800;
+              color: var(--gray-dark, #1e293b);
+              margin: 0 0 0.75rem 0;
+            "
+          >
+            Sheen Comparison
+          </h4>
+          <p
+            style="
+              font-size: 0.95rem;
+              color: var(--gray-light, #64748b);
+              margin: 0;
+              line-height: 1.6;
+            "
+          >
+            How to choose between matte, satin, and high gloss finishes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action Footer Box -->
+    <div
+      style="
+        text-align: center;
+        background: var(--bg-light, #f8fafc);
+        border: 1px solid var(--border, #e2e8f0);
+        border-radius: 24px;
+        padding: 3.5rem 2rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.02);
+        max-width: 800px;
+        margin: 0 auto;
+      "
+    >
+      <h3
+        style="
+          font-size: 1.75rem;
+          font-weight: 800;
+          color: var(--gray-dark, #1e293b);
+          margin-bottom: 0.75rem;
+          letter-spacing: -0.01em;
+        "
+      >
+        Ready to take your interior project further?
+      </h3>
+      <p
+        style="
+          color: var(--gray-light, #64748b);
+          font-size: 1.05rem;
+          margin-bottom: 2rem;
+        "
+      >
+        Dive deeper into our complete library of professional tips, color
+        guides, and application tutorials.
+      </p>
+      <a
+        href="#interior-guides"
+        style="
+          background: var(--primary, #0066ff);
+          color: #ffffff;
+          padding: 1rem 2.5rem;
+          border-radius: 50px;
+          font-size: 1rem;
+          font-weight: 700;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          box-shadow: 0 4px 14px rgba(0, 102, 255, 0.35);
+          transition: background 0.2s ease, transform 0.2s ease;
+        "
+        onmouseover="this.style.background='#0052cc'; this.style.transform='translateY(-2px)';"
+        onmouseout="this.style.background='var(--primary, #0066ff)'; this.style.transform='translateY(0)';"
+      >
+        Explore Interior Painting Guides &rarr;
+      </a>
+    </div>
+  </div>
+</section>
     <!-- Exterior Painting & Maintenance Section -->
-    <section
+   <section
       class="exterior-painting-section"
       style="
         padding: 7rem 0;
@@ -1554,7 +1529,7 @@
               font-size: 2.75rem;
               font-weight: 800;
               color: var(--primary, #0066ff);
-              margin-bottom: 1rem;
+              margin-bottom: 1.0rem;
               letter-spacing: -0.02em;
             "
           >
@@ -1579,63 +1554,36 @@
         <div
           style="
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 4rem;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 3rem;
             align-items: center;
             margin-bottom: 4rem;
           "
         >
-          <!-- Left Column: Exterior Topics Grid/List -->
+          <!-- Left Column: Compact Cards Grid with varied card sizes -->
           <div
             style="
               display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-              gap: 1.5rem;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 1rem;
+              align-items: start;
             "
           >
-            <!-- Topic 1 -->
+            <!-- Topic 1 (Enlarged featured card) -->
             <div
               style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                grid-column: span 2;
+                background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+                border: 2px solid rgba(0, 102, 255, 0.2);
+                border-radius: 14px;
+                padding: 1.25rem 1.25rem;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 20px rgba(0,102,255,0.08)';"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Repainting Schedule
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                When should you repaint your home's exterior for maximum
-                protection?
-              </p>
+              <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--primary, #0066ff); margin: 0 0 0.3rem 0;">Repainting Schedule & Maintenance</h4>
+              <p style="font-size: 0.85rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.4;">Know exactly when to repaint your property for maximum long-term weather protection and curb appeal.</p>
             </div>
 
             <!-- Topic 2 -->
@@ -1643,43 +1591,15 @@
               style="
                 background: var(--white, #ffffff);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                border-radius: 12px;
+                padding: 1rem;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Wall Preparation
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                How to properly clean and prepare exterior walls before coating.
-              </p>
+              <h4 style="font-size: 0.95rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">Wall Preparation</h4>
+              <p style="font-size: 0.8rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.35;">Properly clean, wash, and prep exterior walls.</p>
             </div>
 
             <!-- Topic 3 -->
@@ -1687,89 +1607,32 @@
               style="
                 background: var(--white, #ffffff);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                border-radius: 12px;
+                padding: 1rem;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Failing Paint Signs
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Key indicators that your exterior paint film is failing and
-                needs attention.
-              </p>
+              <h4 style="font-size: 0.95rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">Failing Paint Signs</h4>
+              <p style="font-size: 0.8rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.35;">Early indicators your paint film is breaking down.</p>
             </div>
 
-            <!-- Topic 4 -->
+            <!-- Topic 4 (Enlarged card) -->
             <div
               style="
+                grid-column: span 2;
                 background: var(--white, #ffffff);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                border-radius: 14px;
+                padding: 1.15rem 1.25rem;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Peeling Paint Solutions
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                How to effectively scrape, prime, and deal with bubbling or
-                peeling paint.
-              </p>
+              <h4 style="font-size: 1rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.3rem 0;">Damp-Proofing & Peeling Solutions</h4>
+              <p style="font-size: 0.825rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.4;">Deep treatments to scrape, prime, and resolve bubbling or damp-damaged paint layers.</p>
             </div>
 
             <!-- Topic 5 -->
@@ -1777,44 +1640,15 @@
               style="
                 background: var(--white, #ffffff);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                border-radius: 12px;
+                padding: 1rem;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Damp-Proofing
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Essential damp-proofing treatments before applying exterior
-                coats.
-              </p>
+              <h4 style="font-size: 0.95rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">Crack Repair</h4>
+              <p style="font-size: 0.8rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.35;">Structural plaster and hairline crack fixes.</p>
             </div>
 
             <!-- Topic 6 -->
@@ -1822,134 +1656,15 @@
               style="
                 background: var(--white, #ffffff);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                border-radius: 12px;
+                padding: 1rem;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Crack Repair
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Techniques for structural and plaster crack repair prior to
-                painting.
-              </p>
-            </div>
-
-            <!-- Topic 7 -->
-            <div
-              style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                Weather Impact
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                How local weather conditions and rain seasons affect exterior
-                paint durability.
-              </p>
-            </div>
-
-            <!-- Topic 8 -->
-            <div
-              style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.5rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <h4
-                style="
-                  font-size: 1.05rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.5rem 0;
-                "
-              >
-                UV Protection
-              </h4>
-              <p
-                style="
-                  font-size: 0.9rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                How to protect exterior walls and coatings from harsh UV solar
-                exposure.
-              </p>
+              <h4 style="font-size: 0.95rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">UV & Weather Protection</h4>
+              <p style="font-size: 0.8rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.35;">Shielding walls from harsh solar rays and rain.</p>
             </div>
           </div>
 
@@ -1961,7 +1676,7 @@
               overflow: hidden;
               box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
               border: 1px solid var(--border, #e2e8f0);
-              min-height: 520px;
+              min-height: 480px;
               display: flex;
               align-items: flex-end;
             "
@@ -2104,7 +1819,7 @@
       </div>
     </section>
     <!-- Colour & Paint Selection Section -->
-    <section
+   <section
       class="colour-selection-section"
       style="
         padding: 7rem 0;
@@ -2170,8 +1885,8 @@
           style="
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 4rem;
-            align-items: center;
+            gap: 2.5rem;
+            align-items: stretch;
             margin-bottom: 4rem;
           "
         >
@@ -2258,12 +1973,13 @@
             </div>
           </div>
 
-          <!-- Right Column: 9 Comprehensive Topics Grid -->
+          <!-- Right Column: 9 Comprehensive Topics Grid (Sized to match height) -->
           <div
             style="
               display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-              gap: 1.5rem;
+              grid-template-columns: repeat(3, 1fr);
+              grid-template-rows: repeat(3, 1fr);
+              gap: 1rem;
             "
           >
             <!-- Topic 1 -->
@@ -2271,43 +1987,21 @@
               style="
                 background: var(--bg-light, #f8fafc);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
+                border-radius: 14px;
+                padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                justify-content: center;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
+              <h4 style="font-size: 0.9rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">
                 Lighting Dynamics
               </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                How natural and artificial lighting alters tone perception
-                throughout the day.
+              <p style="font-size: 0.78rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.4;">
+                Natural and artificial lighting tone changes.
               </p>
             </div>
 
@@ -2316,43 +2010,21 @@
               style="
                 background: var(--bg-light, #f8fafc);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
+                border-radius: 14px;
+                padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                justify-content: center;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
+              <h4 style="font-size: 0.9rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">
                 Warm vs. Cool
               </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Balancing undertones to create cozy energy or crisp, open
-                elegance.
+              <p style="font-size: 0.78rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.4;">
+                Balancing undertones for cozy or crisp spaces.
               </p>
             </div>
 
@@ -2361,43 +2033,21 @@
               style="
                 background: var(--bg-light, #f8fafc);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
+                border-radius: 14px;
+                padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                justify-content: center;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
+              <h4 style="font-size: 0.9rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">
                 Neutral Schemes
               </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Building timeless foundations with sophisticated greys, beiges,
-                and taupes.
+              <p style="font-size: 0.78rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.4;">
+                Timeless greys, beiges, and taupe foundations.
               </p>
             </div>
 
@@ -2406,43 +2056,21 @@
               style="
                 background: var(--bg-light, #f8fafc);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
+                border-radius: 14px;
+                padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                justify-content: center;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
+              <h4 style="font-size: 0.9rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">
                 Feature Walls
               </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Techniques for highlighting architectural focal points with bold
-                contrast.
+              <p style="font-size: 0.78rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.4;">
+                Highlighting architectural focal points.
               </p>
             </div>
 
@@ -2451,43 +2079,21 @@
               style="
                 background: var(--bg-light, #f8fafc);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
+                border-radius: 14px;
+                padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                justify-content: center;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
+              <h4 style="font-size: 0.9rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">
                 Flooring Pairing
               </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Harmonizing wall paint selections with hardwood, tile, or carpet
-                textures.
+              <p style="font-size: 0.78rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.4;">
+                Harmonizing walls with wood, tile, or carpet.
               </p>
             </div>
 
@@ -2496,43 +2102,21 @@
               style="
                 background: var(--bg-light, #f8fafc);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
+                border-radius: 14px;
+                padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                justify-content: center;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
+              <h4 style="font-size: 0.9rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">
                 Finish Selection
               </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Matching sheens to room utility, foot traffic, and washability
-                requirements.
+              <p style="font-size: 0.78rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.4;">
+                Matching sheens to room traffic and utility.
               </p>
             </div>
 
@@ -2541,43 +2125,21 @@
               style="
                 background: var(--bg-light, #f8fafc);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
+                border-radius: 14px;
+                padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                justify-content: center;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
+              <h4 style="font-size: 0.9rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">
                 Low-VOC Formulas
               </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Eco-friendly paint options designed for healthier indoor air
-                quality.
+              <p style="font-size: 0.78rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.4;">
+                Eco-friendly options for healthier indoor air.
               </p>
             </div>
 
@@ -2586,43 +2148,21 @@
               style="
                 background: var(--bg-light, #f8fafc);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
+                border-radius: 14px;
+                padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                justify-content: center;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
-                Small Room Palettes
+              <h4 style="font-size: 0.9rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">
+                Small Rooms
               </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Strategic shade choices that visually expand compact areas and
-                maximize light.
+              <p style="font-size: 0.78rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.4;">
+                Strategic shades to expand compact areas.
               </p>
             </div>
 
@@ -2631,43 +2171,21 @@
               style="
                 background: var(--bg-light, #f8fafc);
                 border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
+                border-radius: 14px;
+                padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
+                justify-content: center;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
               "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
+              onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 16px rgba(0,0,0,0.05)';"
+              onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';"
             >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
+              <h4 style="font-size: 0.9rem; font-weight: 800; color: var(--gray-dark, #1e293b); margin: 0 0 0.25rem 0;">
                 Modern Trends
               </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Contemporary color directions shaping modern architectural
-                interiors.
+              <p style="font-size: 0.78rem; color: var(--gray-light, #64748b); margin: 0; line-height: 1.4;">
+                Contemporary color directions for interiors.
               </p>
             </div>
           </div>
@@ -2721,9 +2239,7 @@
               align-items: center;
               gap: 0.5rem;
               box-shadow: 0 4px 14px rgba(0, 102, 255, 0.35);
-              transition:
-                background 0.2s ease,
-                transform 0.2s ease;
+              transition: background 0.2s ease, transform 0.2s ease;
             "
             onmouseover="
               this.style.background = '#0052cc';
@@ -4274,7 +3790,7 @@
       </div>
     </section>
     <!-- Painting Maintenance Checklist Section -->
-    <section
+<section
   class="painting-checklist-section"
   style="
     padding: clamp(4rem, 8vw, 7rem) 0;
@@ -4722,725 +4238,7 @@
     </div>
   </div>
 </section>
-    <section
-      class="before-you-hire-section"
-      style="
-        padding: 7rem 0;
-        background: var(--bg-light, #f8fafc);
-        border-top: 1px solid var(--border, #e2e8f0);
-        border-bottom: 1px solid var(--border, #e2e8f0);
-      "
-    >
-      <div
-        class="container"
-        style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem"
-      >
-        <div
-          class="section-title"
-          style="text-align: center; margin-bottom: 5rem"
-        >
-          <span
-            class="badge"
-            style="
-              background: #eff6ff;
-              color: var(--primary, #0066ff);
-              padding: 0.4rem 1.1rem;
-              border-radius: 50px;
-              font-size: 0.85rem;
-              font-weight: 700;
-              display: inline-block;
-              margin-bottom: 1.25rem;
-              border: 1px solid rgba(0, 102, 255, 0.2);
-              letter-spacing: 0.05em;
-              text-transform: uppercase;
-            "
-            >Project Readiness</span
-          >
-          <h2
-            style="
-              font-size: 2.75rem;
-              font-weight: 800;
-              color: var(--primary, #0066ff);
-              margin-bottom: 1rem;
-              letter-spacing: -0.02em;
-            "
-          >
-            What to Know Before Your Painting Project Begins
-          </h2>
-          <p
-            style="
-              color: var(--gray-light, #64748b);
-              font-size: 1.15rem;
-              max-width: 750px;
-              margin: 0 auto;
-              line-height: 1.6;
-            "
-          >
-            A successful painting project starts long before the first
-            brushstroke. Follow these essential steps to ensure a smooth
-            workflow from planning to final inspection.
-          </p>
-        </div>
-
-        <div
-          style="
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 4rem;
-            align-items: center;
-            margin-bottom: 4rem;
-          "
-        >
-          <div
-            style="
-              position: relative;
-              border-radius: 24px;
-              overflow: hidden;
-              box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-              border: 1px solid var(--border, #e2e8f0);
-              min-height: 720px;
-              display: flex;
-              align-items: flex-end;
-            "
-          >
-            <img
-              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80"
-              alt="Homeowner and painter planning room renovation and color coordination"
-              style="
-                position: absolute;
-                inset: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-              "
-            />
-            <div
-              style="
-                position: absolute;
-                inset: 0;
-                background: linear-gradient(
-                  to top,
-                  rgba(15, 23, 42, 0.85) 0%,
-                  rgba(15, 23, 42, 0.15) 60%
-                );
-              "
-            ></div>
-            <div
-              style="
-                position: relative;
-                padding: 2.5rem;
-                color: #ffffff;
-                z-index: 2;
-              "
-            >
-              <span
-                style="
-                  background: var(--primary, #0066ff);
-                  padding: 0.35rem 0.9rem;
-                  border-radius: 50px;
-                  font-size: 0.75rem;
-                  font-weight: 700;
-                  text-transform: uppercase;
-                  letter-spacing: 0.05em;
-                  display: inline-block;
-                  margin-bottom: 0.75rem;
-                "
-                >Step-by-Step Blueprint</span
-              >
-              <h3
-                style="
-                  font-size: 1.5rem;
-                  font-weight: 800;
-                  margin: 0 0 0.5rem 0;
-                  line-height: 1.3;
-                "
-              >
-                Preparation Leads to Perfection
-              </h3>
-              <p
-                style="
-                  font-size: 0.95rem;
-                  color: #cbd5e1;
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Master the roadmap of professional painting projects to protect
-                your investment and guarantee pristine results.
-              </p>
-            </div>
-          </div>
-
-          <div
-            style="
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-              gap: 1.5rem;
-            "
-          >
-            <div
-              style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <span
-                style="
-                  font-size: 0.75rem;
-                  font-weight: 800;
-                  color: var(--primary, #0066ff);
-                  text-transform: uppercase;
-                  letter-spacing: 0.05em;
-                  margin-bottom: 0.3rem;
-                "
-                >Step 01</span
-              >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
-                Scope Your Rooms
-              </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Determine precisely what needs painting, including ceilings,
-                walls, trim, and doors.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <span
-                style="
-                  font-size: 0.75rem;
-                  font-weight: 800;
-                  color: var(--primary, #0066ff);
-                  text-transform: uppercase;
-                  letter-spacing: 0.05em;
-                  margin-bottom: 0.3rem;
-                "
-                >Step 02</span
-              >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
-                Colours & Finishes
-              </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Choose coordinating palettes and select appropriate sheens
-                (matte, satin, or semi-gloss).
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <span
-                style="
-                  font-size: 0.75rem;
-                  font-weight: 800;
-                  color: var(--primary, #0066ff);
-                  text-transform: uppercase;
-                  letter-spacing: 0.05em;
-                  margin-bottom: 0.3rem;
-                "
-                >Step 03</span
-              >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
-                Assess Surfaces
-              </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Inspect walls for cracks, dampness, or peeling layers that
-                require preparatory repair.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <span
-                style="
-                  font-size: 0.75rem;
-                  font-weight: 800;
-                  color: var(--primary, #0066ff);
-                  text-transform: uppercase;
-                  letter-spacing: 0.05em;
-                  margin-bottom: 0.3rem;
-                "
-                >Step 04</span
-              >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
-                Get Multiple Quotes
-              </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Compare transparent estimates from vetted contractors to find
-                the right value.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <span
-                style="
-                  font-size: 0.75rem;
-                  font-weight: 800;
-                  color: var(--primary, #0066ff);
-                  text-transform: uppercase;
-                  letter-spacing: 0.05em;
-                  margin-bottom: 0.3rem;
-                "
-                >Step 05</span
-              >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
-                Confirm Prep Work
-              </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Ensure sanding, gap filling, washing, and priming are explicitly
-                outlined in the contract.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <span
-                style="
-                  font-size: 0.75rem;
-                  font-weight: 800;
-                  color: var(--primary, #0066ff);
-                  text-transform: uppercase;
-                  letter-spacing: 0.05em;
-                  margin-bottom: 0.3rem;
-                "
-                >Step 06</span
-              >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
-                Confirm Materials
-              </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Specify trusted paint brands and high-grade formulations for
-                long-lasting durability.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <span
-                style="
-                  font-size: 0.75rem;
-                  font-weight: 800;
-                  color: var(--primary, #0066ff);
-                  text-transform: uppercase;
-                  letter-spacing: 0.05em;
-                  margin-bottom: 0.3rem;
-                "
-                >Step 07</span
-              >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
-                Agree on Timeline
-              </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Establish clear start dates, daily working hours, and estimated
-                completion milestones.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <span
-                style="
-                  font-size: 0.75rem;
-                  font-weight: 800;
-                  color: var(--primary, #0066ff);
-                  text-transform: uppercase;
-                  letter-spacing: 0.05em;
-                  margin-bottom: 0.3rem;
-                "
-                >Step 08</span
-              >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
-                Prepare Property
-              </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Clear rooms of fragile items, protect furniture, and provide
-                easy workspace access.
-              </p>
-            </div>
-
-            <div
-              style="
-                background: var(--white, #ffffff);
-                border: 1px solid var(--border, #e2e8f0);
-                border-radius: 16px;
-                padding: 1.25rem;
-                display: flex;
-                flex-direction: column;
-                transition:
-                  transform 0.2s ease,
-                  box-shadow 0.2s ease;
-              "
-              onmouseover="
-                this.style.transform = 'translateY(-3px)';
-                this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.06)';
-              "
-              onmouseout="
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'none';
-              "
-            >
-              <span
-                style="
-                  font-size: 0.75rem;
-                  font-weight: 800;
-                  color: var(--primary, #0066ff);
-                  text-transform: uppercase;
-                  letter-spacing: 0.05em;
-                  margin-bottom: 0.3rem;
-                "
-                >Step 09</span
-              >
-              <h4
-                style="
-                  font-size: 1rem;
-                  font-weight: 800;
-                  color: var(--gray-dark, #1e293b);
-                  margin: 0 0 0.4rem 0;
-                "
-              >
-                Inspect Completed Work
-              </h4>
-              <p
-                style="
-                  font-size: 0.85rem;
-                  color: var(--gray-light, #64748b);
-                  margin: 0;
-                  line-height: 1.5;
-                "
-              >
-                Conduct a final walkthrough with the contractor to verify clean
-                lines and complete satisfaction.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          style="
-            text-align: center;
-            background: var(--white, #ffffff);
-            border: 1px solid var(--border, #e2e8f0);
-            border-radius: 20px;
-            padding: 3rem 2rem;
-            box-shadow: var(--shadow-sm, 0 4px 6px rgba(0, 0, 0, 0.02));
-            max-width: 800px;
-            margin: 0 auto;
-          "
-        >
-          <h3
-            style="
-              font-size: 1.5rem;
-              font-weight: 800;
-              color: var(--gray-dark, #1e293b);
-              margin-bottom: 0.75rem;
-              letter-spacing: -0.01em;
-            "
-          >
-            Want to know exactly how our process works from start to finish?
-          </h3>
-          <p
-            style="
-              color: var(--gray-light, #64748b);
-              font-size: 1rem;
-              margin-bottom: 1.75rem;
-            "
-          >
-            Discover our transparent step-by-step framework designed to make
-            hiring and painting entirely hassle-free.
-          </p>
-          <a
-            href="#how-it-works"
-            style="
-              background: var(--primary, #0066ff);
-              color: #ffffff;
-              padding: 0.9rem 2.25rem;
-              border-radius: 50px;
-              font-size: 1rem;
-              font-weight: 700;
-              text-decoration: none;
-              display: inline-flex;
-              align-items: center;
-              gap: 0.5rem;
-              box-shadow: 0 4px 14px rgba(0, 102, 255, 0.35);
-              transition:
-                background 0.2s ease,
-                transform 0.2s ease;
-            "
-            onmouseover="
-              this.style.background = '#0052cc';
-              this.style.transform = 'translateY(-2px)';
-            "
-            onmouseout="
-              this.style.background = 'var(--primary, #0066ff)';
-              this.style.transform = 'translateY(0)';
-            "
-          >
-            View How It Works &rarr;
-          </a>
-        </div>
-      </div>
-    </section>
+   
     <!--FAQ Section-->
     <section
       class="faq-section"
@@ -6041,7 +4839,8 @@
       </div>
     </section>
     <!--Latest Painting Articles-->
-    <section
+    
+<section
       class="latest-articles-section"
       style="
         padding: 7rem 0;
@@ -6109,6 +4908,7 @@
             margin-bottom: 4rem;
           "
         >
+          <!-- Article 1 -->
           <a
             href="https://www.dulux.co.za/en/colour-inspiration"
             style="
@@ -6136,37 +4936,7 @@
           >
             <div
               style="
-                height: 180px;
-                position: relative;
-                overflow: hidden;
-                background: #0f172a;
-              "
-            >
-              <img
-                src="images/interior-masking-protection.jpg"
-                alt="Interior paint color palette guide"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-                "
-              />
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  background: linear-gradient(
-                    to top,
-                    rgba(15, 23, 42, 0.4) 0%,
-                    transparent 60%
-                  );
-                "
-              ></div>
-            </div>
-            <div
-              style="
-                padding: 2rem;
+                padding: 2.5rem 2rem 2rem 2rem;
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
@@ -6210,6 +4980,7 @@
             </div>
           </a>
 
+          <!-- Article 2 -->
           <a
             href="https://paintingpricepersquaremeter.co.za/locations/gauteng/"
             style="
@@ -6237,37 +5008,7 @@
           >
             <div
               style="
-                height: 180px;
-                position: relative;
-                overflow: hidden;
-                background: #0f172a;
-              "
-            >
-              <img
-                src="images/home-repainting.jpg"
-                alt="House painting cost calculator and breakdown"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-                "
-              />
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  background: linear-gradient(
-                    to top,
-                    rgba(15, 23, 42, 0.4) 0%,
-                    transparent 60%
-                  );
-                "
-              ></div>
-            </div>
-            <div
-              style="
-                padding: 2rem;
+                padding: 2.5rem 2rem 2rem 2rem;
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
@@ -6311,9 +5052,9 @@
             </div>
           </a>
 
+          <!-- Article 3 -->
           <a
-            href="https://www.dulux.co.za/en/colour-inspiration
-            "
+            href="https://www.dulux.co.za/en/colour-inspiration"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -6339,37 +5080,7 @@
           >
             <div
               style="
-                height: 180px;
-                position: relative;
-                overflow: hidden;
-                background: #0f172a;
-              "
-            >
-              <img
-                src="images/exterior-wall-painting.jpg"
-                alt="Interior vs exterior paint comparison"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-                "
-              />
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  background: linear-gradient(
-                    to top,
-                    rgba(15, 23, 42, 0.4) 0%,
-                    transparent 60%
-                  );
-                "
-              ></div>
-            </div>
-            <div
-              style="
-                padding: 2rem;
+                padding: 2.5rem 2rem 2rem 2rem;
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
@@ -6413,6 +5124,7 @@
             </div>
           </a>
 
+          <!-- Article 4 -->
           <a
             href="https://www.dulux.co.uk/en/articles/preparation-and-tools"
             style="
@@ -6440,37 +5152,7 @@
           >
             <div
               style="
-                height: 180px;
-                position: relative;
-                overflow: hidden;
-                background: #0f172a;
-              "
-            >
-              <img
-                src="images/feature-wall-and-trim-work-in-sandhurst.jpg"
-                alt="Wall preparation and sanding guide"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-                "
-              />
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  background: linear-gradient(
-                    to top,
-                    rgba(15, 23, 42, 0.4) 0%,
-                    transparent 60%
-                  );
-                "
-              ></div>
-            </div>
-            <div
-              style="
-                padding: 2rem;
+                padding: 2.5rem 2rem 2rem 2rem;
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
@@ -6514,8 +5196,9 @@
             </div>
           </a>
 
+          <!-- Article 5 -->
           <a
-            href="http://benjaminmoore.com/en-us/project-ideas-inspiration/interiors/kitchen-cabinets-ideas-inspiration"
+            href="https://benjaminmoore.com/en-us/project-ideas-inspiration/interiors/kitchen-cabinets-ideas-inspiration"
             style="
               background: var(--white, #ffffff);
               border: 1px solid var(--border, #e2e8f0);
@@ -6541,37 +5224,7 @@
           >
             <div
               style="
-                height: 180px;
-                position: relative;
-                overflow: hidden;
-                background: #0f172a;
-              "
-            >
-              <img
-                src="images/kitchen-cupboard-refinishing-in-randburg.jpg"
-                alt="Kitchen cabinet refinishing vs replacement"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-                "
-              />
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  background: linear-gradient(
-                    to top,
-                    rgba(15, 23, 42, 0.4) 0%,
-                    transparent 60%
-                  );
-                "
-              ></div>
-            </div>
-            <div
-              style="
-                padding: 2rem;
+                padding: 2.5rem 2rem 2rem 2rem;
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
@@ -6615,6 +5268,7 @@
             </div>
           </a>
 
+          <!-- Article 6 -->
           <a
             href="http://blesserhouse.com/15-ways-to-transform-your-entire-house-with-just-paint/"
             style="
@@ -6642,37 +5296,7 @@
           >
             <div
               style="
-                height: 180px;
-                position: relative;
-                overflow: hidden;
-                background: #0f172a;
-              "
-            >
-              <img
-                src="images/exterior-metalwork-&-gate-after-painted.jpg"
-                alt="How often should you repaint your home"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-                "
-              />
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  background: linear-gradient(
-                    to top,
-                    rgba(15, 23, 42, 0.4) 0%,
-                    transparent 60%
-                  );
-                "
-              ></div>
-            </div>
-            <div
-              style="
-                padding: 2rem;
+                padding: 2.5rem 2rem 2rem 2rem;
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
@@ -6716,6 +5340,7 @@
             </div>
           </a>
 
+          <!-- Article 7 -->
           <a
             href="#article-paint-finish"
             style="
@@ -6743,37 +5368,7 @@
           >
             <div
               style="
-                height: 180px;
-                position: relative;
-                overflow: hidden;
-                background: #0f172a;
-              "
-            >
-              <img
-                src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=80"
-                alt="Paint finish and sheen guide"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-                "
-              />
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  background: linear-gradient(
-                    to top,
-                    rgba(15, 23, 42, 0.4) 0%,
-                    transparent 60%
-                  );
-                "
-              ></div>
-            </div>
-            <div
-              style="
-                padding: 2rem;
+                padding: 2.5rem 2rem 2rem 2rem;
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
@@ -6817,6 +5412,7 @@
             </div>
           </a>
 
+          <!-- Article 8 -->
           <a
             href="#article-exterior-signs"
             style="
@@ -6844,37 +5440,7 @@
           >
             <div
               style="
-                height: 180px;
-                position: relative;
-                overflow: hidden;
-                background: #0f172a;
-              "
-            >
-              <img
-                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80"
-                alt="Signs exterior paint needs repainting"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-                "
-              />
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  background: linear-gradient(
-                    to top,
-                    rgba(15, 23, 42, 0.4) 0%,
-                    transparent 60%
-                  );
-                "
-              ></div>
-            </div>
-            <div
-              style="
-                padding: 2rem;
+                padding: 2.5rem 2rem 2rem 2rem;
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
@@ -6918,6 +5484,7 @@
             </div>
           </a>
 
+          <!-- Article 9 -->
           <a
             href="#article-hiring-questions"
             style="
@@ -6945,37 +5512,7 @@
           >
             <div
               style="
-                height: 180px;
-                position: relative;
-                overflow: hidden;
-                background: #0f172a;
-              "
-            >
-              <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
-                alt="Questions to ask before hiring a painter"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-                "
-              />
-              <div
-                style="
-                  position: absolute;
-                  inset: 0;
-                  background: linear-gradient(
-                    to top,
-                    rgba(15, 23, 42, 0.4) 0%,
-                    transparent 60%
-                  );
-                "
-              ></div>
-            </div>
-            <div
-              style="
-                padding: 2rem;
+                padding: 2.5rem 2rem 2rem 2rem;
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
@@ -7034,58 +5571,46 @@
         >
           <h3
             style="
-              font-size: 1.5rem;
+              font-size: 1.75rem;
               font-weight: 800;
               color: var(--gray-dark, #1e293b);
               margin-bottom: 0.75rem;
-              letter-spacing: -0.01em;
+              letter-spacing: -0.02em;
             "
           >
-            Ready to start your home transformation project?
+            Ready to Start Your Project?
           </h3>
           <p
             style="
               color: var(--gray-light, #64748b);
-              font-size: 1rem;
+              font-size: 1.05rem;
               margin-bottom: 1.75rem;
+              line-height: 1.6;
             "
           >
-            Connect with trusted, pre-vetted local painting contractors and
-            receive competitive quotes today.
+            Get in touch with our expert team today for a free, no-obligation quotation.
           </p>
           <a
-            href="#get-quotes"
+            href="#contact"
             style="
               background: var(--primary, #0066ff);
               color: #ffffff;
               padding: 0.9rem 2.25rem;
               border-radius: 50px;
-              font-size: 1rem;
               font-weight: 700;
               text-decoration: none;
-              display: inline-flex;
-              align-items: center;
-              gap: 0.5rem;
-              box-shadow: 0 4px 14px rgba(0, 102, 255, 0.35);
-              transition:
-                background 0.2s ease,
-                transform 0.2s ease;
+              display: inline-block;
+              box-shadow: 0 4px 14px rgba(0, 102, 255, 0.3);
+              transition: transform 0.2s ease, opacity 0.2s ease;
             "
-            onmouseover="
-              this.style.background = '#0052cc';
-              this.style.transform = 'translateY(-2px)';
-            "
-            onmouseout="
-              this.style.background = 'var(--primary, #0066ff)';
-              this.style.transform = 'translateY(0)';
-            "
+            onmouseover="this.style.transform = 'translateY(-2px)';"
+            onmouseout="this.style.transform = 'translateY(0)';"
           >
-            Get Free Quotes &rarr;
+            Request a Free Quote
           </a>
         </div>
       </div>
     </section>
-
     <!-- Professional Footer Section -->
     <footer
       class="site-footer"
