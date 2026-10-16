@@ -22,8 +22,8 @@
           <a href="https://wa.me/27611440669" target="_blank" class="top-link">
             <i class="fab fa-whatsapp"></i> +27 61 144 0669
           </a>
-          <a href="mailto:info@primepainters.co.za" class="top-link">
-            <i class="far fa-envelope"></i> info@primepainters.co.za
+          <a href="mailto:primepainters770@gmail.com" class="top-link">
+            <i class="far fa-envelope"></i> primepainters770@gmail.com
           </a>
         </div>
         <div class="top-social-links">
@@ -230,7 +230,7 @@
               Takes less than 60 seconds
             </p>
           </div>
-          <form id="homeownerLeadForm">
+          <form id="homeownerLeadForm"  action="https://formspree.io/f/myekllga"method="POST">
             <div class="form-group" style="margin-bottom: 1rem">
               <label
                 for="projectType"
@@ -288,7 +288,7 @@
                   >Full Name</label
                 >
                 <input
-                  type="text"
+                  type="text" name="text"
                   id="fullName"
                   placeholder="John Smith"
                   required
@@ -316,7 +316,7 @@
                   >Phone Number</label
                 >
                 <input
-                  type="tel"
+                  type="tel" name="tel"
                   id="phone"
                   placeholder="(555) 000-0000"
                   required
@@ -346,7 +346,7 @@
                 >Postal / Zip Code</label
               >
               <input
-                type="text"
+                type="text" name="text"
                 id="postalCode"
                 placeholder="Enter your area code"
                 required
@@ -362,7 +362,7 @@
               />
             </div>
             <button
-              type="submit"
+              type="submit" name="submit"
               class="btn-primary"
               style="
                 width: 100%;
@@ -5126,9 +5126,10 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
     <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">
       ↑
     </button>
+    <script src="script.js"></script>
+    
   </body>
 </html>
